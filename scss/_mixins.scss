@@ -1,0 +1,97 @@
+
+
+//VENDOR PREFIXES
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+
+  #{$property}: $value;
+}
+
+//RESPONSIVE 
+@mixin break($point) {
+   @if $point == xl {
+     @media only screen and (min-width: 85em) { @content ; }
+  }
+   @else if $point == lg {
+   	//1088
+     @media only screen and (min-width: 68em) { @content ; }
+  }
+  // @else if $point == medD {
+  //  	//1030
+  //    @media only screen and (max-width: 64.4em) { @content ; }
+  // }
+    @else if $point == med {
+    //600
+     @media only screen and (min-width: 37.5em) { @content ; }
+  }
+  //  @else if $point == smD {
+  //  	//420px
+  //    @media only screen and (max-width: 26.25em )  { @content ; }
+  // }
+  @else {
+    @warn "Break points are sm, med, lg, xl";
+  }
+}
+
+//IMAGE SWAP CLASSES
+// .show-sm {
+// 	display: none !important;
+// }
+// .show-med {
+// 	display: none !important;
+// }
+
+// @media only screen and (max-width: 26.25em ) {
+// 	  .show-sm {
+// 	    display: inline !important;
+// 	  }
+
+// 	  .hide-sm {
+// 	    display: none !important;
+// 	  }
+	  
+
+// }
+//  @media only screen and (max-width: 68em ) and (min-width: 26.3em) {
+// 	  .show-med {
+// 	    display: inline !important;
+// 	  }
+
+// 	  .hide-med {
+// 	    display: none !important;
+// 	  }
+	 
+
+// }
+
+
+
+
+
+
+// @mixin break($class) {
+//   @if $class == xs {
+//     @media (max-width: 767px) { @content; }
+//   }
+ 
+//   @else if $class == sm {
+//     @media (min-width: 768px) { @content; }
+//   }
+ 
+//   @else if $class == med {
+//     @media (min-width: 992px) { @content; }
+//   }
+ 
+//   @else if $class == lrg {
+//     @media (min-width: 1366px) { @content; }
+//   }
+//  @else {
+//     @warn "Break points are xs, sm, med, lrg";
+//   }
+  
+// }
+//@include break(sm) {
+  //   define:yourStuff;
+  // }

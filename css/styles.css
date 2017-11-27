@@ -1,0 +1,556 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* End Reset */
+@font-face {
+  font-family: 'mulilight';
+  src: url("../fonts/muli-light-webfont.woff2") format("woff2"), url("../fonts/muli-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'muliregular';
+  src: url("../fonts/muli-webfont.woff2") format("woff2"), url("../fonts/muli-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'oswalddemibold';
+  src: url("../fonts/oswald-demibold-webfont.woff2") format("woff2"), url("../fonts/oswald-demibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'oswaldextralight';
+  src: url("../fonts/oswald-extralight-webfont.woff2") format("woff2"), url("../fonts/oswald-extralight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+.title {
+  color: #555555;
+  font-family: "oswalddemibold";
+  font-size: 41px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  transition: all 0.5s ease; }
+  .title:hover {
+    color: #333366; }
+
+.description {
+  font-family: "mulilight";
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #999999; }
+
+.contact-box {
+  margin: 0 auto;
+  width: 320px; }
+
+.contact-label {
+  font-family: "mulilight";
+  color: #b0b0b4; }
+
+#email, #name, #message {
+  border-radius: 10px;
+  height: 30px;
+  border: solid 1px #ffffff;
+  box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  color: #555555;
+  display: block;
+  margin: 15px auto;
+  font-family: "mulilight"; }
+
+#message {
+  height: 150px; }
+
+#sendbutton {
+  width: 100px;
+  border: #ffffff solid 4px;
+  border-radius: 10px;
+  background-color: #b0b0b4;
+  color: #ffffff;
+  font-family: "mulilight";
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: -4px;
+  float: right;
+  transition: all 0.5s ease; }
+  #sendbutton:hover {
+    background-color: #333366;
+    color: #ffffff;
+    cursor: pointer; }
+
+.pTitle {
+  font-family: "oswaldextralight";
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 50px;
+  margin-right: -50px;
+  margin-top: 150px;
+  margin-bottom: 150px; }
+
+#portfolio-menu {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+
+#underline {
+  padding: 40px; }
+
+#development, #design, #artwork {
+  display: inline;
+  font-family: "oswaldextralight";
+  font-size: 25px;
+  color: #cccccc;
+  transition: all 0.5s ease; }
+  #development:hover, #design:hover, #artwork:hover {
+    border-bottom: 1px solid #333366;
+    padding-bottom: 10px;
+    color: #555555;
+    cursor: pointer;
+    font-size: 26px; }
+
+#design {
+  margin-left: 0; }
+
+#artwork {
+  margin-left: 0;
+  margin-right: 0; }
+
+.greyBack {
+  background-color: #f0efef; }
+
+.portGrid {
+  display: flex;
+  justify-content: center; }
+
+.scrollingSide {
+  display: flex;
+  flex-direction: column;
+  width: 320px; }
+
+.staticSide {
+  display: flex;
+  flex-direction: column; }
+
+.small-block {
+  width: 313px;
+  margin-right: 30px;
+  display: inline; }
+
+.large-block {
+  width: 695px;
+  height: 541px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  display: inline-block;
+  vertical-align: top; }
+
+.clientLogo {
+  width: 200px; }
+
+.info {
+  width: 320px;
+  margin: 0 auto; }
+  .info h4 {
+    color: #555555;
+    font-size: 40px;
+    text-align: left;
+    margin: 20px;
+    margin-top: 100px; }
+  .info h5 {
+    color: #f8f8f8;
+    color: #555555;
+    font-family: "oswaldextralight";
+    font-size: 20px;
+    text-align: left;
+    margin: 20px; }
+  .info p {
+    color: #f8f8f8;
+    color: #555555;
+    font-family: "mulilight";
+    font-size: 15px;
+    text-align: left;
+    margin: 20px;
+    margin-bottom: 40px; }
+
+#artwork-page {
+  overflow: hidden;
+  width: 1366px;
+  height: 3000px;
+  position: relative;
+  display: none; }
+
+#walking {
+  position: absolute;
+  top: 300px;
+  left: 1040px;
+  height: 434px;
+  width: 236px;
+  overflow: hidden;
+  background-image: url(../images/art_walking.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+#ashley {
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  height: 320px;
+  width: 488px;
+  overflow: hidden;
+  background-image: url(../images/art_ashley.jpg);
+  background-position: -10px;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+#christine {
+  position: absolute;
+  top: 600px;
+  left: 150px;
+  height: 223px;
+  width: 483px;
+  overflow: hidden;
+  background-image: url(../images/art_christine.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+#purpleDress {
+  position: absolute;
+  top: 950px;
+  left: 636px;
+  height: 708px;
+  width: 668px;
+  overflow: hidden;
+  background-image: url(../images/art_purpleDress.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+#profile {
+  position: absolute;
+  top: 1550px;
+  left: 120px;
+  height: 1125px;
+  width: 462px;
+  overflow: hidden;
+  background-image: url(../images/art_profile.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+#greenDress {
+  position: absolute;
+  top: 2000px;
+  left: 950px;
+  height: 1427px;
+  width: 281px;
+  overflow: hidden;
+  background-image: url(../images/art_greenDress.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.backwhite {
+  position: absolute; }
+  .backwhite:last-child {
+    left: 900px;
+    z-index: -3; }
+
+#development-page, #design-page {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; }
+
+.card {
+  width: 320px;
+  background-color: #555555;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 50px; }
+  .card img {
+    width: 280px;
+    margin: 40px 20px; }
+  .card h3 {
+    color: #fff;
+    font-style: "mulilight";
+    font-size: 15px;
+    margin-left: 20px; }
+  .card p {
+    color: #fff;
+    font-style: "mulilight";
+    font-size: 15x;
+    margin: 20px;
+    padding-bottom: 40px; }
+  .card a {
+    color: #fff;
+    font-style: "oswalddemibold";
+    font-size: 15px;
+    margin-right: 20px;
+    padding-bottom: 40px;
+    text-align: right;
+    display: block; }
+    .card a:hover {
+      color: #333366;
+      border-bottom: 1px solid #fff; }
+
+#design-page {
+  display: none; }
+
+.stickyCircleNav {
+  position: fixed;
+  margin-top: 300px;
+  width: 100px;
+  height: 500px; }
+
+.navCircles {
+  fill: #555555;
+  transition: all 0.5 ease; }
+  .navCircles:hover {
+    fill: purple; }
+
+.spaceMe {
+  height: 3000px;
+  width: 1000px; }
+
+.sideNav {
+  height: 20px;
+  width: 50px;
+  transition: all 0.5 ease; }
+  .sideNav:hover {
+    border-bottom: solid 0.5px #555555; }
+
+.lineNav {
+  width: 1px;
+  position: fixed;
+  margin-top: 150px;
+  margin-left: 50px; }
+
+#verbalNav {
+  transform: rotate(270deg);
+  width: 200px;
+  height: 20px;
+  text-align: center;
+  transition: all 0.5 ease; }
+  #verbalNav:hover {
+    border-bottom: solid 0.5px #555555; }
+
+.hidden {
+  display: none; }
+
+body {
+  font-family: "mulilight";
+  font-size: 14px; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+#container {
+  width: 1366px;
+  margin: 0 auto; }
+
+#backImg {
+  position: absolute; }
+
+#logoAll {
+  width: 500px;
+  display: inline; }
+
+#logo {
+  width: 100px;
+  margin: 30px 0 0 30px;
+  transition: all 0.5s ease; }
+  #logo:hover {
+    opacity: 0.5; }
+
+#logoText {
+  color: #b0b0b4;
+  display: inline;
+  font-family: "oswaldextralight";
+  font-size: 25px;
+  letter-spacing: 0.220em;
+  margin-left: 27px;
+  margin-bottom: 30px;
+  transition: all 0.5s ease; }
+
+#logoText:hover {
+  margin: 33px;
+  color: #555555; }
+
+.main-nav {
+  float: right;
+  margin-top: 63px; }
+  .main-nav li {
+    display: inline;
+    margin-right: 100px;
+    transition: all 0.5s ease; }
+    .main-nav li:hover {
+      border-bottom: 1px solid #b0b0b4;
+      padding: 7px; }
+  .main-nav a {
+    text-decoration: none;
+    font-family: "oswaldextralight";
+    font-size: 20px;
+    letter-spacing: 0.220em;
+    color: #b0b0b4;
+    transition: all 0.5s ease; }
+    .main-nav a:hover {
+      color: #333366;
+      cursor: pointer; }
+
+#headerBack {
+  position: relative;
+  margin-top: 20px;
+  background-image: url(../images/sgnm-long.jpg);
+  height: 1307px; }
+
+#rowingHeader, #eightRowing {
+  position: absolute;
+  top: 0; }
+
+#blurb {
+  width: 600px;
+  display: inline;
+  float: left;
+  color: #555555;
+  position: absolute;
+  top: 150px;
+  left: 170px; }
+  #blurb h1 {
+    font-family: "oswalddemibold";
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 65px;
+    line-height: 80px;
+    color: #555555;
+    transition: all 0.5s ease; }
+    #blurb h1:hover {
+      color: #333366;
+      cursor: pointer; }
+  #blurb h4 {
+    font-family: "mulilight";
+    font-size: 25px;
+    margin-bottom: 40px;
+    width: 380px;
+    line-height: 35px;
+    transition: all 0.5s ease; }
+    #blurb h4:hover {
+      color: #333366;
+      cursor: pointer; }
+    #blurb h4 a {
+      color: #333366;
+      transition: all 0.5s ease; }
+      #blurb h4 a:hover {
+        font-family: "muliregular";
+        cursor: pointer; }
+
+#goTo {
+  margin-top: 80px; }
+
+footer {
+  background-color: #fff;
+  clear: both; }
+
+.footer-nav {
+  float: left;
+  margin-top: 50px;
+  background-color: #fff;
+  padding: 20px;
+  clear: both; }
+  .footer-nav li {
+    display: inline;
+    margin-right: 40px; }
+  .footer-nav a {
+    text-decoration: none;
+    font-family: "oswaldextralight";
+    font-size: 15px;
+    letter-spacing: 0.220em;
+    color: #b0b0b4; }
+
+.cright {
+  float: right;
+  display: inline;
+  text-align: right;
+  color: #b0b0b4;
+  margin-top: 70px; }
+
+#parker, #ethridge {
+  background-color: #555555;
+  float: left;
+  width: 600px;
+  height: 600px;
+  opacity: 0.5;
+  transition: all 0.5s ease; }
+  #parker:hover, #ethridge:hover {
+    opacity: 1;
+    cursor: pointer; }
+  #parker img, #ethridge img {
+    width: 200px; }
+
+#ethridge {
+  float: right; }
+
+.wipeIn {
+  animation: wipeIn 2s; }
+
+@keyframes wipeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.wipeInTwo {
+  animation: wipeIn 2s; }
+
+@keyframes wipeIn {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,86 @@
+//START CONTACT
+.title {
+	color: $maincolor;
+	font-family: $fontfamilythick;
+	font-size: 41px;
+	margin-top: 70px;
+	margin-bottom:20px;
+	transition: all 0.5s ease;
+	&:hover {
+		color:	#333366;
+	}
+}
+
+.description {
+	font-family: $fontfamilybody;
+	margin-bottom: 25px;
+	font-size: 14px;
+	color: #999999;
+
+}
+
+.contact-box {
+	margin: 0 auto;
+	width: 320px;
+}
+.contact-label {
+	font-family: $fontfamilybody;
+	color: $navcolor;
+	&:first-of-type {
+		// margin-top:80px;
+		// padding-top: 80px;
+		// color:red;
+	}
+
+}
+
+#email {
+	border-radius: 10px;
+	height: 30px;
+	border: solid 1px #ffffff;
+	// background-color: #eaeaea;
+	// background-color: #f7f7f7;
+	box-shadow: inset 0px 5px 10px rgba(0,0,0,0.2);
+	width: 320px;
+	// color:  #353434;
+	color: $maincolor;
+	display: block;
+	margin: 15px auto;
+	font-family: $fontfamilybody;
+}
+#name {
+	@extend #email;
+	
+}
+
+#message {
+	@extend #email;
+	height: 150px;
+
+}
+
+#sendbutton {
+  width: 100px;
+  border: #ffffff solid 4px;
+  border-radius: 10px;
+  background-color: $navcolor;
+  color:#ffffff;
+  font-family: $fontfamilybody;
+  font-size:15px;
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-top:-4px;
+  float: right;
+  transition: all 0.5s ease;
+  &:hover{
+  	background-color: #333366;
+  	color: #ffffff;
+  	cursor: pointer;
+	}
+}
+
+
+
+
+
+//END CONTACT

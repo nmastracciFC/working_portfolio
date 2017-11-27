@@ -1,0 +1,277 @@
+
+@import 'reset';
+@import 'globals';
+@import 'mixins';
+@import 'fonts';
+@import 'contact';
+@import 'portfolio';
+@import 'sideNav';
+
+.hidden {
+	display:none;
+}
+
+body {
+	font-family: $fontfamilybody;
+	font-size: 14px;
+	// background-color: #000;
+	
+}
+
+a {
+	text-decoration: none;
+	color:#000;
+}
+
+#container {
+	width: 1366px;
+	margin:0 auto;
+
+}
+
+//RESPONSIVE
+// #container {
+// 	width:320px;
+// 	height:400px;
+// 	margin:0 auto;
+// 	background-color: blue;
+// 	 @include break(med) {width: 768px;}
+// 	 @include break(lg) {width: 1366px;}
+// }
+
+#backImg {
+	position:absolute;
+}
+#logoAll {
+	width:500px;
+	display:inline;
+}
+#logo {
+	width:100px;
+	margin: 30px 0 0 30px;	
+	transition: all 0.5s ease;
+	&:hover {
+		opacity: 0.5;
+	}
+
+}
+#logoText {
+	color: $navcolor;
+	display:inline;
+	font-family: $fontfamilythin;
+	font-size: 25px;
+	letter-spacing: 0.220em;
+	margin-left: 27px;
+	margin-bottom:30px;
+	transition: all 0.5s ease;
+	
+	}
+#logoText:hover {
+	margin:33px;
+	color: $maincolor;
+}
+
+.main-nav {
+	float:right;
+	margin-top: 63px;
+	// @@include breakpoint(med) {
+	// 	display:none;
+	// 	opacity:0;
+	// }
+	// @include break(med) {
+	// 	display:none;
+	// }
+	// @include break(sm) {
+	// 	display:none;
+	// 	// opacity:0;
+	// }
+	li{
+	display: inline;
+	margin-right: 100px;
+	transition: all 0.5s ease;
+	&:hover{
+		border-bottom: 1px solid $navcolor;
+		padding: 7px;	
+
+	}
+	}
+	  
+	a{
+	text-decoration: none;
+	font-family: $fontfamilythin;
+	font-size: 20px;
+	letter-spacing: 0.220em;
+	color: $navcolor;
+	transition: all 0.5s ease;
+	&:hover{
+		color: $purple;
+		cursor: pointer;
+		
+	}
+	
+	} 
+	
+
+
+} 
+
+#headerBack {
+	position: relative;
+	margin-top: 20px;
+	background-image: url(../images/sgnm-long.jpg);
+	height:1307px;
+}
+#rowingHeader, #eightRowing {
+	position:absolute;
+	top:0;
+}
+// #eightRowing {
+// 	position: absolute;
+// 	top:0;
+// 	width: 1327px;
+// 	z-index: 3;
+// }
+
+#blurb {
+	width:600px;
+	display:inline;
+	float:left;
+	color: $maincolor;
+	position: absolute;
+	top: 150px;
+	left: 170px;
+	
+
+	h1 {
+	font-family: $fontfamilythick;
+	font-size: 50px;
+	font-weight:900;
+	// margin: 250px 0 65px 170px;
+	margin-bottom: 65px;
+	line-height: 80px;
+	color: $maincolor;
+	transition: all 0.5s ease;
+	&:hover {
+		color:	$purple;
+		cursor: pointer;
+	}
+	}
+	h4 {
+	font-family: $fontfamilybody;
+	font-size: 25px;
+	margin-bottom: 40px;
+	width: 380px;
+	line-height: 35px;
+	transition: all 0.5s ease;
+	&:hover {
+		color:	$purple;
+		cursor: pointer;
+	}
+		a {
+		color:	$purple;
+		transition: all 0.5s ease;
+		&:hover {
+			// border-bottom: 1px solid $purple;
+			font-family: $fontfamilybodythick;
+			cursor: pointer;
+		}
+		}
+	}
+
+}
+#goTo{
+	margin-top: 80px;
+	
+}
+
+footer {
+	background-color: #fff;
+	clear:both;
+}
+.footer-nav {
+	float: left;
+	margin-top: 50px;
+	background-color: #fff;
+	padding:20px;
+	 clear: both;
+
+	li{
+	display: inline;
+	margin-right: 40px;
+	} 
+	a{
+	text-decoration: none;
+	font-family: $fontfamilythin;
+	font-size: 15px;
+	letter-spacing: 0.220em;
+	color: $navcolor;
+	} 
+} 
+.cright {
+	float: right;
+	display: inline;
+	text-align: right;
+	color: $navcolor;
+	margin-top:70px;
+}
+
+
+
+#parker {
+	background-color: $maincolor;
+	float: left;
+	width: 600px;
+	height: 600px;
+	opacity: 0.5;
+	transition: all 0.5s ease;
+	&:hover {
+		opacity:1;
+		cursor: pointer;
+	}
+	img {
+		width: 200px;
+
+
+	}
+
+
+}
+
+#ethridge {
+	@extend #parker;
+	float: right;
+}
+
+//START ANIMATION
+.wipeIn {
+	animation: wipeIn 2s;
+}
+@keyframes wipeIn{
+	0% {opacity:0;}
+	// 1% {left:200px;}
+	// 99% { left:0;}
+	100% {opacity:1;}
+}
+.wipeInTwo {
+		animation: wipeIn 2s;
+}
+@keyframes wipeIn{
+	0% {opacity:0;}
+	50% {opacity:0;}
+	100% {opacity:1;}
+}
+
+//END ANIMATION
+
+
+
+
+
+
+
+
+
+
+
+
+ 
