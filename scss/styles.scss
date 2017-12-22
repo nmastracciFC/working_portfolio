@@ -26,6 +26,8 @@ a {
 #container {
 	width: 1366px;
 	margin:0 auto;
+	// background-image: url(../images/sgnm-long.jpg);
+	// height:1307px;
 
 }
 
@@ -117,13 +119,15 @@ a {
 
 #headerBack {
 	position: relative;
-	margin-top: 20px;
+	// margin-top: 20px;
 	background-image: url(../images/sgnm-long.jpg);
 	height:1307px;
 }
-#rowingHeader, #eightRowing {
+#eightRowing {
 	position:absolute;
 	top:0;
+	opacity:0.5;
+	
 }
 // #eightRowing {
 // 	position: absolute;
@@ -159,7 +163,7 @@ a {
 	h4 {
 	font-family: $fontfamilybody;
 	font-size: 25px;
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 	width: 380px;
 	line-height: 35px;
 	transition: all 0.5s ease;
@@ -179,6 +183,41 @@ a {
 	}
 
 }
+
+#skills {
+	position:absolute;
+	top: 700px;
+	left: 768px;
+	text-align: right;
+	margin:40px;
+	font-family: $fontfamilybody;
+	font-size: 25px;
+	margin-bottom: 80px;
+	width: 380px;
+	line-height: 35px;
+	display:inline;
+	float:left;
+	color: $maincolor;
+	transition: all 0.5s ease;
+	h1{
+	line-height: 50px;
+	font-family: $fontfamilythick;
+	font-size: 50px;
+	font-weight:900;
+	// margin: 250px 0 65px 170px;
+	margin-bottom: 65px;
+	color: $maincolor;
+	}
+	h4 {
+		margin-bottom: 40px;
+	}
+}
+
+
+
+
+
+
 #goTo{
 	margin-top: 80px;
 	
@@ -217,45 +256,20 @@ footer {
 
 
 
-#parker {
-	background-color: $maincolor;
-	float: left;
-	width: 600px;
-	height: 600px;
-	opacity: 0.5;
-	transition: all 0.5s ease;
-	&:hover {
-		opacity:1;
-		cursor: pointer;
-	}
-	img {
-		width: 200px;
-
-
-	}
-
-
-}
-
-#ethridge {
-	@extend #parker;
-	float: right;
-}
-
 //START ANIMATION
 .wipeIn {
-	animation: wipeIn 2s;
+	animation: wipeIn 4s;
 }
 @keyframes wipeIn{
 	0% {opacity:0;}
 	// 1% {left:200px;}
 	// 99% { left:0;}
-	100% {opacity:1;}
+	100% {opacity:0.5;}
 }
 .wipeInTwo {
-		animation: wipeIn 2s;
+		animation: wipeInTwo 2s;
 }
-@keyframes wipeIn{
+@keyframes wipeInTwo{
 	0% {opacity:0;}
 	50% {opacity:0;}
 	100% {opacity:1;}

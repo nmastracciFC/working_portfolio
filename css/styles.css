@@ -43,6 +43,21 @@ table {
   border-spacing: 0; }
 
 /* End Reset */
+@media only screen and (min-width: 300px) {
+  .respond {
+    height: 100px;
+    width: 320px;
+    margin: 0 auto; } }
+@media only screen and (min-width: 768px) {
+  .respond {
+    width: 900px; } }
+@media only screen and (min-width: 1024px) {
+  .respond {
+    width: 1200px; } }
+@media only screen and (min-width: 1200px) {
+  .respond {
+    width: 1366px; } }
+
 @font-face {
   font-family: 'mulilight';
   src: url("../fonts/muli-light-webfont.woff2") format("woff2"), url("../fonts/muli-light-webfont.woff") format("woff");
@@ -91,7 +106,7 @@ table {
   border-radius: 10px;
   height: 30px;
   border: solid 1px #ffffff;
-  box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #f0efef;
   width: 320px;
   color: #555555;
   display: block;
@@ -125,17 +140,21 @@ table {
   text-align: center;
   letter-spacing: 50px;
   margin-right: -50px;
-  margin-top: 150px;
-  margin-bottom: 150px; }
+  margin-top: 250px;
+  margin-bottom: 50px; }
 
 #portfolio-menu {
   width: 1024px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between; }
+  justify-content: center; }
+  #portfolio-menu h2 {
+    margin: 30px; }
 
 #underline {
-  padding: 40px; }
+  padding: 40px;
+  display: flex;
+  justify-content: center; }
 
 #development, #design, #artwork {
   display: inline;
@@ -162,12 +181,15 @@ table {
 
 .portGrid {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  overflow: hidden; }
 
 .scrollingSide {
   display: flex;
   flex-direction: column;
-  width: 320px; }
+  width: 320px;
+  overflow: auto;
+  height: 450px; }
 
 .staticSide {
   display: flex;
@@ -180,11 +202,13 @@ table {
 
 .large-block {
   width: 695px;
-  height: 541px;
-  margin-left: 30px;
+  height: 450px;
   margin-bottom: 30px;
   display: inline-block;
   vertical-align: top; }
+  .large-block:nth-child(even) {
+    margin-left: 0;
+    margin-right: 30px; }
 
 .clientLogo {
   width: 200px; }
@@ -307,6 +331,7 @@ table {
 
 .card {
   width: 320px;
+  height: 360px;
   background-color: #555555;
   display: inline-block;
   overflow: hidden;
@@ -330,12 +355,23 @@ table {
     font-style: "oswalddemibold";
     font-size: 15px;
     margin-right: 20px;
-    padding-bottom: 40px;
+    display: inline;
     text-align: right;
-    display: block; }
+    vertical-align: bottom;
+    display: block;
+    transition: all 0.5s ease; }
     .card a:hover {
-      color: #333366;
-      border-bottom: 1px solid #fff; }
+      font-size: 16px;
+      font-weight: 900; }
+
+#summerLEDC {
+  margin: 40px 20px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+  font-size: 33px;
+  text-align: center; }
 
 #design-page {
   display: none; }
@@ -444,13 +480,13 @@ a {
 
 #headerBack {
   position: relative;
-  margin-top: 20px;
   background-image: url(../images/sgnm-long.jpg);
   height: 1307px; }
 
-#rowingHeader, #eightRowing {
+#eightRowing {
   position: absolute;
-  top: 0; }
+  top: 0;
+  opacity: 0.5; }
 
 #blurb {
   width: 600px;
@@ -474,7 +510,7 @@ a {
   #blurb h4 {
     font-family: "mulilight";
     font-size: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     width: 380px;
     line-height: 35px;
     transition: all 0.5s ease; }
@@ -487,6 +523,31 @@ a {
       #blurb h4 a:hover {
         font-family: "muliregular";
         cursor: pointer; }
+
+#skills {
+  position: absolute;
+  top: 700px;
+  left: 768px;
+  text-align: right;
+  margin: 40px;
+  font-family: "mulilight";
+  font-size: 25px;
+  margin-bottom: 80px;
+  width: 380px;
+  line-height: 35px;
+  display: inline;
+  float: left;
+  color: #555555;
+  transition: all 0.5s ease; }
+  #skills h1 {
+    line-height: 50px;
+    font-family: "oswalddemibold";
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 65px;
+    color: #555555; }
+  #skills h4 {
+    margin-bottom: 40px; }
 
 #goTo {
   margin-top: 80px; }
@@ -518,34 +579,18 @@ footer {
   color: #b0b0b4;
   margin-top: 70px; }
 
-#parker, #ethridge {
-  background-color: #555555;
-  float: left;
-  width: 600px;
-  height: 600px;
-  opacity: 0.5;
-  transition: all 0.5s ease; }
-  #parker:hover, #ethridge:hover {
-    opacity: 1;
-    cursor: pointer; }
-  #parker img, #ethridge img {
-    width: 200px; }
-
-#ethridge {
-  float: right; }
-
 .wipeIn {
-  animation: wipeIn 2s; }
+  animation: wipeIn 4s; }
 
 @keyframes wipeIn {
   0% {
     opacity: 0; }
   100% {
-    opacity: 1; } }
+    opacity: 0.5; } }
 .wipeInTwo {
-  animation: wipeIn 2s; }
+  animation: wipeInTwo 2s; }
 
-@keyframes wipeIn {
+@keyframes wipeInTwo {
   0% {
     opacity: 0; }
   50% {
