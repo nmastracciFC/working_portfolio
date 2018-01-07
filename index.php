@@ -15,11 +15,17 @@ if (isset($_POST['name'])) {
 	// echo $street;
 	if($street === ""){
 		$sendMail = submitMessage($name, $email, $message, $direct);
-
+		$querysert = "INSERT INTO visitors (visitors_name, visitors_email, visitors_message) VALUES ($name, $email, $message)";
+		$postit = mysqli_query($link, $querysert);
+		echo $name;
+	echo $email;
+	echo $message;
+	
 	} 
 }
 
 ?>
+
 
 <html lang="en"><head>
 	<meta charset="UTF-8">
@@ -232,19 +238,31 @@ if (isset($_POST['name'])) {
 			<h1 class="title ">Let's Keep In Touch</h1>
 			<!-- like what you see? -->
 			<p class=" description" >Why not fill out the form below and say hello?</p>
-			<form id="cform">
-				<label class="contact-label">name</label>
-				<input class="form-mat" type="text"  id="name">
+			<form id="cform" action="index.php" method="POST">
+				<label class="contact-label" for="name">name</label>
+				<input class="form-mat" type="text"  id="name" name="name">
 
-				<label class="contact-label">email</label>
-				<input class="form-mat" type="email"  id="email">
+				<label class="contact-label" for="email">email</label>
+				<input class="form-mat" type="email"  id="email" name="email">
 
-				<label class="contact-label hidden">email</label>
-				<input class="form-mat hidden" type="email"  id="email">
+				<label for="street" class="hidden">Street: </label>
+				<input class="street hidden" name="street" type="text" size="21" maxlength="30" />
 
-				<label class="contact-label">message</label>
+				<label class="contact-label" for="message">message</label>
 				<textarea class="form-mat" type="text"  id="message" name="message"></textarea>
-				<button type="button"  id="sendbutton">SUBMIT</button>         
+				<button type="submit"  id="sendbutton">SUBMIT</button>         
+                
+			</form>
+		</section>
+
+		<section class="contact-box">
+			
+			<form  action="admin/scripts/insert.php" method="POST">
+				<label class="contact-label" for="location">location</label>
+				<input class="form-mat" type="text"  name="location">
+
+
+				<button type="submit"  >SUBMIT</button>         
                 
 			</form>
 		</section>
