@@ -17,7 +17,7 @@ var skills = document.querySelector("#skills");
 
 function parallaxHeader() {
     var scroll = window.pageYOffset;
-    eight.style.top = -scroll * 0.1 + "px";
+    // eight.style.top = -scroll * 0.1 + "px";
     // headerBack.style.top = -scroll * 0.7 + "px";
     title.style.top = scroll * 0.5 + "px";
     titleDesc.style.top = -scroll * 0.5 + "px";

@@ -1,0 +1,28 @@
+#headerColour {
+	// display: grid;
+	// grid-template-columns: repeat(24, 1fr);
+	// grid-template-rows: repeat(12, 1fr);
+	// grid-gap: 20px;
+	position:relative;
+
+}
+#dark-pink, #light-pink, #peach, #yellow {
+	// grid-column-start: 1;
+	// grid-column-end: 25;
+	// grid-row-start: 1;
+	// grid-row-end: 13;
+	position:absolute;
+	top:0;
+}
+#dark-pink {
+	z-index: 1;
+}
+#light-pink {
+	z-index: 2;
+}
+#peach {
+	z-index: 3;
+}
+#yellow {
+	z-index: 4;
+}

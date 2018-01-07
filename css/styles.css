@@ -414,6 +414,25 @@ table {
   #verbalNav:hover {
     border-bottom: solid 0.5px #555555; }
 
+#headerColour {
+  position: relative; }
+
+#dark-pink, #light-pink, #peach, #yellow {
+  position: absolute;
+  top: 0; }
+
+#dark-pink {
+  z-index: 1; }
+
+#light-pink {
+  z-index: 2; }
+
+#peach {
+  z-index: 3; }
+
+#yellow {
+  z-index: 4; }
+
 .hidden {
   display: none; }
 

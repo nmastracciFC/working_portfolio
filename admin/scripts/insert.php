@@ -13,9 +13,10 @@ if (isset($_POST['name'])) {
 	$direct = "../../thankyou.php";
 	
 	if($street === ""){
-		$sendMail = submitMessage($name, $email, $message, $direct);
 		$querysert = "INSERT INTO visitors (visitors_name, visitors_email, visitors_message) VALUES ('$name', '$email', '$message')";
 		$postit = $link->query($querysert);
+		$sendMail = submitMessage($name, $email, $message, $direct);
+		
 		
 	} 
 }
