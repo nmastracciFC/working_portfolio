@@ -9,12 +9,7 @@ if (isset($_POST['name'])) {
 	$message = $_POST['message'];
 	$street = $_POST['street'];
 	$direct = "thankyou.php";
-	//these are tests to make sure all the info comes back
-
-	// echo $name;
-	// echo $email;
-	// echo $message;
-	// echo $street;
+	
 	if($street === ""){
 		$sendMail = submitMessage($name, $email, $message, $direct);
 		$querysert = "INSERT INTO visitors (visitors_name, visitors_email, visitors_message) VALUES ($name, $email, $message)";
@@ -255,18 +250,6 @@ if (isset($_POST['name'])) {
 				<label class="contact-label" for="message">message</label>
 				<textarea class="form-mat" type="text"  id="message" name="message"></textarea>
 				<button type="submit"  id="sendbutton">SUBMIT</button>         
-                
-			</form>
-		</section>
-
-		<section class="contact-box">
-			
-			<form  action="admin/scripts/insert.php" method="POST">
-				<label class="contact-label" for="location">location</label>
-				<input class="form-mat" type="text"  name="location">
-
-
-				<button type="submit"  >SUBMIT location</button>         
                 
 			</form>
 		</section>
