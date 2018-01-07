@@ -1,3 +1,25 @@
+<?php
+require_once("admin/scripts/config.php");
+
+if (isset($_POST['name'])) {
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$message = $_POST['message'];
+	$street = $_POST['street'];
+	$direct = "thankyou.php";
+	//these are tests to make sure all the info comes back
+
+	// echo $name;
+	// echo $email;
+	// echo $message;
+	// echo $street;
+	if($street === ""){
+		$sendMail = submitMessage($name, $email, $message, $direct);
+
+	} 
+}
+
+?>
 
 <html lang="en"><head>
 	<meta charset="UTF-8">
@@ -202,6 +224,32 @@
 		</section>
 		</section>
 
+
+
+		<!-- CONTACT SECTION -->
+
+		<section class="contact-box">
+			<h1 class="title ">Let's Keep In Touch</h1>
+			<!-- like what you see? -->
+			<p class=" description" >Why not fill out the form below and say hello?</p>
+			<form id="cform">
+				<label class="contact-label">name</label>
+				<input class="form-mat" type="text"  id="name">
+
+				<label class="contact-label">email</label>
+				<input class="form-mat" type="email"  id="email">
+
+				<label class="contact-label hidden">email</label>
+				<input class="form-mat hidden" type="email"  id="email">
+
+				<label class="contact-label">message</label>
+				<textarea class="form-mat" type="text"  id="message" name="message"></textarea>
+				<button type="button"  id="sendbutton">SUBMIT</button>         
+                
+			</form>
+		</section>
+
+
 		
 		<footer>
 			<ul class="footer-nav">
@@ -212,6 +260,7 @@
 			<h6 class="cright">© Natalie Mastracci 2017</h6>	
 		</footer>
 	</div>
+
 	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
