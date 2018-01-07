@@ -1,5 +1,7 @@
 <?php
+require_once("admin/scripts/connect.php");
 require_once("admin/scripts/config.php");
+
 
 if (isset($_POST['name'])) {
 	$name = $_POST['name'];
@@ -16,10 +18,12 @@ if (isset($_POST['name'])) {
 	if($street === ""){
 		$sendMail = submitMessage($name, $email, $message, $direct);
 		$querysert = "INSERT INTO visitors (visitors_name, visitors_email, visitors_message) VALUES ($name, $email, $message)";
-		$postit = mysqli_query($link, $querysert);
+		$postit = $link->query($querysert);
 		echo $name;
 	echo $email;
 	echo $message;
+	
+	
 	
 	} 
 }
@@ -238,7 +242,7 @@ if (isset($_POST['name'])) {
 			<h1 class="title ">Let's Keep In Touch</h1>
 			<!-- like what you see? -->
 			<p class=" description" >Why not fill out the form below and say hello?</p>
-			<form id="cform" action="index.php" method="POST">
+			<form id="cform" action="admin/scripts/insert.php" method="POST">
 				<label class="contact-label" for="name">name</label>
 				<input class="form-mat" type="text"  id="name" name="name">
 
@@ -262,11 +266,12 @@ if (isset($_POST['name'])) {
 				<input class="form-mat" type="text"  name="location">
 
 
-				<button type="submit"  >SUBMIT</button>         
+				<button type="submit"  >SUBMIT location</button>         
                 
 			</form>
 		</section>
 
+		
 
 		
 		<footer>

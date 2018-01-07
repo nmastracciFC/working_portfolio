@@ -1,25 +1,23 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+require_once("connect.php");
+require_once("config.php");
 
-	$user = "root";
-	$pass = "root";
-	$url = "localhost";
-	$db = "db_nammie";
 
-	$link = mysqli_connect($url, $user, $pass, $db, "8888"); 
-
-	if(mysqli_connect_errno()) {
-		printf("Connection Failed: %s\n", mysqli_connect_error());
-		exit();
-	}
-
-	$location = $_POST('location');
-	$sql = "INSERT INTO test (test_location) VALUES ('$location')"
-
-	if(!mysqli_query($link,$sql)) {
-		echo 'not inserted';
-	} else {
-		echo 'inserted';
-	}
-
+if (isset($_POST['name'])) {
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$message = $_POST['message'];
+	$street = $_POST['street'];
+	$direct = "../../thankyou.php";
+	
+	if($street === ""){
+		$sendMail = submitMessage($name, $email, $message, $direct);
+		$querysert = "INSERT INTO visitors (visitors_name, visitors_email, visitors_message) VALUES ('$name', '$email', '$message')";
+		$postit = $link->query($querysert);
+		
+	} 
+}
 
 ?>
