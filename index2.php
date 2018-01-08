@@ -54,21 +54,26 @@ if (isset($_POST['name'])) {
 		<header id="headerColour">
 			
 			<img id="dark-pink" src="images/dark-pink.png" alt="paint splash">
+			<!-- <img id="em" src="images/m_logo-backwhite.png"> -->
+			<img id="en" src="images/n_logo-large.png">
 			<img id="light-pink" src="images/light-pink.png" alt="paint splash">
+			
 			<img id="peach" src="images/peach.png" alt="paint splash">
 			<img id="yellow" src="images/yellow.png" alt="paint splash">
+
 			
- 			<div id="blurb">
-				<h1 id="title" style="top: 1035.5px;">Designer<br>&amp; Developer</h1>
-				<h4 id="titleDesc" style="top: -1035.5px;">After spending nine years backwards in a boat, it’s time to start looking ahead.</h4>
-				<!-- <h4 id="goTo">Go to <a href="portfolio.html">Portfolio  ></a></h4> -->
-				<h4 id="contact" style="top: -1035.5px;">Let's keep <a href="contact.html">in Touch  &gt;</a></h4>
+ 			<div id="heading">
+ 				<h1 >Natalie Mastracci</h1>
+				<!-- <h2 >Designer &amp; Developer</h2> -->
+				<!-- <h3 >After spending nine years backwards in a boat, it’s time to start looking ahead.</h3> -->
+				<h4 >Go to <a href="#portfolio">Portfolio  ></a></h4>
+				<h4 >Keep <a href="#form">in Touch  &gt;</a></h4>
 			</div>
 
-			<div id="skills">
+			<div id="sub-head">
 				
-				<h1>Skills</h1>
-				<h4>Skills include: responsive web design, PHP, mySQL, MVC framework (ex. Laravel, codeigniter), core Javascipt and popular JS libraries (such as greensock, D3.js and three.js), cinema4D and the adobe creative cloud suite.</h4>
+				<h2>Designer &amp; Developer</h2>
+				<h3>Skills include: responsive web design, PHP, mySQL, MVC framework (ex. Laravel, codeigniter), core Javascipt and popular JS libraries (such as greensock, D3.js and three.js), cinema4D and the adobe creative cloud suite.</h3>
 				<h4>I believe efficiency, functionality and beauty are created equal but above all else make something great.</h4>
 				
 				
@@ -236,7 +241,7 @@ if (isset($_POST['name'])) {
 
 		<!-- CONTACT SECTION -->
 
-		<section class="contact-box">
+		<section class="contact-box" id="form">
 			<h1 class="title ">Let's Keep In Touch</h1>
 			<!-- like what you see? -->
 			<p class=" description" >Why not fill out the form below and say hello?</p>
@@ -270,9 +275,12 @@ if (isset($_POST['name'])) {
 		</footer>
 	</div>
 
-	
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script> -->
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/portfolio.js"></script>
+<script type="text/javascript" src="js/headerColour.js"></script>
 
 </body></html>

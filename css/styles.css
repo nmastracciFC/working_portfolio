@@ -134,13 +134,16 @@ table {
     color: #ffffff;
     cursor: pointer; }
 
+#portfolio {
+  clear: both; }
+
 .pTitle {
   font-family: "oswaldextralight";
   font-size: 60px;
   text-align: center;
   letter-spacing: 50px;
   margin-right: -50px;
-  margin-top: 250px;
+  margin-top: 150px;
   margin-bottom: 50px; }
 
 #portfolio-menu {
@@ -376,62 +379,61 @@ table {
 #design-page {
   display: none; }
 
-.stickyCircleNav {
-  position: fixed;
-  margin-top: 300px;
-  width: 100px;
-  height: 500px; }
-
-.navCircles {
-  fill: #555555;
-  transition: all 0.5 ease; }
-  .navCircles:hover {
-    fill: purple; }
-
-.spaceMe {
-  height: 3000px;
-  width: 1000px; }
-
-.sideNav {
-  height: 20px;
-  width: 50px;
-  transition: all 0.5 ease; }
-  .sideNav:hover {
-    border-bottom: solid 0.5px #555555; }
-
-.lineNav {
-  width: 1px;
-  position: fixed;
-  margin-top: 150px;
-  margin-left: 50px; }
-
-#verbalNav {
-  transform: rotate(270deg);
-  width: 200px;
-  height: 20px;
-  text-align: center;
-  transition: all 0.5 ease; }
-  #verbalNav:hover {
-    border-bottom: solid 0.5px #555555; }
-
 #headerColour {
-  position: relative; }
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: 100px repeat(10, 1fr);
+  position: relative;
+  width: 100%; }
 
-#dark-pink, #light-pink, #peach, #yellow {
-  position: absolute;
-  top: 0; }
+#dark-pink, #light-pink, #peach, #yellow, #em, #en {
+  position: absolute; }
 
-#dark-pink {
-  z-index: 1; }
+#en {
+  left: 30%; }
 
-#light-pink {
-  z-index: 2; }
+#heading {
+  grid-column-start: 4;
+  grid-column-end: 12;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  z-index: 2;
+  color: #45352b; }
+  #heading h1 {
+    font-family: "oswalddemibold";
+    font-size: 65px;
+    margin-bottom: 10px; }
+  #heading h2 {
+    font-family: "mulilight";
+    font-size: 36px;
+    margin-bottom: 20px;
+    letter-spacing: 4.1px; }
+  #heading h3 {
+    font-family: "mulilight";
+    font-size: 25px;
+    margin-bottom: 15px; }
+  #heading h4 {
+    font-family: "mulilight";
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: right; }
 
-#peach {
-  z-index: 3; }
-
-#yellow {
-  z-index: 4; }
+#sub-head {
+  grid-column-start: -4;
+  grid-column-end: -11;
+  grid-row-start: 6;
+  grid-row-end: 10;
+  z-index: 2;
+  color: #45352b;
+  text-align: right; }
+  #sub-head h2 {
+    font-family: "oswalddemibold";
+    font-size: 40px;
+    margin-bottom: 30px; }
+  #sub-head h3 {
+    font-family: "mulilight";
+    font-size: 20px;
+    margin-bottom: 10px; }
 
 .hidden {
   display: none; }
