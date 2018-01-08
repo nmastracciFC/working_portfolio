@@ -10,7 +10,7 @@ const headerBox = document.querySelector("#headerColour"),
 const nLarge = document.querySelector("#en"),
 	name = document.querySelector("#heading"),
 	skill = document.querySelector("#sub-head");
-	console.log(name, skill);
+	// console.log(name, skill);
 //TULIPS
 const tulip1 = document.querySelector("#tulip1"),	
 	tulip2 = document.querySelector("#tulip2"),
@@ -23,8 +23,8 @@ const tulip1 = document.querySelector("#tulip1"),
 
 function parallaxHeader() {
 	var scroll = window.pageYOffset;
-	console.log(scroll);
-	console.log(headerBox.getBoundingClientRect().bottom);
+	// console.log(scroll);
+	// console.log(headerBox.getBoundingClientRect().bottom);
 
 	tulip1.style.top = -scroll * 0.2 + "px";	
 	tulip2.style.top = -scroll * 0.4 + "px";

@@ -44,9 +44,13 @@
 		display:inline-block;
 
 	}
+	#to-portfolio {
+		cursor: pointer;
+	}
 	#to-contact {
 		display:block;
 		text-align:right;
+		cursor: pointer;
 	}
 }
 #sub-head {

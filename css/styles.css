@@ -415,9 +415,12 @@ table {
     font-size: 20px;
     margin-bottom: 10px;
     display: inline-block; }
+  #heading #to-portfolio {
+    cursor: pointer; }
   #heading #to-contact {
     display: block;
-    text-align: right; }
+    text-align: right;
+    cursor: pointer; }
 
 #sub-head {
   grid-column-start: -2;

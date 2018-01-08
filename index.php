@@ -74,8 +74,8 @@ if (isset($_POST['name'])) {
 			<div id="sub-head">
 				
 				<h2>Designer &amp; Developer</h2>
-				<h3>Skills include: responsive web design, PHP, mySQL, MVC framework (ex. Laravel, codeigniter), core Javascipt and popular JS libraries (such as greensock, D3.js and three.js), cinema4D and the adobe creative cloud suite.</h3>
-				<h4>I believe efficiency, functionality and beauty are created equal but above all else make something great.</h4>
+				<h3>I believe efficiency, functionality and beauty are created equal but above all else make something great.</h3>
+				<h4>Skills include: responsive web design, PHP, mySQL, MVC framework (ex. Laravel, codeigniter), core Javascipt and popular JS libraries (such as greensock, D3.js and three.js), cinema4D and the adobe creative cloud suite.</h4>
 				
 				
 			</div>
