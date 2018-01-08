@@ -9,8 +9,9 @@ const toPortfolio = document.querySelector("#to-portfolio"),
 	console.log(toPortfolio, toContact);
 	
 
-function scrollNav(){
-	TweenLite.to(window, 2, {scrollTo:"#portfolio"})
+function scrollNav(e){
+	toPortfolio.preventDefault();
+	TweenLite.to(window, 2, {scrollTo:{y:toPortfolio}})
  
 }
  
