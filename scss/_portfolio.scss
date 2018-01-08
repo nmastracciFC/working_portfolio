@@ -70,7 +70,6 @@
 
 	display:flex;
 	flex-direction:column;
-	// margin-right:30px;
 	width:320px;
 	overflow: auto;
 	height: 450px;
@@ -97,7 +96,7 @@
 	
 }
 .small-block-bottom {
-	// transform: translate(0, -282px)
+	
 }
 
 .clientLogo {
@@ -139,7 +138,6 @@
 	width:1366px;
 	height:3000px;
 	position:relative;
-	// background-color: black;
 	display:none;
 }
 #walking {
@@ -164,7 +162,6 @@
 	width: 488px;
 	overflow: hidden;
 	background-image: url(../images/art_ashley.jpg);
-	// background-position: left;
 	background-position: -10px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -244,9 +241,10 @@
 .card {
 	width: 320px;
 	height:360px;
-	// background-color: $maincolor;
-	background-color: $portfolioback;
-	color: #555;
+	background-color: $maincolor;
+	// background-color: $portfolioback;
+	// color: #555;
+	color: #fff;
 	display: inline-block;
 	overflow:hidden;
 	margin-left:50px;
@@ -255,20 +253,17 @@
 		margin: 40px 20px;
 	}
 	h3 {
-		// color: #fff;
 		font-style: $fontfamilybody;
 		font-size:15px;
 		margin-left: 20px;
 	}
 	p {
-		// color: #fff;
 		font-style: $fontfamilybody;
 		font-size: 15x;
 		margin: 20px;
 		padding-bottom: 40px;
 	}
 	a {
-		// color: #fff;
 		font-style: $fontfamilythick;
 		font-size: 15px;
 		margin-right:20px;

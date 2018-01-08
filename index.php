@@ -38,7 +38,7 @@ if (isset($_POST['name'])) {
 	<h1 class="hidden">title</h1>
 	<div id="container">
 		
-		<nav>
+		<!-- <nav>
 			<img id="logo" src="images/logo-g.png" alt="Natalie's Logo">
 			<p id="logoText">Natalie Mastracci</p>
 
@@ -47,25 +47,34 @@ if (isset($_POST['name'])) {
 				<li><a href="portfolio.html">PORTFOLIO</a></li>
 				<li><a href="contact.html">CONTACT</a></li>
 			</ul>
-		</nav> 
+		</nav>  -->
 
 		
 
-		<header id="headerBack">
+		<header id="headerColour">	
 			
-			<img id="eightRowing" class="wipeIn" src="images/eight.png" alt="eight rowing" style="top: -207.1px;">
+			<!-- <img class="stay-put" id="nLogo" src="images/nm_logo-large-grey.png" alt="Natalie's Logo"> -->
+			<img class="stay-put" id="tulip1" src="images/tulip-dark-green.png" alt="tulip drawing">
+			<img class="stay-put" id="tulip2" src="images/tulip-light-green.png" alt="tulip drawing">
+			<img class="stay-put" id="tulip3" src="images/tulip-yellow-green.png" alt="tulip drawing">
+			<img class="stay-put" id="nLogo" src="images/nm_logo-large-grey.png" alt="Natalie's Logo">
+
+			<img class="stay-put" id="tulip4" src="images/tulip-dark-pink.png" alt="tulip drawing">
+			<img class="stay-put" id="tulip5" src="images/tulip-light-pink.png" alt="tulip drawing">
+
+			<img class="stay-put" id="tulip6" src="images/tulip-white.png" alt="tulip drawing">
+
 			
- 			<div id="blurb">
-				<h1 id="title" style="top: 1035.5px;">Designer<br>&amp; Developer</h1>
-				<h4 id="titleDesc" style="top: -1035.5px;">After spending nine years backwards in a boat, it’s time to start looking ahead.</h4>
-				<!-- <h4 id="goTo">Go to <a href="portfolio.html">Portfolio  ></a></h4> -->
-				<h4 id="contact" style="top: -1035.5px;">Let's keep <a href="contact.html">in Touch  &gt;</a></h4>
+ 			<div id="heading">
+ 				<h1 >Natalie Mastracci</h1>
+				<h4 id="to-portfolio">Go to <a href="#portfolio">Portfolio</a></h4>
+				<h4 id="to-contact" >Keep <a href="#form">in Touch  &gt;</a></h4>
 			</div>
 
-			<div id="skills">
+			<div id="sub-head">
 				
-				<h1>Skills</h1>
-				<h4>Skills include: responsive web design, PHP, mySQL, MVC framework (ex. Laravel, codeigniter), core Javascipt and popular JS libraries (such as greensock, D3.js and three.js), cinema4D and the adobe creative cloud suite.</h4>
+				<h2>Designer &amp; Developer</h2>
+				<h3>Skills include: responsive web design, PHP, mySQL, MVC framework (ex. Laravel, codeigniter), core Javascipt and popular JS libraries (such as greensock, D3.js and three.js), cinema4D and the adobe creative cloud suite.</h3>
 				<h4>I believe efficiency, functionality and beauty are created equal but above all else make something great.</h4>
 				
 				
@@ -163,7 +172,6 @@ if (isset($_POST['name'])) {
 
 				<div class="scrollingSide">
 					<div class="greyBack small-block">
-						<!-- <img class="clientLogo" src="images/ee_logo-white.svg" alt="Eric Ethridge's Logo"> -->
 						<img src="images/tlm_poster1-sm.jpg" alt="Teresa's poster">
 					</div>
 					<div class="greyBack small-block">
@@ -179,7 +187,6 @@ if (isset($_POST['name'])) {
 			<div class="portGrid">
 				<div class="scrollingSide">
 					<div class="greyBack small-block">
-						<!-- <img class="clientLogo" src="images/ee_logo-white.svg" alt="Eric Ethridge's Logo"> -->
 						<img src="images/ww_tomato-sm.jpg" alt="Tomato Soup Label">
 					</div>
 					<div class="greyBack small-block">
@@ -233,7 +240,7 @@ if (isset($_POST['name'])) {
 
 		<!-- CONTACT SECTION -->
 
-		<section class="contact-box">
+		<section class="contact-box" id="form">
 			<h1 class="title ">Let's Keep In Touch</h1>
 			<!-- like what you see? -->
 			<p class=" description" >Why not fill out the form below and say hello?</p>
@@ -267,9 +274,14 @@ if (isset($_POST['name'])) {
 		</footer>
 	</div>
 
-	
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js"></script>
+
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/portfolio.js"></script>
+<script type="text/javascript" src="js/headerColour.js"></script>
+<script type="text/javascript" src="js/scrollNav.js"></script>
 
 </body></html>
