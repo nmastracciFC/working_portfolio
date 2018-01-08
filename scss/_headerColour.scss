@@ -1,38 +1,59 @@
 #headerColour {
 	display: grid;
 	grid-template-columns: repeat(24, 1fr);
-	grid-template-rows: 100px repeat(10, 1fr);
+	grid-template-rows: 50px repeat(10, 1fr);
 	// grid-gap: 20px;
 	position:relative;
 	width:100%;
 	
 
 }
-#dark-pink, #light-pink, #peach, #yellow, #em, #en {
-	// grid-column-start: 1;
-	// grid-column-end: 25;
-	// grid-row-start: 1;
-	// grid-row-end: 13;
+.stay-put {
 	position:absolute;
-	
 }
-#en {
-	left:30%;
-	
+#nLogo {
+	z-index: -1;
 }
+// #dark-pink, #light-pink, #peach, #yellow {
+// 	// grid-column-start: 1;
+// 	// grid-column-end: 25;
+// 	// grid-row-start: 1;
+// 	// grid-row-end: 13;
+// 	position:absolute;
+// 	width:1000px;
+// 	margin:0 auto;
+	
+// }
+// #light-pink{
+// 	left:150px;
+// }
+// #peach{
+// 	left:250px;
+// }
+// #yellow{
+// 	left:350px;
+// }
+// #en {
+// 	position:absolute;
+// 	left:30%;
+	
+// }
 #heading {
-	grid-column-start: 4;
-	grid-column-end: 12;
+	grid-column-start: 3;
+	grid-column-end: 14;
 	grid-row-start:2;
-	grid-row-end: 5;
+	grid-row-end: 3;
 	z-index: 2;
+	color: #555;
 	// color: #693F44;
-	color: #45352b;
+	// color: #45352b;
 	h1 {
 		// color: #fff;
 		font-family: $fontfamilythick;
 		font-size: 65px;
-		margin-bottom: 10px;
+		margin-right: 14px;
+
+		display:inline-block;
 		// grid-column-start: 4;
 		// grid-column-end: 20;
 		// grid-row-start: 5;
@@ -43,6 +64,7 @@
 		font-size: 36px;
 		margin-bottom: 20px;
 		letter-spacing: 4.1px;
+		display:inline-block;
 		// grid-column-start: 4;
 		// grid-column-end: 20;
 		// grid-row-start: 12;
@@ -58,33 +80,43 @@
 		font-family: $fontfamilybody;
 		font-size: 20px;
 		margin-bottom: 10px;
-		text-align: right;
+		
+		display:inline-block;
 
+	}
+	#to-contact {
+		display:block;
+		text-align:right;
 	}
 }
 #sub-head {
-	grid-column-start: -4;
-	grid-column-end: -11;
-	grid-row-start:6;
+	grid-column-start: -2;
+	grid-column-end: -8;
+	grid-row-start:3;
 	grid-row-end: 10;
 	z-index: 2;
+	color: #555;
 	// color: #693F44;
-	color: #45352b;
-	text-align: right;
+	// color: #45352b;
+	text-align: left;
 	h2{
 		font-family: $fontfamilythick;
 		font-size: 40px;
 		margin-bottom: 30px;
+		// text-align:left;
 
 	}
 	h3{
 		font-family: $fontfamilybody;
-		font-size: 20px;
+		font-size: 17px;
 		margin-bottom: 10px;
+		margin-left: 40px;
 
 	}
 	h4 {
-
+		font-family: $fontfamilybody;
+		font-size: 17px;
+		margin-left: 40px;
 	}
 }
 

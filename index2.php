@@ -53,21 +53,27 @@ if (isset($_POST['name'])) {
 
 		<header id="headerColour">
 			
-			<img id="dark-pink" src="images/dark-pink.png" alt="paint splash">
-			<!-- <img id="em" src="images/m_logo-backwhite.png"> -->
+			<!-- <img id="dark-pink" src="images/p-dark-pink.png" alt="paint splash">
 			<img id="en" src="images/n_logo-large.png">
-			<img id="light-pink" src="images/light-pink.png" alt="paint splash">
-			
-			<img id="peach" src="images/peach.png" alt="paint splash">
-			<img id="yellow" src="images/yellow.png" alt="paint splash">
+			<img id="light-pink" src="images/p-light-pink.png" alt="paint splash">
+			<img id="peach" src="images/p-peach.png" alt="paint splash">
+			<img id="yellow" src="images/p-yellow.png" alt="paint splash"> -->
+
+			<img class="stay-put" id="tulip6" src="images/tulip-white.png" alt="tulip drawing">
+			<img class="stay-put" id="tulip5" src="images/tulip-light-pink.png" alt="tulip drawing">
+			<img class="stay-put" id="tulip4" src="images/tulip-dark-pink.png" alt="tulip drawing">
+			<img class="stay-put" id="nLogo" src="images/nm_logo-large-grey.png" alt="Natalie's Logo">
+			<img class="stay-put" id="tulip3" src="images/tulip-yellow-green.png" alt="tulip drawing">
+			<img class="stay-put" id="tulip2" src="images/tulip-light-green.png" alt="tulip drawing">
+			<img class="stay-put" id="tulip1" src="images/tulip-dark-green.png" alt="tulip drawing">
 
 			
  			<div id="heading">
  				<h1 >Natalie Mastracci</h1>
 				<!-- <h2 >Designer &amp; Developer</h2> -->
 				<!-- <h3 >After spending nine years backwards in a boat, it’s time to start looking ahead.</h3> -->
-				<h4 >Go to <a href="#portfolio">Portfolio  ></a></h4>
-				<h4 >Keep <a href="#form">in Touch  &gt;</a></h4>
+				<h4 id="to-portfolio">Go to <a href="#portfolio">Portfolio</a></h4>
+				<h4 id="to-contact" >Keep <a href="#form">in Touch  &gt;</a></h4>
 			</div>
 
 			<div id="sub-head">
@@ -278,9 +284,11 @@ if (isset($_POST['name'])) {
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/CSSPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/easing/EasePack.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script> -->
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/portfolio.js"></script>
 <script type="text/javascript" src="js/headerColour.js"></script>
+<script type="text/javascript" src="js/scrollNav.js"></script>
 
 </body></html>

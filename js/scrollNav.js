@@ -4,20 +4,17 @@
 
 var scroll = window.pageYOffset;
 
-var section1 = document.querySelector("#section1"),
-	section2 = document.querySelector("#section2"),
-	section3 = document.querySelector("#section3"),
-	section4 = document.querySelector("#section4"),
-	section5 = document.querySelector("#section5");
-
-var navCon = document.querySelector(".lineNav");
+const toPortfolio = document.querySelector("#to-portfolio"),
+	toContact = document.querySelector("#to-contact");
+	console.log(toPortfolio, toContact);
+	
 
 function scrollNav(){
-
+	TweenLite.to(window, 2, {scrollTo:"#portfolio"})
  
 }
  
-window.addEventListener("scroll", scrollNav,false);
+toPortfolio.addEventListener("scroll", scrollNav,false);
 
 
 	})();

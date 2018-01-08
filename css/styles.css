@@ -96,7 +96,8 @@ table {
 
 .contact-box {
   margin: 0 auto;
-  width: 320px; }
+  width: 320px;
+  padding-top: 100px; }
 
 .contact-label {
   font-family: "mulilight";
@@ -135,7 +136,8 @@ table {
     cursor: pointer; }
 
 #portfolio {
-  clear: both; }
+  clear: both;
+  padding-top: 100px; }
 
 .pTitle {
   font-family: "oswaldextralight";
@@ -143,7 +145,6 @@ table {
   text-align: center;
   letter-spacing: 50px;
   margin-right: -50px;
-  margin-top: 150px;
   margin-bottom: 50px; }
 
 #portfolio-menu {
@@ -382,32 +383,34 @@ table {
 #headerColour {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
-  grid-template-rows: 100px repeat(10, 1fr);
+  grid-template-rows: 50px repeat(10, 1fr);
   position: relative;
   width: 100%; }
 
-#dark-pink, #light-pink, #peach, #yellow, #em, #en {
+.stay-put {
   position: absolute; }
 
-#en {
-  left: 30%; }
+#nLogo {
+  z-index: -1; }
 
 #heading {
-  grid-column-start: 4;
-  grid-column-end: 12;
+  grid-column-start: 3;
+  grid-column-end: 14;
   grid-row-start: 2;
-  grid-row-end: 5;
+  grid-row-end: 3;
   z-index: 2;
-  color: #45352b; }
+  color: #555; }
   #heading h1 {
     font-family: "oswalddemibold";
     font-size: 65px;
-    margin-bottom: 10px; }
+    margin-right: 14px;
+    display: inline-block; }
   #heading h2 {
     font-family: "mulilight";
     font-size: 36px;
     margin-bottom: 20px;
-    letter-spacing: 4.1px; }
+    letter-spacing: 4.1px;
+    display: inline-block; }
   #heading h3 {
     font-family: "mulilight";
     font-size: 25px;
@@ -416,24 +419,32 @@ table {
     font-family: "mulilight";
     font-size: 20px;
     margin-bottom: 10px;
+    display: inline-block; }
+  #heading #to-contact {
+    display: block;
     text-align: right; }
 
 #sub-head {
-  grid-column-start: -4;
-  grid-column-end: -11;
-  grid-row-start: 6;
+  grid-column-start: -2;
+  grid-column-end: -8;
+  grid-row-start: 3;
   grid-row-end: 10;
   z-index: 2;
-  color: #45352b;
-  text-align: right; }
+  color: #555;
+  text-align: left; }
   #sub-head h2 {
     font-family: "oswalddemibold";
     font-size: 40px;
     margin-bottom: 30px; }
   #sub-head h3 {
     font-family: "mulilight";
-    font-size: 20px;
-    margin-bottom: 10px; }
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-left: 40px; }
+  #sub-head h4 {
+    font-family: "mulilight";
+    font-size: 17px;
+    margin-left: 40px; }
 
 .hidden {
   display: none; }
