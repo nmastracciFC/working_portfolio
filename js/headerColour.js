@@ -25,22 +25,7 @@ function parallaxHeader() {
 	var scroll = window.pageYOffset;
 	console.log(scroll);
 	console.log(headerBox.getBoundingClientRect().bottom);
-	// darkPink.style.top = -scroll * 0.2 + "px";
-	// lightPink.style.top = scroll * 1.1 + "px";
-	// peach.style.top = scroll * 1.4 + "px";
-	// yellow.style.top = -scroll * 2 + "px";
 
-	// nLarge.style.top = scroll * 0.1 + "px";
-
-	// name.style.top = -scroll * 5 + "px";
-	// skill.style.top = scroll * 6 + "px";
-
-	// darkPink.style.top = -scroll * 0.2 + "px";
-	// lightPink.style.top = -scroll * 0.6 + "px";
-	// peach.style.top = -scroll * 1.2 + "px";
-	// yellow.style.top = -scroll * 1.8 + "px";
-
-	//TULIPS
 	tulip1.style.top = -scroll * 0.2 + "px";	
 	tulip2.style.top = -scroll * 0.4 + "px";
 	tulip3.style.top = -scroll * 0.6 + "px";
@@ -48,7 +33,6 @@ function parallaxHeader() {
 	tulip5.style.top = -scroll * 1 + "px";
 	tulip6.style.top = -scroll * 1.2 + "px";
 	nLogo.style.top = scroll * 0.8 + "px";
-	
 
 
 	if (headerBox.getBoundingClientRect().bottom <= 350 ) {
@@ -57,10 +41,14 @@ function parallaxHeader() {
 		// TweenLite.to(skill, 0.8, {x:500, ease:Power2.easeOut});
 
 		function hide(){
-			splatter.classList.add("hidden");
+			nLogo.classList.add("hidden");
 		}
 		
 	} else if (headerBox.getBoundingClientRect().bottom >= 350) {
+		function show(){
+			nLogo.classList.remove("hidden");
+		}
+		show();
 		TweenLite.to(splatter, 1, {opacity:1, ease:Power1.easeOut});
 		// TweenLite.to(name, 0.8, {x:0, ease:Power2.easeOut});
 		// TweenLite.to(skill, 0.8, {x:0, ease:Power2.easeOut});

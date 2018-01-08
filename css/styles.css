@@ -336,7 +336,8 @@ table {
 .card {
   width: 320px;
   height: 360px;
-  background-color: #555555;
+  background-color: #f0efef;
+  color: #555;
   display: inline-block;
   overflow: hidden;
   margin-left: 50px; }
@@ -344,18 +345,15 @@ table {
     width: 280px;
     margin: 40px 20px; }
   .card h3 {
-    color: #fff;
     font-style: "mulilight";
     font-size: 15px;
     margin-left: 20px; }
   .card p {
-    color: #fff;
     font-style: "mulilight";
     font-size: 15x;
     margin: 20px;
     padding-bottom: 40px; }
   .card a {
-    color: #fff;
     font-style: "oswalddemibold";
     font-size: 15px;
     margin-right: 20px;
@@ -389,9 +387,6 @@ table {
 
 .stay-put {
   position: absolute; }
-
-#nLogo {
-  z-index: -1; }
 
 #heading {
   grid-column-start: 3;
@@ -461,129 +456,6 @@ a {
   width: 1366px;
   margin: 0 auto; }
 
-#backImg {
-  position: absolute; }
-
-#logoAll {
-  width: 500px;
-  display: inline; }
-
-#logo {
-  width: 100px;
-  margin: 30px 0 0 30px;
-  transition: all 0.5s ease; }
-  #logo:hover {
-    opacity: 0.5; }
-
-#logoText {
-  color: #b0b0b4;
-  display: inline;
-  font-family: "oswaldextralight";
-  font-size: 25px;
-  letter-spacing: 0.220em;
-  margin-left: 27px;
-  margin-bottom: 30px;
-  transition: all 0.5s ease; }
-
-#logoText:hover {
-  margin: 33px;
-  color: #555555; }
-
-.main-nav {
-  float: right;
-  margin-top: 63px; }
-  .main-nav li {
-    display: inline;
-    margin-right: 100px;
-    transition: all 0.5s ease; }
-    .main-nav li:hover {
-      border-bottom: 1px solid #b0b0b4;
-      padding: 7px; }
-  .main-nav a {
-    text-decoration: none;
-    font-family: "oswaldextralight";
-    font-size: 20px;
-    letter-spacing: 0.220em;
-    color: #b0b0b4;
-    transition: all 0.5s ease; }
-    .main-nav a:hover {
-      color: #333366;
-      cursor: pointer; }
-
-#headerBack {
-  position: relative;
-  background-image: url(../images/sgnm-long.jpg);
-  height: 1307px; }
-
-#eightRowing {
-  position: absolute;
-  top: 0;
-  opacity: 0.5; }
-
-#blurb {
-  width: 600px;
-  display: inline;
-  float: left;
-  color: #555555;
-  position: absolute;
-  top: 150px;
-  left: 170px; }
-  #blurb h1 {
-    font-family: "oswalddemibold";
-    font-size: 50px;
-    font-weight: 900;
-    margin-bottom: 65px;
-    line-height: 80px;
-    color: #555555;
-    transition: all 0.5s ease; }
-    #blurb h1:hover {
-      color: #333366;
-      cursor: pointer; }
-  #blurb h4 {
-    font-family: "mulilight";
-    font-size: 25px;
-    margin-bottom: 80px;
-    width: 380px;
-    line-height: 35px;
-    transition: all 0.5s ease; }
-    #blurb h4:hover {
-      color: #333366;
-      cursor: pointer; }
-    #blurb h4 a {
-      color: #333366;
-      transition: all 0.5s ease; }
-      #blurb h4 a:hover {
-        font-family: "muliregular";
-        cursor: pointer; }
-
-#skills {
-  position: absolute;
-  top: 700px;
-  left: 768px;
-  text-align: right;
-  margin: 40px;
-  font-family: "mulilight";
-  font-size: 25px;
-  margin-bottom: 80px;
-  width: 380px;
-  line-height: 35px;
-  display: inline;
-  float: left;
-  color: #555555;
-  transition: all 0.5s ease; }
-  #skills h1 {
-    line-height: 50px;
-    font-family: "oswalddemibold";
-    font-size: 50px;
-    font-weight: 900;
-    margin-bottom: 65px;
-    color: #555555; }
-  #skills h4 {
-    margin-bottom: 40px; }
-
-#goTo {
-  margin-top: 80px; }
-
 footer {
   background-color: #fff;
   clear: both; }
@@ -610,24 +482,5 @@ footer {
   text-align: right;
   color: #b0b0b4;
   margin-top: 70px; }
-
-.wipeIn {
-  animation: wipeIn 4s; }
-
-@keyframes wipeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 0.5; } }
-.wipeInTwo {
-  animation: wipeInTwo 2s; }
-
-@keyframes wipeInTwo {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 
 /*# sourceMappingURL=styles.css.map */
