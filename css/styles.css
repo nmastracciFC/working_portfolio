@@ -398,7 +398,6 @@ table {
   #heading h1 {
     font-family: "oswalddemibold";
     font-size: 65px;
-    margin-right: 14px;
     display: inline-block; }
   #heading h2 {
     font-family: "mulilight";
@@ -416,16 +415,26 @@ table {
     margin-bottom: 10px;
     display: inline-block; }
   #heading #to-portfolio {
-    cursor: pointer; }
+    cursor: pointer;
+    margin-left: 14px;
+    transition: all 0.5s ease; }
+    #heading #to-portfolio:hover {
+      color: #000;
+      margin-left: 5px;
+      font-size: 21px; }
   #heading #to-contact {
     display: block;
     text-align: right;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all 0.5s ease; }
+    #heading #to-contact:hover {
+      color: #000;
+      font-size: 21px; }
 
 #sub-head {
   grid-column-start: -2;
   grid-column-end: -8;
-  grid-row-start: 3;
+  grid-row-start: 4;
   grid-row-end: 10;
   z-index: 2;
   color: #555;

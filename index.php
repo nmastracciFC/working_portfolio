@@ -67,8 +67,8 @@ if (isset($_POST['name'])) {
 			
  			<div id="heading">
  				<h1 >Natalie Mastracci</h1>
-				<h4 id="to-portfolio">Go to <a href="#portfolio">Portfolio</a></h4>
-				<h4 id="to-contact" >Keep <a href="#form">in Touch  &gt;</a></h4>
+				<h4 id="to-portfolio">Go to Portfolio &gt;</h4>
+				<h4 id="to-contact" >Keep in Touch  &gt;</h4>
 			</div>
 
 			<div id="sub-head">

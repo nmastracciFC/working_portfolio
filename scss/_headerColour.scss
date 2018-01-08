@@ -19,7 +19,7 @@
 	h1 {
 		font-family: $fontfamilythick;
 		font-size: 65px;
-		margin-right: 14px;
+		
 		display:inline-block;
 	}
 	h2 {
@@ -46,17 +46,29 @@
 	}
 	#to-portfolio {
 		cursor: pointer;
+		margin-left: 14px;
+		transition: all 0.5s ease;
+		&:hover {
+			color: #000;
+			margin-left: 5px;
+			font-size: 21px;
+		}
 	}
 	#to-contact {
 		display:block;
 		text-align:right;
 		cursor: pointer;
+		transition: all 0.5s ease;
+		&:hover {
+			color: #000;
+			font-size: 21px;
+		}
 	}
 }
 #sub-head {
 	grid-column-start: -2;
 	grid-column-end: -8;
-	grid-row-start:3;
+	grid-row-start:4;
 	grid-row-end: 10;
 	z-index: 2;
 	color: #555;
