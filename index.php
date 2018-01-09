@@ -52,6 +52,9 @@ if (isset($_POST['name'])) {
 		
 
 		<header id="headerColour">	
+				<img class="linkedIn" src="images/social-linkedin.png" alt="linkedIn logo">
+				<img class="twitter" src="images/social-twitter.png" alt="twitter logo">
+				<img class="instagram" src="images/social-instagram.png" alt="instagram logo">
 			
 			<!-- <img class="stay-put" id="nLogo" src="images/nm_logo-large-grey.png" alt="Natalie's Logo"> -->
 			<img class="stay-put" id="tulip1" src="images/tulip-dark-green.png" alt="tulip drawing">

@@ -1,12 +1,7 @@
 console.log("headerColour.js is attached");
 
 const headerBox = document.querySelector("#headerColour"),
-	splatter = document.querySelectorAll("#headerColour img");;
-
-// const darkPink = document.querySelector("#dark-pink"),
-// 	lightPink = document.querySelector("#light-pink"),
-// 	peach = document.querySelector("#peach"),
-// 	yellow = document.querySelector("#yellow");
+	splatter = document.querySelectorAll(".stay-put");;
 const nLarge = document.querySelector("#en"),
 	name = document.querySelector("#heading"),
 	skill = document.querySelector("#sub-head");

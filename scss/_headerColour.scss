@@ -1,14 +1,33 @@
 #headerColour {
 	display: grid;
+	//loveeeee you IE <3
+	-ms-grid-columns: repeat(24, 1fr);
+	-ms-grid-rows: 50px repeat(10, 1fr);
 	grid-template-columns: repeat(24, 1fr);
 	grid-template-rows: 50px repeat(10, 1fr);
 	position:relative;
 	width:100%;
 }
+.linkedIn {
+	margin-top:10px;
+	grid-column-start: -4;
+}
+.twitter {
+	@extend .linkedIn;
+	grid-column-start: -3;
+}
+.instagram {
+	@extend .linkedIn;
+	grid-column-start: -2;
+}
 .stay-put {
 	position:absolute;
 }
 #heading {
+	-ms-grid-column:3;
+	-ms-grid-column-span:11;
+	-ms-grid-row:2;
+	-ms-grid-row-span: 1; 
 	grid-column-start: 3;
 	grid-column-end: 14;
 	grid-row-start:2;
@@ -66,6 +85,10 @@
 	}
 }
 #sub-head {
+	-ms-grid-column:17;
+	-ms-grid-column-span:11;
+	-ms-grid-row:2;
+	-ms-grid-row-span: 1;
 	grid-column-start: -2;
 	grid-column-end: -8;
 	grid-row-start:4;
