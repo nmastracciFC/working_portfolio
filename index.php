@@ -282,9 +282,11 @@ if (isset($_POST['name'])) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js"></script>
 <!--build:js js/main.min.js -->
-<script type="text/javascript" src="js/main.js"></script>
+<!-- <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/portfolio.js"></script>
 <script type="text/javascript" src="js/headerColour.js"></script>
-<script type="text/javascript" src="js/scrollNav.js"></script>
+<script type="text/javascript" src="js/scrollNav.js"></script> -->
 <!-- endbuild -->
+<script type="text/javascript" src="prod/js/scripts.js"></script> -->
+
 </body></html>

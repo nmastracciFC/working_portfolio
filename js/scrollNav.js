@@ -1,4 +1,5 @@
-App.scrollNav => {
+(function (){
+	"use strict";
 	console.log("scrollNav.js connected");
 
 var scroll = window.pageYOffset;
@@ -18,4 +19,4 @@ function scrollContact(){
 toPortfolio.addEventListener("click", scrollPortfolio,false);
 toContact.addEventListener("click", scrollContact,false);
 
-};
+	})();
