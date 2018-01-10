@@ -30,7 +30,7 @@ if (isset($_POST['name'])) {
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Natalie Mastracci</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="prod/css/styles.css">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
@@ -281,10 +281,10 @@ if (isset($_POST['name'])) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/easing/EasePack.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js"></script>
-
+<!--build:js js/main.min.js -->
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/portfolio.js"></script>
 <script type="text/javascript" src="js/headerColour.js"></script>
 <script type="text/javascript" src="js/scrollNav.js"></script>
-
+<!-- endbuild -->
 </body></html>

@@ -1,3 +1,5 @@
+var App = {};
+App.headerColour => {
 console.log("headerColour.js is attached");
 
 const headerBox = document.querySelector("#headerColour"),
@@ -53,3 +55,5 @@ function parallaxHeader() {
 }
 
 window.addEventListener("scroll", function(){requestAnimationFrame(parallaxHeader);}, false);
+
+};
