@@ -1,0 +1,31 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "a window into my skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmastracciFC/working_portfolio.git"
+  },
+  "keywords": [
+    "Natalie"
+  ],
+  "author": "Natalie Mastracci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmastracciFC/working_portfolio/issues"
+  },
+  "homepage": "https://github.com/nmastracciFC/working_portfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^2.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-useref": "^3.1.4",
+    "gulp-util": "^3.0.8"
+  },
+  "dependencies": {}
+}

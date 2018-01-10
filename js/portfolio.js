@@ -1,5 +1,4 @@
-(function (){
-	"use strict";
+App.portfolio => {
 	console.log("portfolio.js connected");
 
 var dev = document.querySelector("#development"),
@@ -49,13 +48,9 @@ function showArt() {
 	artPage.style.display = "block";
  }
 
- 
-
 window.addEventListener("load", showDev, false);
 dev.addEventListener("click", showDev, false);
 des.addEventListener("click", showDes, false);
 art.addEventListener("click", showArt, false);
 
-
-
-	})();
+};
