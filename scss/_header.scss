@@ -1,0 +1,108 @@
+
+#headerColour {
+	
+	
+	@include medium-up {
+	
+	}
+	@include large-up {
+		
+	}
+	
+}
+
+.stay-put {
+	position:absolute;
+	// display: none;
+}
+
+#heading {
+	
+	z-index: 2;
+	color: #555;
+	@include medium-up {
+
+	}
+	@include large-up {
+	
+	z-index: 2;
+	color: #555;
+	}
+
+	h1 {
+		font-family: $fontfamilythick;
+		font-size: 65px;
+		
+		display:inline-block;
+	}
+	h2 {
+		font-family: $fontfamilybody;
+		font-size: 36px;
+		margin-bottom: 20px;
+		letter-spacing: 4.1px;
+		display:inline-block;
+		
+	}
+	h3{
+		font-family: $fontfamilybody;
+		font-size: 25px;
+		margin-bottom: 15px;
+
+	}
+	h4{
+		font-family: $fontfamilybody;
+		font-size: 20px;
+		margin-bottom: 10px;
+		
+		display:inline-block;
+
+	}
+	#to-portfolio {
+		cursor: pointer;
+		margin-left: 14px;
+		transition: all 0.5s ease;
+		&:hover {
+			color: #000;
+			margin-left: 5px;
+			font-size: 21px;
+		}
+	}
+	#to-contact {
+		display:block;
+		text-align:right;
+		cursor: pointer;
+		transition: all 0.5s ease;
+		&:hover {
+			color: #000;
+			font-size: 21px;
+		}
+	}
+}
+#sub-head {
+	
+	z-index: 2;
+	color: #555;
+	text-align: left;
+	@include large-up {
+	
+	z-index: 2;
+	color: #555;
+	text-align: left;
+	}
+	h2{
+		font-family: $fontfamilythick;
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
+	h3{
+		font-family: $fontfamilybody;
+		font-size: 17px;
+		margin-bottom: 10px;
+		margin-left: 40px;
+	}
+	h4 {
+		font-family: $fontfamilybody;
+		font-size: 17px;
+		margin-left: 40px;
+	}
+}
