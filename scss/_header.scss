@@ -1,14 +1,20 @@
 
-#headerColour {
+// #headerColour {
 	
 	
-	@include medium-up {
+// 	@include medium-up {
 	
-	}
-	@include large-up {
+// 	}
+// 	@include large-up {
 		
-	}
+// 	}
 	
+// }
+#headerBack {
+	position: relative;
+	// margin-top: 20px;
+	background-image: url(../images/sgnm-long.jpg);
+	height:1307px;
 }
 
 .stay-put {

@@ -51,19 +51,19 @@ if (isset($_POST['name'])) {
 
 		
 
-		<header  id="headerColour">
+		<header  id="headerBack">
 		<!-- <div >	 -->
 				
 			
 			<!-- TULIPS -->
 			<!-- <img class="stay-put" id="nLogo" src="images/nm_logo-large-grey.png" alt="Natalie's Logo"> -->
-			<img class="stay-put" id="tulip1" src="images/tulip-dark-green.png" alt="tulip drawing">
+			<!-- <img class="stay-put" id="tulip1" src="images/tulip-dark-green.png" alt="tulip drawing">
 			<img class="stay-put" id="tulip2" src="images/tulip-light-green.png" alt="tulip drawing">
 			<img class="stay-put" id="tulip3" src="images/tulip-yellow-green.png" alt="tulip drawing">
 			<img class="stay-put" id="nLogo" src="images/nm_logo-large-grey.png" alt="Natalie's Logo">
 			<img class="stay-put" id="tulip4" src="images/tulip-dark-pink.png" alt="tulip drawing">
 			<img class="stay-put" id="tulip5" src="images/tulip-light-pink.png" alt="tulip drawing">
-			<img class="stay-put" id="tulip6" src="images/tulip-white.png" alt="tulip drawing">
+			<img class="stay-put" id="tulip6" src="images/tulip-white.png" alt="tulip drawing"> -->
 
 			
  			<div id="heading">
@@ -269,14 +269,16 @@ if (isset($_POST['name'])) {
 		
 		<footer>
 			<ul class="footer-nav">
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="portfolio.html">PORTFOLIO</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
+				<!-- <li><a href="index.html">HOME</a></li> -->
+				<li><a href="#portfolio">PORTFOLIO</a></li>
+				<li><a href="#form">CONTACT</a></li>
 			</ul>
 			<h6 class="cright">© Natalie Mastracci 2017</h6>
-			<img class="linkedIn" src="images/social-linkedin.png" alt="linkedIn logo">
-				<img class="twitter" src="images/social-twitter.png" alt="twitter logo">
-				<img class="instagram" src="images/social-instagram.png" alt="instagram logo">	
+				<a href="https://www.instagram.com/nmastracci/"><img class="instagram" src="images/social-instagram.png" alt="instagram logo"></a>	
+				
+				<a href="https://twitter.com/NMastracci"><img class="twitter" src="images/social-twitter.png" alt="twitter logo"></a>
+				<a href="https://www.linkedin.com/in/natalie-mastracci-b8772257/"><img class="linkedIn" src="images/social-linkedin.png" alt="linkedIn logo"></a>
+				
 		</footer>
 	</div>
 
