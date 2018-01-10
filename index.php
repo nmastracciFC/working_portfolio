@@ -38,7 +38,7 @@ if (isset($_POST['name'])) {
 	<h1 class="hidden">title</h1>
 	<div id="container">
 		
-		<nav>
+	<!-- 	<nav>
 			<img id="logo" src="images/logo-g.png" alt="Natalie's Logo">
 			<p id="logoText">Natalie Mastracci</p>
 
@@ -47,7 +47,7 @@ if (isset($_POST['name'])) {
 				<li><a href="portfolio.html">PORTFOLIO</a></li>
 				<li><a href="contact.html">CONTACT</a></li>
 			</ul>
-		</nav> 
+		</nav>  -->
 
 		
 
@@ -57,13 +57,13 @@ if (isset($_POST['name'])) {
 			
 			<!-- TULIPS -->
 			<!-- <img class="stay-put" id="nLogo" src="images/nm_logo-large-grey.png" alt="Natalie's Logo"> -->
-			<!-- <img class="stay-put" id="tulip1" src="images/tulip-dark-green.png" alt="tulip drawing">
+			<img class="stay-put" id="tulip1" src="images/tulip-dark-green.png" alt="tulip drawing">
 			<img class="stay-put" id="tulip2" src="images/tulip-light-green.png" alt="tulip drawing">
 			<img class="stay-put" id="tulip3" src="images/tulip-yellow-green.png" alt="tulip drawing">
 			<img class="stay-put" id="nLogo" src="images/nm_logo-large-grey.png" alt="Natalie's Logo">
 			<img class="stay-put" id="tulip4" src="images/tulip-dark-pink.png" alt="tulip drawing">
 			<img class="stay-put" id="tulip5" src="images/tulip-light-pink.png" alt="tulip drawing">
-			<img class="stay-put" id="tulip6" src="images/tulip-white.png" alt="tulip drawing"> -->
+			<img class="stay-put" id="tulip6" src="images/tulip-white.png" alt="tulip drawing">
 
 			
  			<div id="heading">
@@ -71,7 +71,7 @@ if (isset($_POST['name'])) {
 				<h4 id="to-portfolio">Go to Portfolio &gt;</h4>
 				<h4 id="to-contact" >Keep in Touch  &gt;</h4>
 			</div>
-			<img id="eight" src="images/eight-nowhite.png" alt="eight rowing">
+			<!-- <img id="eight" src="images/eight-nowhite.png" alt="eight rowing"> -->
 
 			<div id="sub-head">
 				

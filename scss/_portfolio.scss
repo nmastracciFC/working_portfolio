@@ -1,52 +1,49 @@
 #portfolio {
-	clear:both;
-	padding-top:100px;
-	@include large-up {
+	// clear:both;
+	// padding-top:100px;
+	// @include large-up {
 		clear:both;
 		padding-top:100px;
-	}
+	// }
 }
 .pTitle {
-	font-family: $fontfamilythin;
-	font-size: 60px;
-	text-align: center;
-	letter-spacing: 50px;
-	margin-right:-50px;
-	margin-bottom: 50px;
-	width:375px;
-	@include large-up {
+	// font-family: $fontfamilythin;
+	// font-size: 60px;
+	// text-align: center;
+	// letter-spacing: 50px;
+	// margin-right:-50px;
+	// margin-bottom: 50px;
+	// width:375px;
+	// @include large-up {
 		font-family: $fontfamilythin;
 		font-size: 60px;
 		text-align: center;
 		letter-spacing: 50px;
 		margin-right:-50px;
 		margin-bottom: 50px;
-	}
+	// }
 
 }
 #portfolio-menu {
+	// width: 375px;
+	// margin:0 auto;
+	// display:flex;
+	// justify-content:center;
+	// @include large-up {
 	width: 375px;
 	margin:0 auto;
 	display:flex;
 	justify-content:center;
-	@include large-up {
-	width: 1024px;
-	margin:0 auto;
-	display:flex;
-	justify-content:center;
-	@include large-up {
-		
-	}
 	h2 {
 		margin:30px;
 	}
-}
+
 }
 
 #underline {
 	padding: 40px; 
 	display:flex;
-  justify-content: center;
+  	justify-content: center;
 
 }
 
@@ -58,7 +55,7 @@
 	transition: all 0.5s ease;
 	width: 375px;
   	
-	@include large-up {
+	@include medium-up {
 	display:inline;
 	font-family: $fontfamilythin;
 	font-size:25px;
@@ -76,6 +73,25 @@
 
 #section1 {
 	width:375px;
+	@include medium-up {
+		width:900px;
+	}
+	@include large-up {
+		width:1200px;
+	}
+}
+//DEVELOPMENT
+#development-page {
+	width: 375px;
+	@include medium {
+		width:900px;
+	}
+	@include large-up {
+	width: 1200px;
+	margin:0 auto;
+	display:flex;
+	justify-content: center;
+}
 }
 
 #design {
@@ -263,19 +279,6 @@
 	}
 }
 //ARTWORK
-
-
-
-//DEVELOPMENT
-#development-page {
-	width: 375px;
-	@include large-up {
-	// width: 1200px;
-	margin:0 auto;
-	display:flex;
-	justify-content: center;
-}
-}
 
 .card {
 	width: 320px;
