@@ -23,6 +23,12 @@ if (isset($_POST['name'])) {
 	} 
 }
 
+
+	
+
+
+	include('admin/scripts/getPics.php');
+	echo $rows;
 ?>
 
 
@@ -107,14 +113,14 @@ if (isset($_POST['name'])) {
 			<!-- CARDS BEGIN -->
 			<div id="section1">
 				<div class="card">
-				<img src="images/logo_parker-white.svg" alt="Parker Clothing Logo">
+				<img class="data-ref" src="images/logo_parker-white.svg" alt="Parker Clothing Logo">
 				<h3>Parker Clothing</h3>
-				<p>Developed purely with HTML and CSS this website serves as a tribute to CSS3 transitions. Illustrator and </p>
+				<p>Developed purely with HTML and CSS this website serves as a tribute to CSS3 transitions. Illustrator and Photoshop were used to create all graphic content.</p>
 				<a href="" target="_blank">SEE FULL SITE</a>
 			</div>
 			
 			<div class="card">
-				<img src="images/logo_lotr.png" alt="Lord of the Rings Logo">
+				<img class="data-ref" src="images/logo_lotr.png" alt="Lord of the Rings Logo">
 				<h3>Lord of the Rings: The Adventure App</h3>
 				<p>This project is an excersize in front-end development. It utilizes a combination of vanilla javascript and the greensock library to animate items as well as sass to make style development more efficient.</p>
 				<a href="file:///Users/alexandra/Desktop/mastracci_natalie_portfolio-q/lotr/index.html" target="_blank">SEE FULL SITE</a>
@@ -167,7 +173,7 @@ if (isset($_POST['name'])) {
 						<div class="info">
 						<h4>Team BETA WATCH OUT</h4>
 						<h5>Fundraising Posters for JDRF One Walk</h5>
-						<p>This client required posters to advertise their fundraising events for the JDRF One Walk. Adobe Illustrator was used to create the text layout while which was then brought in to Photoshop as a  </p>
+						<p>This client required posters to advertise their fundraising events for the JDRF One Walk. Adobe Illustrator was used to create the text layout while which was then brought in to Photoshop as a smart object to create the additional surrounding graphics</p>
 					</div>
 					</div>
 				</div>
