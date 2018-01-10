@@ -2,7 +2,6 @@
 require_once("admin/scripts/connect.php");
 require_once("admin/scripts/config.php");
 
-
 if (isset($_POST['name'])) {
 	$name = $_POST['name'];
 	$email = $_POST['email'];
@@ -18,17 +17,12 @@ if (isset($_POST['name'])) {
 	echo $email;
 	echo $message;
 	
-	
-	
 	} 
 }
 
 
-	
-
-
-	include('admin/scripts/getPics.php');
-	echo $rows;
+	// include('admin/scripts/getPics.php');
+	// echo $rows;
 ?>
 
 
@@ -44,7 +38,7 @@ if (isset($_POST['name'])) {
 	<h1 class="hidden">title</h1>
 	<div id="container">
 		
-		<!-- <nav>
+		<nav>
 			<img id="logo" src="images/logo-g.png" alt="Natalie's Logo">
 			<p id="logoText">Natalie Mastracci</p>
 
@@ -53,25 +47,23 @@ if (isset($_POST['name'])) {
 				<li><a href="portfolio.html">PORTFOLIO</a></li>
 				<li><a href="contact.html">CONTACT</a></li>
 			</ul>
-		</nav>  -->
+		</nav> 
 
 		
 
-		<header id="headerColour">	
-				<img class="linkedIn" src="images/social-linkedin.png" alt="linkedIn logo">
-				<img class="twitter" src="images/social-twitter.png" alt="twitter logo">
-				<img class="instagram" src="images/social-instagram.png" alt="instagram logo">
+		<header id="susanne">
+		<div id="headerColour">	
+				
 			
+			<!-- TULIPS -->
 			<!-- <img class="stay-put" id="nLogo" src="images/nm_logo-large-grey.png" alt="Natalie's Logo"> -->
-			<img class="stay-put" id="tulip1" src="images/tulip-dark-green.png" alt="tulip drawing">
+			<!-- <img class="stay-put" id="tulip1" src="images/tulip-dark-green.png" alt="tulip drawing">
 			<img class="stay-put" id="tulip2" src="images/tulip-light-green.png" alt="tulip drawing">
 			<img class="stay-put" id="tulip3" src="images/tulip-yellow-green.png" alt="tulip drawing">
 			<img class="stay-put" id="nLogo" src="images/nm_logo-large-grey.png" alt="Natalie's Logo">
-
 			<img class="stay-put" id="tulip4" src="images/tulip-dark-pink.png" alt="tulip drawing">
 			<img class="stay-put" id="tulip5" src="images/tulip-light-pink.png" alt="tulip drawing">
-
-			<img class="stay-put" id="tulip6" src="images/tulip-white.png" alt="tulip drawing">
+			<img class="stay-put" id="tulip6" src="images/tulip-white.png" alt="tulip drawing"> -->
 
 			
  			<div id="heading">
@@ -79,6 +71,7 @@ if (isset($_POST['name'])) {
 				<h4 id="to-portfolio">Go to Portfolio &gt;</h4>
 				<h4 id="to-contact" >Keep in Touch  &gt;</h4>
 			</div>
+			<img id="eight" src="images/eight-nowhite.png" alt="eight rowing">
 
 			<div id="sub-head">
 				
@@ -87,6 +80,7 @@ if (isset($_POST['name'])) {
 				<h4>Skills include: responsive web design, PHP, mySQL, MVC framework (ex. Laravel, codeigniter), core Javascipt and popular JS libraries (such as greensock, D3.js and three.js), cinema4D and the adobe creative cloud suite.</h4>
 				
 				
+			</div>
 			</div>
 		</header>
 
@@ -100,8 +94,8 @@ if (isset($_POST['name'])) {
 				<h2 id="development" style="">Development</h2>
 				<h2 id="artwork" style="">Artwork</h2>
 			</div>
-			<svg id="underline" height="3" width="1366">
-  				<line x1="100" y1="0" x2="1184" y2="0" style="stroke:#777777;stroke-width:3"></line>
+			<!-- <svg id="underline" height="3" width="1366">
+  				<line x1="100" y1="0" x2="1184" y2="0" style="stroke:#777777;stroke-width:3"></line> -->
 			</svg>
 		</section>
 
@@ -279,7 +273,10 @@ if (isset($_POST['name'])) {
 				<li><a href="portfolio.html">PORTFOLIO</a></li>
 				<li><a href="contact.html">CONTACT</a></li>
 			</ul>
-			<h6 class="cright">© Natalie Mastracci 2017</h6>	
+			<h6 class="cright">© Natalie Mastracci 2017</h6>
+			<img class="linkedIn" src="images/social-linkedin.png" alt="linkedIn logo">
+				<img class="twitter" src="images/social-twitter.png" alt="twitter logo">
+				<img class="instagram" src="images/social-instagram.png" alt="instagram logo">	
 		</footer>
 	</div>
 
@@ -293,6 +290,6 @@ if (isset($_POST['name'])) {
 <script type="text/javascript" src="js/headerColour.js"></script>
 <script type="text/javascript" src="js/scrollNav.js"></script> -->
 <!-- endbuild -->
-<script type="text/javascript" src="prod/js/scripts.js"></script> -->
+<script type="text/javascript" src="prod/js/scripts.js"></script>
 
 </body></html>

@@ -3,6 +3,7 @@
 @import 'globals';
 @import 'mixins';
 @import 'fonts';
+@import 'nav';
 @import 'contact';
 @import 'portfolio';
 @import 'headerColour';
@@ -25,30 +26,24 @@ a {
 }
 
 #container {
-	width: 1366px;
+	width: 100%;
 	margin:0 auto;
 }
 
-//RESPONSIVE
-// #container {
-// 	width:320px;
-// 	height:400px;
-// 	margin:0 auto;
-// 	background-color: blue;
-// 	 @include break(med) {width: 768px;}
-// 	 @include break(lg) {width: 1366px;}
-// }
 
 footer {
-	background-color: #fff;
+	// background-color: #555;
 	clear:both;
+	width:100%;
+	height: 4em;
 }
 .footer-nav {
-	float: left;
-	margin-top: 50px;
+	// float: left;
+	// margin-top: 50px;
 	background-color: #fff;
 	padding:20px;
 	 clear: both;
+	 display:inline-block;
 
 	li{
 	display: inline;
@@ -63,9 +58,31 @@ footer {
 	} 
 } 
 .cright {
-	float: right;
+	// float: right;
 	display: inline;
 	text-align: right;
 	color: $navcolor;
-	margin-top:70px;
+	// margin-top:70px;
+}
+.linkedIn {
+	float: right;
+	vertical-align: bottom;
+	text-align: left;
+}
+.twitter {
+	@extend .linkedIn;
+	
+}
+.instagram {
+	@extend .linkedIn;
+		
+
+	@include medium-up {
+		
+	}
+
+	@include large-up {
+		
+	}
+	
 }

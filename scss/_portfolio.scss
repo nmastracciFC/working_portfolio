@@ -1,6 +1,10 @@
 #portfolio {
 	clear:both;
 	padding-top:100px;
+	@include large-up {
+		clear:both;
+		padding-top:100px;
+	}
 }
 .pTitle {
 	font-family: $fontfamilythin;
@@ -9,16 +13,33 @@
 	letter-spacing: 50px;
 	margin-right:-50px;
 	margin-bottom: 50px;
+	@include large-up {
+		font-family: $fontfamilythin;
+		font-size: 60px;
+		text-align: center;
+		letter-spacing: 50px;
+		margin-right:-50px;
+		margin-bottom: 50px;
+	}
 
 }
 #portfolio-menu {
+	width: 375px;
+	margin:0 auto;
+	display:flex;
+	justify-content:center;
+	@include large-up {
 	width: 1024px;
 	margin:0 auto;
 	display:flex;
 	justify-content:center;
+	@include large-up {
+		
+	}
 	h2 {
 		margin:30px;
 	}
+}
 }
 
 #underline {
@@ -31,6 +52,13 @@
 #development {
 	display:inline;
 	font-family: $fontfamilythin;
+	font-size:3em;
+	color: #cccccc;
+	transition: all 0.5s ease;
+  	
+	@include large-up {
+	display:inline;
+	font-family: $fontfamilythin;
 	font-size:25px;
 	color: #cccccc;
 	transition: all 0.5s ease;
@@ -41,7 +69,7 @@
   		cursor: pointer;
   		font-size:26px;
 	}
-
+}
 }
 
 #design {
@@ -147,7 +175,7 @@
 	height:434px;
 	width: 236px;
 	overflow: hidden;
-	background-image: url(../images/art_walking.jpg);
+	background-image: url(../../images/art_walking.jpg);
 	background-position: right;
 	// background-position: -984px;
 	background-repeat: no-repeat;
@@ -161,7 +189,7 @@
 	height:320px;
 	width: 488px;
 	overflow: hidden;
-	background-image: url(../images/art_ashley.jpg);
+	background-image: url(../../images/art_ashley.jpg);
 	background-position: -10px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -174,7 +202,7 @@
 	height: 223px;
 	width: 483px;
 	overflow: hidden;
-	background-image: url(../images/art_christine.jpg);
+	background-image: url(../../images/art_christine.jpg);
 	background-position: left;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -186,7 +214,7 @@
 	height:708px;
 	width:668px;
 	overflow: hidden;
-	background-image: url(../images/art_purpleDress.jpg);
+	background-image: url(../../images/art_purpleDress.jpg);
 	background-position: right;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -200,7 +228,7 @@
 	height:1125px;
 	width:462px;
 	overflow: hidden;
-	background-image: url(../images/art_profile.jpg);
+	background-image: url(../../images/art_profile.jpg);
 	background-position: left;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -213,7 +241,7 @@
 	height:1427px;
 	width:281px;
 	overflow: hidden;
-	background-image: url(../images/art_greenDress.jpg);
+	background-image: url(../../images/art_greenDress.jpg);
 	background-position: right;
 	background-repeat: no-repeat;
 	background-attachment: fixed;

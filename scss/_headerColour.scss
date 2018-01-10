@@ -1,27 +1,54 @@
+#susanne {
+	background-image: url(../../images/sgnm-sm.jpg);
+	@include medium-up {
+		background-image: url(../../images/sgnm-med.jpg);
+	}
+	@include large-up {
+		background-image: url(../../images/sgnm-long.jpg);
+	}
+}
+
 #headerColour {
 	display: grid;
 	//loveeeee you IE <3
-	-ms-grid-columns: repeat(24, 1fr);
+	-ms-grid-columns: repeat(12, 1fr);
 	-ms-grid-rows: 50px repeat(10, 1fr);
-	grid-template-columns: repeat(24, 1fr);
+	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: 50px repeat(10, 1fr);
 	position:relative;
-	width:100%;
+	// width:100%;
+	@include large-up {
+		display: grid;
+		//loveeeee you IE <3
+		-ms-grid-columns: repeat(24, 1fr);
+		-ms-grid-rows: 50px repeat(10, 1fr);
+		grid-template-columns: repeat(24, 1fr);
+		grid-template-rows: 50px repeat(10, 1fr);
+		position:relative;
+		width:100%;
+	}
+	
 }
-.linkedIn {
-	margin-top:10px;
-	grid-column-start: -4;
-}
-.twitter {
-	@extend .linkedIn;
-	grid-column-start: -3;
-}
-.instagram {
-	@extend .linkedIn;
-	grid-column-start: -2;
-}
+
 .stay-put {
-	position:absolute;
+	display: none;
+}
+#eight {
+	
+	@include medium-up {
+
+	}
+	@include large-up {
+		-ms-grid-column:7;
+		-ms-grid-column-span:7;
+		-ms-grid-row:4;
+		-ms-grid-row-span: 1; 
+		grid-column-start: 7;
+		grid-column-end: 20;
+		grid-row-start:4;
+		grid-row-end: 5;
+
+	}
 }
 #heading {
 	-ms-grid-column:3;
@@ -34,6 +61,12 @@
 	grid-row-end: 3;
 	z-index: 2;
 	color: #555;
+	@include medium-up {
+
+	}
+	@include large-up {
+
+	}
 
 	h1 {
 		font-family: $fontfamilythick;

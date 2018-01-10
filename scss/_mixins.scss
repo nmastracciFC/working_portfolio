@@ -9,49 +9,68 @@
   #{$property}: $value;
 }
 
-//RESPONSIVE 
-@mixin break($point) {
-   @if $point == xl {
-     @media only screen and (min-width: 1200px) { @content ; }
-  }
-   @else if $point == lg {
-   	//1088
-     @media only screen and (min-width: 1024px) { @content ; }
-  }
-  // @else if $point == medD {
-  //  	//1030
-  //    @media only screen and (max-width: 64.4em) { @content ; }
-  // }
-    @else if $point == med {
-    //600
-     @media only screen and (min-width: 768px) { @content ; }
-  }
-   @else if $point == sm {
-   	//420px
-     @media only screen and (min-width: 300px )  { @content ; }
-  }
-  @else {
-    @warn "Break points are sm, med, lg, xl";
+@mixin large-up {
+  @media only screen and (min-width: 60em) {
+    @content;
   }
 }
 
-.respond {
-  @include break(sm) { 
-  height:100px;
-  width: 320px;
-  margin:0 auto;
-  // background-color: green;
+@mixin medium-up {
+  @media only screen and (min-width: 40em) {
+    @content;
   }
-  @include break(med) {
-    // background-color: blue;
-    width: 900px;}
-  @include break(lg) {
-    // background-color: orange;
-    width: 1200px;}
-  @include break(xl) {
-    // background-color: red;
-    width: 1366px;}
 }
+
+@mixin small-only {
+  @media only screen and (max-width: 40em) {
+    @content;
+  }
+}
+
+
+//RESPONSIVE 
+// @mixin break($point) {
+//    @if $point == xl {
+//      @media only screen and (min-width: 1200px) { @content ; }
+//   }
+//    @else if $point == lg {
+//    	//1088
+//      @media only screen and (min-width: 1024px) { @content ; }
+//   }
+//   // @else if $point == medD {
+//   //  	//1030
+//   //    @media only screen and (max-width: 64.4em) { @content ; }
+//   // }
+//     @else if $point == med {
+//     //600
+//      @media only screen and (min-width: 768px) { @content ; }
+//   }
+//    @else if $point == sm {
+//    	//420px
+//      @media only screen and (min-width: 300px )  { @content ; }
+//   }
+//   @else {
+//     @warn "Break points are sm, med, lg, xl";
+//   }
+// }
+
+// .respond {
+//   @include break(sm) { 
+//   height:100px;
+//   width: 320px;
+//   margin:0 auto;
+//   // background-color: green;
+//   }
+//   @include break(med) {
+//     // background-color: blue;
+//     width: 900px;}
+//   @include break(lg) {
+//     // background-color: orange;
+//     width: 1200px;}
+//   @include break(xl) {
+//     // background-color: red;
+//     width: 1366px;}
+// }
 
 //IMAGE SWAP CLASSES
 // .show-sm {
