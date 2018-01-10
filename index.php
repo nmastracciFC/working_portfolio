@@ -51,8 +51,8 @@ if (isset($_POST['name'])) {
 
 		
 
-		<header id="susanne">
-		<div id="headerColour">	
+		<header  id="headerColour">
+		<!-- <div >	 -->
 				
 			
 			<!-- TULIPS -->
@@ -81,7 +81,7 @@ if (isset($_POST['name'])) {
 				
 				
 			</div>
-			</div>
+			<!-- </div> -->
 		</header>
 
 

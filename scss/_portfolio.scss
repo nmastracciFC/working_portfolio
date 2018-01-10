@@ -13,6 +13,7 @@
 	letter-spacing: 50px;
 	margin-right:-50px;
 	margin-bottom: 50px;
+	width:375px;
 	@include large-up {
 		font-family: $fontfamilythin;
 		font-size: 60px;
@@ -55,6 +56,7 @@
 	font-size:3em;
 	color: #cccccc;
 	transition: all 0.5s ease;
+	width: 375px;
   	
 	@include large-up {
 	display:inline;
@@ -70,6 +72,10 @@
   		font-size:26px;
 	}
 }
+}
+
+#section1 {
+	width:375px;
 }
 
 #design {
@@ -96,31 +102,31 @@
 }
 .scrollingSide {
 
-	display:flex;
-	flex-direction:column;
-	width:320px;
-	overflow: auto;
-	height: 450px;
+	// display:flex;
+	// flex-direction:column;
+	// width:320px;
+	// overflow: auto;
+	// height: 450px;
 }
 .staticSide {
 	display:flex;
 	flex-direction:column;
 }
 .small-block {
-	width: 313px;
-	margin-right: 30px;
-	display:inline;
+	// width: 313px;
+	// margin-right: 30px;
+	// display:inline;
 }
 .large-block {
-	width: 695px;
-	height: 450px;
-	margin-bottom: 30px;
-	display:inline-block;
-	vertical-align: top;
-	&:nth-child(even) {
-		margin-left: 0;
-		margin-right: 30px;
-	}
+	// width: 695px;
+	// height: 450px;
+	// margin-bottom: 30px;
+	// display:inline-block;
+	// vertical-align: top;
+	// &:nth-child(even) {
+	// 	margin-left: 0;
+	// 	margin-right: 30px;
+	// }
 	
 }
 .small-block-bottom {
@@ -162,11 +168,13 @@
 
 //ARTWORK
 #artwork-page {
+	@include large-up {
 	overflow: hidden;
 	width:1366px;
 	height:3000px;
 	position:relative;
 	display:none;
+}
 }
 #walking {
 	position: absolute;
@@ -260,10 +268,13 @@
 
 //DEVELOPMENT
 #development-page {
-	width: 1200px;
+	width: 375px;
+	@include large-up {
+	// width: 1200px;
 	margin:0 auto;
 	display:flex;
 	justify-content: center;
+}
 }
 
 .card {

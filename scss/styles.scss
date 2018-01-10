@@ -26,8 +26,13 @@ a {
 }
 
 #container {
-	width: 100%;
-	margin:0 auto;
+	width: 375px;
+	@include medium-up {
+		width:700px;
+	}
+	@include large-up {
+		width:100%;
+	}
 }
 
 
