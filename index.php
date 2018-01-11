@@ -62,7 +62,7 @@ if (isset($_POST['name'])) {
 				
 				<h2>Designer &amp; Developer</h2>
 				<h3>I believe efficiency, functionality and beauty are created equal but above all else make something great.</h3>
-				<h4>Skills include: responsive web design, PHP, mySQL, MVC framework (ex. Laravel, codeigniter), core Javascipt and popular JS libraries (such as greensock, D3.js and three.js), cinema4D and the adobe creative cloud suite.</h4>
+				<h4>Skills include: responsive web design with bespoke media queries (as well as foundation and bootstrap), procedural and OOP PHP, mySQL, MVC frameworks (ex. Laravel, codeigniter), core Javascipt and popular JS libraries (such as greensock, D3.js and three.js), cinema4D and the adobe creative cloud suite.</h4>
 	
 			</div>
 		</header>
@@ -77,42 +77,45 @@ if (isset($_POST['name'])) {
 				<h2 id="development" style="">Development</h2>
 				<h2 id="artwork" style="">Artwork</h2>
 			</div>
-		</section>
+		
 
 		
 
 		<section id="development-page" style="display: none;">
 			<h2 class="hidden">Development page</h2>
-
+			<div class="center">
 			<!-- CARDS BEGIN -->
 			<div class="card">
 				<img class="data-ref" src="images/logo_hrd-white.png" alt="HR Downloads">
 				<h3>Back End Dev</h3>
-				<p>Working on a team of three to create the Time and Attendance module that will fit into HRDownload's greater product. This app will use laravel--with eloquent models and migrations--as well as vue.js components. Daily scrum and weekly sprints will see that this product is complete in early April</p>
-				<a href="http://www.reactr.ca/scavenger/index.php/welcome" target="_blank">SEE TEAM</a>
+				<p>Working on a team of three to create the Time and Attendance module that will fit into HRDownload's greater product. This app will use laravel--with eloquent models and migrations--as well as vue.js components.</p>
+				<p>The module is being created for multiple users with different levels of access to features. Managers will be able to create, set and assign schedules and Employees will be able to see their schedule and request time off. Daily scrum, weekly sprints and frequent code review will see that this product is complete in early April</p>
+				<a href="#portfolio" target="_blank">SEE THE TEAM</a>
 			</div>
 
 			<div class="card">
-				<h1 id="summerLEDC">#discoverldnont</h1>
+				<h1 class="summerLEDC">#discoverldnont</h1>
 				<h3>Back End Dev</h3>
-				<p>As the back-end developer, our team this site used foundation for responsive, mobile-first-application. Code Igniter and core PHP on the server were used with a mySQL database.</p>
+				<p>In three weeks, without prior knowledge of php or MVC, our team of two delivered this mobile-first web app for the LEDC's treasure hunt contest. Through client meetings, our team settled on Code Igniter and core PHP with a mySQL database for the back-end. The front-end uses foundation to create the responsive environment.</p>
+				<p>Students who registered their team on the app, recieved an email to sign in to their team's checklist and begin completing tasks. The committee who determined the winner could see each team's progress in real time from their dashboard.</p>
 				<a href="http://www.reactr.ca/scavenger/index.php/welcome" target="_blank">SEE FULL SITE</a>
 			</div>
 
-			<div id="section1">
+			<!-- <div id="section1"> -->
+
 				<div class="card">
 				<img class="data-ref" src="images/logo_parker-white.svg" alt="Parker Clothing Logo">
 				<h3>Front End Dev</h3>
-				<p>Developed purely with HTML and CSS this website serves as a tribute to CSS3 transitions. Illustrator and Photoshop were used to create all graphic content.</p>
+				<p>With javascript turned off in the browser this site still works seamlessly. Developed purely with HTML and CSS this website serves as a tribute to CSS3 transitions. Illustrator and Photoshop were used to create all graphic content.</p>
 				<a href="" target="_blank">SEE FULL SITE</a>
 			</div>
 			
-			<div class="card">
+			<!-- <div class="card">
 				<img class="data-ref" src="images/logo_lotr.png" alt="Lord of the Rings Logo">
 				<h3>Front End Dev</h3>
 				<p>This project is an excersize in front-end development. It utilizes a combination of vanilla javascript and the greensock library to animate items as well as sass to make style development more efficient.</p>
 				<a href="file:///Users/alexandra/Desktop/mastracci_natalie_portfolio-q/lotr/index.html" target="_blank">SEE FULL SITE</a>
-			</div>
+			</div> -->
 
 			
 			</div>
@@ -225,6 +228,7 @@ if (isset($_POST['name'])) {
 			<img id="name4" class="backwhite" src="images/m_logo-backwhite.png" alt="letter m">
 
 		
+		</section>
 		</section>
 
 

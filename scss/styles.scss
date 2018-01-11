@@ -27,9 +27,11 @@ a {
 }
 
 #container {
-	width: 374px;
+	// width: 374px;
+	width:100%;
 	@include medium-up {
-		width:750px;
+		// width:750px;
+		width:100%;
 	}
 	@include large-up {
 		width:100%;
