@@ -13,7 +13,7 @@
 #logoText {
 	display:none;
 
-	@include medium-up {
+	@include large-up {
 	color: $navcolor;
 	display:inline;
 	font-family: $fontfamilythin;

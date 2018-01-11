@@ -27,6 +27,10 @@
 	grid-column-end:12;
 	grid-row-start:5;
 	grid-row-end:8;
+	@include medium-up {
+		width:40em;
+		grid-column-start:4;
+	}
 }
 
 #heading {
@@ -38,6 +42,7 @@
 	
 	color: #555;
 	@include medium-up {
+		grid-column-end:6;
 
 	}
 	@include large-up {
@@ -52,6 +57,10 @@
 		display:inline-block;
 		margin-top:0.3em;
 		margin-bottom: 0.3em;
+		@include medium-up {
+			font-size:3em;
+			margin-bottom:0.7em;
+		}
 		@include large-up {
 		font-size: 4.063em;
 		
@@ -59,7 +68,7 @@
 		}
 	}
 	h2 {
-		font-size:1.5em;
+		font-size:1.8em;
 		@include large-up {
 		font-family: $fontfamilybody;
 		font-size: 36px;
@@ -69,18 +78,28 @@
 		}
 	}
 	h3{
-		margin-bottom: 1em;
+		margin-bottom: 1.8em;
+		@include medium-up {
+		font-size: 1.3em;
+
+		}
 		@include large-up {
 		font-family: $fontfamilybody;
-		font-size: 25px;
-		margin-bottom: 15px;
+		font-size: 1.563em;
+		margin-bottom: 1em;
 	}
 
 	}
 	h4{
+		margin-bottom: 1em;
+
+		@include medium-up {
+			font-size: 1.4em;
+		}
+
 		@include large-up {
 		font-family: $fontfamilybody;
-		font-size: 20px;
+		font-size: 1.25em;
 		margin-bottom: 10px;
 		
 		display:inline-block;
@@ -117,7 +136,7 @@
 #sub-head {
 	grid-column-start:6;
 	grid-column-end:12;
-	grid-row-start:6;
+	grid-row-start:7;
 	grid-row-end:12;
 
 	z-index: 2;
@@ -134,15 +153,21 @@
 		font-family: $fontfamilythick;
 		display:inline-block;
 		margin-bottom: 1em;
+		@include medium-up {
+			font-size: 2.3em;
+		}
 		@include large-up {
 		font-family: $fontfamilythick;
-		font-size: 40px;
-		margin-bottom: 30px;
+		font-size: 2.5px;
+		margin-bottom: 1.9px;
 	}
 	}
 	h3{
 		font-family: $fontfamilybody;
 		margin-bottom: 1em;
+		@include medium-up {
+			font-size:1.3em;
+		}
 		@include large-up {
 		
 		font-size: 17px;
@@ -151,6 +176,9 @@
 	}
 	}
 	h4 {
+		@include medium-up {
+			font-size:1.3em;
+		}
 		@include large-up {
 		font-family: $fontfamilybody;
 		font-size: 17px;
