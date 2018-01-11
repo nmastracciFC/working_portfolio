@@ -112,7 +112,15 @@ if (isset($_POST['name'])) {
 				<a href="http://www.reactr.ca/scavenger/index.php/welcome" target="_blank">SEE FULL SITE</a>
 			</div>
 
-			<!-- <div id="section1"> -->
+			<div class="card">
+				<h1 class="summerLEDC">Parallax Two Ways</h1>
+				<h3>Front End Dev</h3>
+				<p>Here are two different examples of depth using javascript and css to create a parallax effect</p>
+				<p>Students who registered their team on the app, recieved an email to sign in to their team's checklist and begin completing tasks. The committee who determined the winner could see each team's progress in real time from their dashboard.</p>
+				<a href="parallax/index.html" target="_blank">SEE FULL SITE</a>
+			</div>
+
+			
 
 				<div class="card">
 				<img class="data-ref" src="images/logo_parker-white.svg" alt="Parker Clothing Logo">

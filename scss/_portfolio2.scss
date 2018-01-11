@@ -75,15 +75,15 @@
 }
 }
 
-#section1 {
-	width:375px;
-	@include medium-up {
-		width:900px;
-	}
-	@include large-up {
-		width:1200px;
-	}
-}
+// #section1 {
+// 	width:375px;
+// 	@include medium-up {
+// 		width:900px;
+// 	}
+// 	@include large-up {
+// 		width:1200px;
+// 	}
+// }
 //DEVELOPMENT
 #development-page {
 	margin:0 auto;
@@ -118,38 +118,46 @@
 	background-color: $portfolioback;
 }
 .portGrid{
+	@include large-up {
   display:flex;
   justify-content: center;
   overflow: hidden;
 }
+}
 .scrollingSide {
-
-	// display:flex;
-	// flex-direction:column;
-	// width:320px;
-	// overflow: auto;
-	// height: 450px;
+		@include large-up {
+	display:flex;
+	flex-direction:column;
+	width:320px;
+	overflow: auto;
+	height: 450px;
+}
 }
 .staticSide {
+	@include large-up {
 	display:flex;
 	flex-direction:column;
 }
+}
 .small-block {
-	// width: 313px;
-	// margin-right: 30px;
-	// display:inline;
+	@include large-up {
+	width: 313px;
+	margin-right: 30px;
+	display:inline;
+}
 }
 .large-block {
-	// width: 695px;
-	// height: 450px;
-	// margin-bottom: 30px;
-	// display:inline-block;
-	// vertical-align: top;
-	// &:nth-child(even) {
-	// 	margin-left: 0;
-	// 	margin-right: 30px;
-	// }
-	
+	@include large-up {
+	width: 695px;
+	height: 450px;
+	margin-bottom: 30px;
+	display:inline-block;
+	vertical-align: top;
+	&:nth-child(even) {
+		margin-left: 0;
+		margin-right: 30px;
+	}
+	}
 }
 .small-block-bottom {
 	
