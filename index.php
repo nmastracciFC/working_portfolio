@@ -53,6 +53,7 @@ if (isset($_POST['name'])) {
 
  			<div id="heading">
  				<h1 >Natalie Mastracci</h1>
+ 				<h3>After spending nine years facing backward in a boat it’s time to look forward.</h3>
 				<h4 id="to-portfolio">Go to Portfolio &gt;</h4>
 				<h4 id="to-contact" >Keep in Touch  &gt;</h4>
 			</div>

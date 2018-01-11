@@ -1,9 +1,9 @@
 #logo {
 	width:3.125em;
-	margin: 1em 0 0 1em;	
+	margin: 1em 0 1em 1em;	
 	@include medium-up {
 	width:6.25em;
-	margin: 2em 0 0 2em;	
+	margin: 2em 0 2em 2em;	
 	transition: all 0.5s ease;
 	&:hover {
 		opacity: 0.5;
@@ -32,6 +32,7 @@
 
 .main-nav {
 	float:right;
+	display:none;
 	@include medium-up {
 	
 	margin-top: 3.938em;
