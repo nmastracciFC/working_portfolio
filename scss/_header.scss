@@ -31,7 +31,7 @@
 
 #heading {
 	grid-column-start:2;
-	grid-column-end:8;
+	grid-column-end:9;
 	grid-row-start:1;
 	grid-row-end:5;
 	
@@ -50,7 +50,8 @@
 		font-size:2em;
 		font-family: $fontfamilythick;
 		display:inline-block;
-		margin-bottom: 1em;
+		margin-top:0.3em;
+		margin-bottom: 0.3em;
 		@include large-up {
 		font-size: 4.063em;
 		
@@ -90,6 +91,7 @@
 		cursor: pointer;
 		// margin-left: 14px;
 		text-align:right;
+		@include medium-up {
 		transition: all 0.5s ease;
 		margin-bottom:1em;
 		&:hover {
@@ -98,15 +100,18 @@
 			font-size: 21px;
 		}
 	}
+	}
 	#to-contact {
 		// display:block;
 		text-align:right;
 		cursor: pointer;
+		@include medium-up {
 		transition: all 0.5s ease;
 		&:hover {
 			color: #000;
 			font-size: 21px;
 		}
+	}
 	}
 }
 #sub-head {

@@ -61,9 +61,19 @@ if (isset($_POST['name'])) {
 
 			<div id="sub-head">
 				
-				<h2>Designer &amp; Developer</h2>
+				<!-- <h2>Designer &amp; Developer</h2> -->
+				<h2>Full Stack Developer</h2>
 				<h3>I believe efficiency, functionality and beauty are created equal but above all else make something great.</h3>
-				<h4>Skills include: responsive web design with bespoke media queries (as well as foundation and bootstrap), procedural and OOP PHP, mySQL, MVC frameworks (ex. Laravel, codeigniter), core Javascipt and popular JS libraries (such as greensock, D3.js and three.js), cinema4D and the adobe creative cloud suite.</h4>
+				<!-- <h4>Areas of study: procedural and OOP PHP, mySQL database architecture, MVC frameworks (ex. Laravel, codeigniter), core Javascipt and popular JS libraries (such as greensock, D3.js and three.js), responsive web design with media queries (as well as foundation and bootstrap), cinema4D and the adobe creative cloud suite.</h4> -->
+				<ul>
+					Areas of study: 
+					<li>procedural and OOP PHP,</li>
+					<li>mySQL database architecture,</li>
+					<li>MVC frameworks (Laravel, codeigniter),</li>
+					<li>core Javascipt and popular JS libraries (greensock, D3.js and three.js),</li>
+					<li>responsive web design with media queries (as well as foundation and bootstrap),</li>
+					<li>cinema4D and the adobe creative cloud suite.</li>    
+				</ul>
 	
 			</div>
 		</header>
