@@ -7,45 +7,44 @@
 	// }
 }
 .pTitle {
+	font-family: $fontfamilythin;
 	// font-family: $fontfamilythin;
-	// font-size: 60px;
-	// text-align: center;
+	font-size: 4em;
+	text-align: center;
 	// letter-spacing: 50px;
 	// margin-right:-50px;
 	// margin-bottom: 50px;
 	// width:375px;
-	// @include large-up {
-		font-family: $fontfamilythin;
+	@include large-up {
+		
 		font-size: 60px;
-		text-align: center;
+		
 		letter-spacing: 50px;
 		margin-right:-50px;
 		margin-bottom: 50px;
-	// }
+		color: $maincolor;
+	
+	
+	margin-top: 70px;
+	
+	}
 
 }
 #portfolio-menu {
-	// width: 375px;
-	// margin:0 auto;
-	// display:flex;
-	// justify-content:center;
-	// @include large-up {
 	width: 375px;
 	margin:0 auto;
 	display:flex;
 	justify-content:center;
+	@include medium-up {
+
+	}
 	h2 {
 		margin:30px;
+		font-size: 1.8em;
 	}
 
 }
 
-#underline {
-	padding: 40px; 
-	display:flex;
-  	justify-content: center;
-
-}
 
 #development {
 	display:inline;
@@ -157,13 +156,16 @@
 	width:320px;
 	margin:0 auto;
 	h4 {
+		@include large-up {
 		color: $maincolor;
 		font-size: 40px;
 		text-align: left;
-		margin:20px;
+		margin:10px;
 		margin-top: 100px;
+		}
 	}
 	h5 {
+		@include large-up {
 		color: $barelythere;
 		color: $maincolor;
 		font-family: $fontfamilythin;
@@ -171,7 +173,9 @@
 		text-align: left;
 		margin:20px;
 	}
+	}
 	p {
+		@include large-up {
 		color: $barelythere;
 		color: $maincolor;
 		font-family: $fontfamilybody;
@@ -180,104 +184,105 @@
 		margin:20px;
 		margin-bottom:40px;
 	}
+	}
 }
 
 //ARTWORK
-#artwork-page {
-	@include large-up {
-	overflow: hidden;
-	width:1366px;
-	height:3000px;
-	position:relative;
-	display:none;
-}
-}
-#walking {
-	position: absolute;
-	top:300px;
-	left:1040px;
-	height:434px;
-	width: 236px;
-	overflow: hidden;
-	background-image: url(../../images/art_walking.jpg);
-	background-position: right;
-	// background-position: -984px;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	// background-size: cover;
-}
-#ashley {
-	position: absolute;
-	top:150px;
-	left:200px;
-	height:320px;
-	width: 488px;
-	overflow: hidden;
-	background-image: url(../../images/art_ashley.jpg);
-	background-position: -10px;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
+// #artwork-page {
+// 	@include large-up {
+// 	overflow: hidden;
+// 	width:1366px;
+// 	height:3000px;
+// 	position:relative;
+// 	display:none;
+// }
+// }
+// #walking {
+// 	position: absolute;
+// 	top:300px;
+// 	left:1040px;
+// 	height:434px;
+// 	width: 236px;
+// 	overflow: hidden;
+// 	background-image: url(../../images/art_walking.jpg);
+// 	background-position: right;
+// 	// background-position: -984px;
+// 	background-repeat: no-repeat;
+// 	background-attachment: fixed;
+// 	// background-size: cover;
+// }
+// #ashley {
+// 	position: absolute;
+// 	top:150px;
+// 	left:200px;
+// 	height:320px;
+// 	width: 488px;
+// 	overflow: hidden;
+// 	background-image: url(../../images/art_ashley.jpg);
+// 	background-position: -10px;
+// 	background-repeat: no-repeat;
+// 	background-attachment: fixed;
+// }
 
-#christine {
-	position: absolute;
-	top: 600px;
-	left:150px;
-	height: 223px;
-	width: 483px;
-	overflow: hidden;
-	background-image: url(../../images/art_christine.jpg);
-	background-position: left;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
-#purpleDress {
-	position: absolute;
-	top: 950px;
-	left: 636px;
-	height:708px;
-	width:668px;
-	overflow: hidden;
-	background-image: url(../../images/art_purpleDress.jpg);
-	background-position: right;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+// #christine {
+// 	position: absolute;
+// 	top: 600px;
+// 	left:150px;
+// 	height: 223px;
+// 	width: 483px;
+// 	overflow: hidden;
+// 	background-image: url(../../images/art_christine.jpg);
+// 	background-position: left;
+// 	background-repeat: no-repeat;
+// 	background-attachment: fixed;
+// }
+// #purpleDress {
+// 	position: absolute;
+// 	top: 950px;
+// 	left: 636px;
+// 	height:708px;
+// 	width:668px;
+// 	overflow: hidden;
+// 	background-image: url(../../images/art_purpleDress.jpg);
+// 	background-position: right;
+// 	background-repeat: no-repeat;
+// 	background-attachment: fixed;
 
-}
+// }
 
-#profile {
-	position: absolute;
-	top: 1550px;
-	left: 120px;
-	height:1125px;
-	width:462px;
-	overflow: hidden;
-	background-image: url(../../images/art_profile.jpg);
-	background-position: left;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
+// #profile {
+// 	position: absolute;
+// 	top: 1550px;
+// 	left: 120px;
+// 	height:1125px;
+// 	width:462px;
+// 	overflow: hidden;
+// 	background-image: url(../../images/art_profile.jpg);
+// 	background-position: left;
+// 	background-repeat: no-repeat;
+// 	background-attachment: fixed;
+// }
 
-#greenDress {
-	position: absolute;
-	top: 2000px;
-	left: 950px;
-	height:1427px;
-	width:281px;
-	overflow: hidden;
-	background-image: url(../../images/art_greenDress.jpg);
-	background-position: right;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
+// #greenDress {
+// 	position: absolute;
+// 	top: 2000px;
+// 	left: 950px;
+// 	height:1427px;
+// 	width:281px;
+// 	overflow: hidden;
+// 	background-image: url(../../images/art_greenDress.jpg);
+// 	background-position: right;
+// 	background-repeat: no-repeat;
+// 	background-attachment: fixed;
+// }
 
-.backwhite {
-	position: absolute;
-	&:last-child{
-		left:900px;
-		z-index: -3;
-	}
-}
+// .backwhite {
+// 	position: absolute;
+// 	&:last-child{
+// 		left:900px;
+// 		z-index: -3;
+// 	}
+// }
 //ARTWORK
 
 .card {
@@ -289,21 +294,31 @@
 	color: #fff;
 	display: inline-block;
 	overflow:hidden;
+	margin: 1.5em auto;
+	@include medium-up {
 	margin-left:50px;
+	}
 	img {
 		width:280px;
 		margin: 40px 20px;
 	}
 	h3 {
-		font-style: $fontfamilybody;
-		font-size:15px;
+		font-style: $fontfamilythin;
+		font-size:1.5em;
 		margin-left: 20px;
+		@include medium-up {
+		// font-size:15px;
+	}
 	}
 	p {
 		font-style: $fontfamilybody;
-		font-size: 15x;
+		font-size: 1em;
 		margin: 20px;
 		padding-bottom: 40px;
+		@include medium-up {
+			font-size: 15px;
+			margin-left:50px;
+	}
 	}
 	a {
 		font-style: $fontfamilythick;

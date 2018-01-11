@@ -27,9 +27,9 @@ a {
 }
 
 #container {
-	width: 375px;
+	width: 374px;
 	@include medium-up {
-		width:700px;
+		width:750px;
 	}
 	@include large-up {
 		width:100%;
@@ -41,16 +41,22 @@ footer {
 	// background-color: #555;
 	clear:both;
 	width:100%;
-	height: 4em;
+	height: 8em;
+
 	padding-bottom: 15px;
+	@include large-up {
+		height: 4em;
+	}
 }
 .footer-nav {
 	// float: left;
 	// margin-top: 50px;
 	background-color: #fff;
-	padding:20px;
-	
+	padding:25px;
+	display: block;
+	@include large-up {
 	 display:inline-block;
+	}
 
 	li{
 	display: inline;
@@ -70,18 +76,22 @@ footer {
 	text-align: right;
 	color: $navcolor;
 	// margin-top:70px;
+	padding-left:1.5em;
 }
 .linkedIn {
 	float: right;
 	vertical-align: bottom;
 	text-align: left;
+	padding-right: 0.5em;
 }
 .twitter {
 	@extend .linkedIn;
+	// padding-right: 0.5em;
 	
 }
 .instagram {
 	@extend .linkedIn;
+	padding-right: 1.5em;
 		
 
 	@include medium-up {

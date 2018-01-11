@@ -87,8 +87,8 @@ if (isset($_POST['name'])) {
 
 		<section id="portfolio">
 			<h2 class="hidden">Portfolio</h2>
-			<section>
-			<h1 class="pTitle title">PORTFOLIO</h1>
+			
+			<h1 class="pTitle">PORTFOLIO</h1>
 			<div id="portfolio-menu">
 				<h2 id="design" style="color: rgb(85, 85, 85);">Design</h2>
 				<h2 id="development" style="">Development</h2>

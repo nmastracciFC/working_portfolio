@@ -13,8 +13,17 @@
 #headerBack {
 	position: relative;
 	// margin-top: 20px;
-	background-image: url(../images/sgnm-long.jpg);
-	height:1307px;
+	
+	// height:1307px;
+	background-image: url(../../images/sgnm-sm.jpg);
+	background-repeat: no-repeat;
+	// width:100%;
+	@include medium-up {
+		background-image: url(../../images/sgnm-med.jpg);
+	}
+	@include large-up {
+		background-image: url(../../images/sgnm-long.jpg);
+	}
 }
 
 .stay-put {
