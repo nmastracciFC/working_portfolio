@@ -20,13 +20,11 @@ if (isset($_POST['name'])) {
 	} 
 }
 
+?> 
 
-	// include('admin/scripts/getPics.php');
-	// echo $rows;
-?>
-
-
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Natalie Mastracci</title>
@@ -38,7 +36,7 @@ if (isset($_POST['name'])) {
 	<h1 class="hidden">title</h1>
 	<div id="container">
 		
-	<!-- 	<nav>
+		<nav>
 			<img id="logo" src="images/logo-g.png" alt="Natalie's Logo">
 			<p id="logoText">Natalie Mastracci</p>
 
@@ -47,86 +45,98 @@ if (isset($_POST['name'])) {
 				<li><a href="portfolio.html">PORTFOLIO</a></li>
 				<li><a href="contact.html">CONTACT</a></li>
 			</ul>
-		</nav>  -->
+		</nav> 
 
 		
 
-		<header  id="headerColour">
-		<!-- <div >	 -->
-				
-			
-			<!-- TULIPS -->
-			<!-- <img class="stay-put" id="nLogo" src="images/nm_logo-large-grey.png" alt="Natalie's Logo"> -->
-			<img class="stay-put" id="tulip1" src="images/tulip-dark-green.png" alt="tulip drawing">
-			<img class="stay-put" id="tulip2" src="images/tulip-light-green.png" alt="tulip drawing">
-			<img class="stay-put" id="tulip3" src="images/tulip-yellow-green.png" alt="tulip drawing">
-			<img class="stay-put" id="nLogo" src="images/nm_logo-large-grey.png" alt="Natalie's Logo">
-			<img class="stay-put" id="tulip4" src="images/tulip-dark-pink.png" alt="tulip drawing">
-			<img class="stay-put" id="tulip5" src="images/tulip-light-pink.png" alt="tulip drawing">
-			<img class="stay-put" id="tulip6" src="images/tulip-white.png" alt="tulip drawing">
+		<header  id="headerBack">
 
-			
  			<div id="heading">
  				<h1 >Natalie Mastracci</h1>
+ 				<h3>After spending nine years facing backward in a boat it’s time to look forward.</h3>
 				<h4 id="to-portfolio">Go to Portfolio &gt;</h4>
 				<h4 id="to-contact" >Keep in Touch  &gt;</h4>
 			</div>
-			<!-- <img id="eight" src="images/eight-nowhite.png" alt="eight rowing"> -->
+			<img id="eight" src="images/eight-nowhite.png" alt="eight rowing">
 
 			<div id="sub-head">
 				
-				<h2>Designer &amp; Developer</h2>
+				<!-- <h2>Designer &amp; Developer</h2> -->
+				<h2>Full Stack Developer</h2>
 				<h3>I believe efficiency, functionality and beauty are created equal but above all else make something great.</h3>
-				<h4>Skills include: responsive web design, PHP, mySQL, MVC framework (ex. Laravel, codeigniter), core Javascipt and popular JS libraries (such as greensock, D3.js and three.js), cinema4D and the adobe creative cloud suite.</h4>
-				
-				
+				<!-- <h4>Areas of study: procedural and OOP PHP, mySQL database architecture, MVC frameworks (ex. Laravel, codeigniter), core Javascipt and popular JS libraries (such as greensock, D3.js and three.js), responsive web design with media queries (as well as foundation and bootstrap), cinema4D and the adobe creative cloud suite.</h4> -->
+				<ul>
+					Areas of study: 
+					<li>procedural and OOP PHP,</li>
+					<li>mySQL database architecture,</li>
+					<li>MVC frameworks (Laravel, codeigniter),</li>
+					<li>core Javascipt and popular JS libraries (greensock, D3.js and three.js),</li>
+					<li>responsive web design with media queries (as well as foundation and bootstrap),</li>
+					<li>cinema4D and the adobe creative cloud suite.</li>    
+				</ul>
+	
 			</div>
-			<!-- </div> -->
 		</header>
 
 
 		<section id="portfolio">
 			<h2 class="hidden">Portfolio</h2>
-			<section>
-			<h1 class="pTitle title">PORTFOLIO</h1>
+			
+			<h1 class="pTitle">PORTFOLIO</h1>
 			<div id="portfolio-menu">
 				<h2 id="design" style="color: rgb(85, 85, 85);">Design</h2>
 				<h2 id="development" style="">Development</h2>
 				<h2 id="artwork" style="">Artwork</h2>
 			</div>
-			<!-- <svg id="underline" height="3" width="1366">
-  				<line x1="100" y1="0" x2="1184" y2="0" style="stroke:#777777;stroke-width:3"></line> -->
-			</svg>
-		</section>
+		
 
 		
 
 		<section id="development-page" style="display: none;">
 			<h2 class="hidden">Development page</h2>
-
+			<div class="center">
 			<!-- CARDS BEGIN -->
-			<div id="section1">
+			<div class="card">
+				<img class="data-ref" src="images/logo_hrd-white.png" alt="HR Downloads">
+				<h3>Back End Dev</h3>
+				<p>Working on a team of three to create the Time and Attendance module that will fit into HRDownload's greater product. This app will use laravel--with eloquent models and migrations--as well as vue.js components.</p>
+				<p>The module is being created for multiple users with different levels of access to features. Managers will be able to create, set and assign schedules and Employees will be able to see their schedule and request time off. Daily scrum, weekly sprints and frequent code review will see that this product is complete in early April</p>
+				<a href="#portfolio" target="_blank">SEE THE TEAM</a>
+			</div>
+
+			<div class="card">
+				<h1 class="summerLEDC">#discoverldnont</h1>
+				<h3>Back End Dev</h3>
+				<p>In three weeks, without prior knowledge of php or MVC, our team of two delivered this mobile-first web app for the LEDC's treasure hunt contest. Through client meetings, our team settled on Code Igniter and core PHP with a mySQL database for the back-end. The front-end uses foundation to create the responsive environment.</p>
+				<p>Students who registered their team on the app, recieved an email to sign in to their team's checklist and begin completing tasks. The committee who determined the winner could see each team's progress in real time from their dashboard.</p>
+				<a href="http://www.reactr.ca/scavenger/index.php/welcome" target="_blank">SEE FULL SITE</a>
+			</div>
+
+			<div class="card">
+				<h1 class="summerLEDC">Parallax Two Ways</h1>
+				<h3>Front End Dev</h3>
+				<p>Here are two different examples of depth using javascript and css to create a parallax effect</p>
+				<p>Students who registered their team on the app, recieved an email to sign in to their team's checklist and begin completing tasks. The committee who determined the winner could see each team's progress in real time from their dashboard.</p>
+				<a href="parallax/index.html" target="_blank">SEE FULL SITE</a>
+			</div>
+
+			
+
 				<div class="card">
 				<img class="data-ref" src="images/logo_parker-white.svg" alt="Parker Clothing Logo">
-				<h3>Parker Clothing</h3>
-				<p>Developed purely with HTML and CSS this website serves as a tribute to CSS3 transitions. Illustrator and Photoshop were used to create all graphic content.</p>
+				<h3>Front End Dev</h3>
+				<p>With javascript turned off in the browser this site still works seamlessly. Developed purely with HTML and CSS this website serves as a tribute to CSS3 transitions. Illustrator and Photoshop were used to create all graphic content.</p>
 				<a href="" target="_blank">SEE FULL SITE</a>
 			</div>
 			
-			<div class="card">
+			<!-- <div class="card">
 				<img class="data-ref" src="images/logo_lotr.png" alt="Lord of the Rings Logo">
-				<h3>Lord of the Rings: The Adventure App</h3>
+				<h3>Front End Dev</h3>
 				<p>This project is an excersize in front-end development. It utilizes a combination of vanilla javascript and the greensock library to animate items as well as sass to make style development more efficient.</p>
 				<a href="file:///Users/alexandra/Desktop/mastracci_natalie_portfolio-q/lotr/index.html" target="_blank">SEE FULL SITE</a>
-			</div>
+			</div> -->
 
-			<div class="card">
-				<!-- <img src="images/logo_parker-white.svg" alt="Parker Clothing Logo"> -->
-				<h1 id="summerLEDC">#discoverldnont</h1>
-				<h3>LEDC Student Scavenger Hunt</h3>
-				<p>As the back-end developer, our team this site used foundation for responsive, mobile-first-application. Code Igniter and core PHP on the server were used with a mySQL database.</p>
-				<a href="http://www.reactr.ca/scavenger/index.php/welcome" target="_blank">SEE FULL SITE</a>
-			</div>
+			
 			</div>
 
 		</section>
@@ -236,14 +246,16 @@ if (isset($_POST['name'])) {
 			<div id="greenDress"></div>
 			<img id="name4" class="backwhite" src="images/m_logo-backwhite.png" alt="letter m">
 
+		
 		</section>
 		</section>
 
 
 
-		<!-- CONTACT SECTION -->
+		<!-- CONTACT -->
 
 		<section class="contact-box" id="form">
+			<h1 class="hidden">Let's Keep In Touch</h1>
 			<h1 class="title ">Let's Keep In Touch</h1>
 			<!-- like what you see? -->
 			<p class=" description" >Why not fill out the form below and say hello?</p>
@@ -258,7 +270,7 @@ if (isset($_POST['name'])) {
 				<input class="street hidden" name="street" type="text" size="21" maxlength="30" />
 
 				<label class="contact-label" for="message">message</label>
-				<textarea class="form-mat" type="text"  id="message" name="message"></textarea>
+				<textarea class="form-mat"   id="message" name="message"></textarea>
 				<button type="submit"  id="sendbutton">SUBMIT</button>         
                 
 			</form>
@@ -269,14 +281,16 @@ if (isset($_POST['name'])) {
 		
 		<footer>
 			<ul class="footer-nav">
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="portfolio.html">PORTFOLIO</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
+				<!-- <li><a href="index.html">HOME</a></li> -->
+				<li><a href="#portfolio">PORTFOLIO</a></li>
+				<li><a href="#form">CONTACT</a></li>
 			</ul>
 			<h6 class="cright">© Natalie Mastracci 2017</h6>
-			<img class="linkedIn" src="images/social-linkedin.png" alt="linkedIn logo">
-				<img class="twitter" src="images/social-twitter.png" alt="twitter logo">
-				<img class="instagram" src="images/social-instagram.png" alt="instagram logo">	
+				<a href="https://www.instagram.com/nmastracci/"><img class="instagram" src="images/social-instagram.png" alt="instagram logo"></a>	
+				
+				<a href="https://twitter.com/NMastracci"><img class="twitter" src="images/social-twitter.png" alt="twitter logo"></a>
+				<a href="https://www.linkedin.com/in/natalie-mastracci-b8772257/"><img class="linkedIn" src="images/social-linkedin.png" alt="linkedIn logo"></a>
+				
 		</footer>
 	</div>
 
@@ -284,12 +298,7 @@ if (isset($_POST['name'])) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/easing/EasePack.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js"></script>
-<!--build:js js/main.min.js -->
-<!-- <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/portfolio.js"></script>
-<script type="text/javascript" src="js/headerColour.js"></script>
-<script type="text/javascript" src="js/scrollNav.js"></script> -->
-<!-- endbuild -->
+
 <script type="text/javascript" src="prod/js/scripts.js"></script>
 
 </body></html>
