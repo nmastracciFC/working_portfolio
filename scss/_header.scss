@@ -1,17 +1,8 @@
-
-// #headerColour {
-	
-	
-// 	@include medium-up {
-	
-// 	}
-// 	@include large-up {
-		
-// 	}
-	
-// }
 #headerBack {
-	position: relative;
+	width:100%;
+	display:grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(12, 1fr);
 	// margin-top: 20px;
 	
 	// height:1307px;
@@ -35,44 +26,57 @@
 }
 
 #heading {
+	grid-column-start:2;
+	grid-column-end:6;
+	grid-row-start:2;
+	grid-row-end:4;
 	
-	z-index: 2;
+	
 	color: #555;
 	@include medium-up {
 
 	}
 	@include large-up {
 	
-	z-index: 2;
-	color: #555;
+	
+	
 	}
 
 	h1 {
+		@include large-up {
+
+
 		font-family: $fontfamilythick;
 		font-size: 65px;
 		
 		display:inline-block;
+		}
 	}
 	h2 {
+		@include large-up {
 		font-family: $fontfamilybody;
 		font-size: 36px;
 		margin-bottom: 20px;
 		letter-spacing: 4.1px;
 		display:inline-block;
-		
+		}
 	}
 	h3{
+		@include large-up {
 		font-family: $fontfamilybody;
 		font-size: 25px;
 		margin-bottom: 15px;
+	}
 
 	}
 	h4{
+		@include large-up {
 		font-family: $fontfamilybody;
 		font-size: 20px;
 		margin-bottom: 10px;
 		
 		display:inline-block;
+	}
 
 	}
 	#to-portfolio {
@@ -97,30 +101,40 @@
 	}
 }
 #sub-head {
-	
+	grid-column-start:6;
+	grid-column-end:12;
+	grid-row-start:6;
+	grid-row-end:12;
+
 	z-index: 2;
 	color: #555;
 	text-align: left;
 	@include large-up {
 	
 	z-index: 2;
-	color: #555;
+	
 	text-align: left;
 	}
 	h2{
+		@include large-up {
 		font-family: $fontfamilythick;
 		font-size: 40px;
 		margin-bottom: 30px;
 	}
+	}
 	h3{
+		@include large-up {
 		font-family: $fontfamilybody;
 		font-size: 17px;
 		margin-bottom: 10px;
 		margin-left: 40px;
 	}
+	}
 	h4 {
+		@include large-up {
 		font-family: $fontfamilybody;
 		font-size: 17px;
 		margin-left: 40px;
 	}
+}
 }
