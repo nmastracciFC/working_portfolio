@@ -85,12 +85,13 @@
 }
 //DEVELOPMENT
 #development-page {
-	width: 375px;
+	margin:0 auto;
+	// width: 375px;
 	@include medium-up {
-		width:750px;
+		// width:750px;
 	}
 	@include large-up {
-	width: 1200px;
+	// width: 1200px;
 	margin:0 auto;
 	display:flex;
 	justify-content: center;
@@ -194,7 +195,7 @@
 //ARTWORK
 @include large-up {
 #artwork-page {
-	
+	// @include large-up {
 	overflow: hidden;
 	width:1366px;
 	height:3000px;
@@ -291,8 +292,8 @@
 //ARTWORK end
 
 .card {
-	width: 320px;
-	height:360px;
+	width: 20em;
+	// height:360px;
 	background-color: $maincolor;
 	// background-color: $portfolioback;
 	// color: #555;
@@ -300,12 +301,13 @@
 	display: inline-block;
 	overflow:hidden;
 	margin: 1.5em auto;
-	margin-left:1.7em;
+	margin-left:3em;
 	@include medium-up {
-	margin-left:50px;
+		// width: 15.625em;
+	margin-left:3em;
 	}
 	img {
-		width:280px;
+		width:17.5em;
 		margin: 40px 20px;
 	}
 	h3 {
@@ -345,13 +347,17 @@
 //DEVELOPMENT
 
 #summerLEDC {
-	margin: 40px 20px;
+	// margin: 2.5em 1.25em;
+	margin: 1.5em auto;
 	font-family: 'Montserrat';
     font-weight: 600;
     font-style: normal;
     color: #fff;
-    font-size: 33px;
+    font-size: 2em;
     text-align: center;
+	@include large-up {
+
+	}
 }
 
 

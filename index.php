@@ -20,13 +20,11 @@ if (isset($_POST['name'])) {
 	} 
 }
 
+?> 
 
-	// include('admin/scripts/getPics.php');
-	// echo $rows;
-?>
-
-
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Natalie Mastracci</title>
@@ -79,8 +77,6 @@ if (isset($_POST['name'])) {
 				<h2 id="development" style="">Development</h2>
 				<h2 id="artwork" style="">Artwork</h2>
 			</div>
-
-			</svg>
 		</section>
 
 		
@@ -89,11 +85,16 @@ if (isset($_POST['name'])) {
 			<h2 class="hidden">Development page</h2>
 
 			<!-- CARDS BEGIN -->
-			
+			<div class="card">
+				<img class="data-ref" src="images/logo_hrd-white.png" alt="HR Downloads">
+				<h3>Back End Dev</h3>
+				<p>Working on a team of three to create the Time and Attendance module that will fit into HRDownload's greater product. This app will use laravel--with eloquent models and migrations--as well as vue.js components. Daily scrum and weekly sprints will see that this product is complete in early April</p>
+				<a href="http://www.reactr.ca/scavenger/index.php/welcome" target="_blank">SEE TEAM</a>
+			</div>
 
 			<div class="card">
 				<h1 id="summerLEDC">#discoverldnont</h1>
-				<h3>LEDC Student Scavenger Hunt</h3>
+				<h3>Back End Dev</h3>
 				<p>As the back-end developer, our team this site used foundation for responsive, mobile-first-application. Code Igniter and core PHP on the server were used with a mySQL database.</p>
 				<a href="http://www.reactr.ca/scavenger/index.php/welcome" target="_blank">SEE FULL SITE</a>
 			</div>
@@ -101,14 +102,14 @@ if (isset($_POST['name'])) {
 			<div id="section1">
 				<div class="card">
 				<img class="data-ref" src="images/logo_parker-white.svg" alt="Parker Clothing Logo">
-				<h3>Parker Clothing</h3>
+				<h3>Front End Dev</h3>
 				<p>Developed purely with HTML and CSS this website serves as a tribute to CSS3 transitions. Illustrator and Photoshop were used to create all graphic content.</p>
 				<a href="" target="_blank">SEE FULL SITE</a>
 			</div>
 			
 			<div class="card">
 				<img class="data-ref" src="images/logo_lotr.png" alt="Lord of the Rings Logo">
-				<h3>Lord of the Rings: The Adventure App</h3>
+				<h3>Front End Dev</h3>
 				<p>This project is an excersize in front-end development. It utilizes a combination of vanilla javascript and the greensock library to animate items as well as sass to make style development more efficient.</p>
 				<a href="file:///Users/alexandra/Desktop/mastracci_natalie_portfolio-q/lotr/index.html" target="_blank">SEE FULL SITE</a>
 			</div>
@@ -223,14 +224,15 @@ if (isset($_POST['name'])) {
 			<div id="greenDress"></div>
 			<img id="name4" class="backwhite" src="images/m_logo-backwhite.png" alt="letter m">
 
+		
 		</section>
-		</section>
 
 
 
-		<!-- CONTACT SECTION -->
+		<!-- CONTACT -->
 
 		<section class="contact-box" id="form">
+			<h1 class="hidden">Let's Keep In Touch</h1>
 			<h1 class="title ">Let's Keep In Touch</h1>
 			<!-- like what you see? -->
 			<p class=" description" >Why not fill out the form below and say hello?</p>
@@ -245,7 +247,7 @@ if (isset($_POST['name'])) {
 				<input class="street hidden" name="street" type="text" size="21" maxlength="30" />
 
 				<label class="contact-label" for="message">message</label>
-				<textarea class="form-mat" type="text"  id="message" name="message"></textarea>
+				<textarea class="form-mat"   id="message" name="message"></textarea>
 				<button type="submit"  id="sendbutton">SUBMIT</button>         
                 
 			</form>
