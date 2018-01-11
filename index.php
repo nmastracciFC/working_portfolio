@@ -38,7 +38,7 @@ if (isset($_POST['name'])) {
 	<h1 class="hidden">title</h1>
 	<div id="container">
 		
-	<!-- 	<nav>
+		<nav>
 			<img id="logo" src="images/logo-g.png" alt="Natalie's Logo">
 			<p id="logoText">Natalie Mastracci</p>
 
@@ -47,41 +47,26 @@ if (isset($_POST['name'])) {
 				<li><a href="portfolio.html">PORTFOLIO</a></li>
 				<li><a href="contact.html">CONTACT</a></li>
 			</ul>
-		</nav>  -->
+		</nav> 
 
 		
 
 		<header  id="headerBack">
-		<!-- <div >	 -->
-				
-			
-			<!-- TULIPS -->
-			<!-- <img class="stay-put" id="nLogo" src="images/nm_logo-large-grey.png" alt="Natalie's Logo"> -->
-			<!-- <img class="stay-put" id="tulip1" src="images/tulip-dark-green.png" alt="tulip drawing">
-			<img class="stay-put" id="tulip2" src="images/tulip-light-green.png" alt="tulip drawing">
-			<img class="stay-put" id="tulip3" src="images/tulip-yellow-green.png" alt="tulip drawing">
-			<img class="stay-put" id="nLogo" src="images/nm_logo-large-grey.png" alt="Natalie's Logo">
-			<img class="stay-put" id="tulip4" src="images/tulip-dark-pink.png" alt="tulip drawing">
-			<img class="stay-put" id="tulip5" src="images/tulip-light-pink.png" alt="tulip drawing">
-			<img class="stay-put" id="tulip6" src="images/tulip-white.png" alt="tulip drawing"> -->
 
-			
  			<div id="heading">
  				<h1 >Natalie Mastracci</h1>
 				<h4 id="to-portfolio">Go to Portfolio &gt;</h4>
 				<h4 id="to-contact" >Keep in Touch  &gt;</h4>
 			</div>
-			<!-- <img id="eight" src="images/eight-nowhite.png" alt="eight rowing"> -->
+			<img id="eight" src="images/eight-nowhite.png" alt="eight rowing">
 
 			<div id="sub-head">
 				
 				<h2>Designer &amp; Developer</h2>
 				<h3>I believe efficiency, functionality and beauty are created equal but above all else make something great.</h3>
 				<h4>Skills include: responsive web design, PHP, mySQL, MVC framework (ex. Laravel, codeigniter), core Javascipt and popular JS libraries (such as greensock, D3.js and three.js), cinema4D and the adobe creative cloud suite.</h4>
-				
-				
+	
 			</div>
-			<!-- </div> -->
 		</header>
 
 
@@ -94,8 +79,7 @@ if (isset($_POST['name'])) {
 				<h2 id="development" style="">Development</h2>
 				<h2 id="artwork" style="">Artwork</h2>
 			</div>
-			<!-- <svg id="underline" height="3" width="1366">
-  				<line x1="100" y1="0" x2="1184" y2="0" style="stroke:#777777;stroke-width:3"></line> -->
+
 			</svg>
 		</section>
 
@@ -105,6 +89,15 @@ if (isset($_POST['name'])) {
 			<h2 class="hidden">Development page</h2>
 
 			<!-- CARDS BEGIN -->
+			
+
+			<div class="card">
+				<h1 id="summerLEDC">#discoverldnont</h1>
+				<h3>LEDC Student Scavenger Hunt</h3>
+				<p>As the back-end developer, our team this site used foundation for responsive, mobile-first-application. Code Igniter and core PHP on the server were used with a mySQL database.</p>
+				<a href="http://www.reactr.ca/scavenger/index.php/welcome" target="_blank">SEE FULL SITE</a>
+			</div>
+
 			<div id="section1">
 				<div class="card">
 				<img class="data-ref" src="images/logo_parker-white.svg" alt="Parker Clothing Logo">
@@ -120,13 +113,7 @@ if (isset($_POST['name'])) {
 				<a href="file:///Users/alexandra/Desktop/mastracci_natalie_portfolio-q/lotr/index.html" target="_blank">SEE FULL SITE</a>
 			</div>
 
-			<div class="card">
-				<!-- <img src="images/logo_parker-white.svg" alt="Parker Clothing Logo"> -->
-				<h1 id="summerLEDC">#discoverldnont</h1>
-				<h3>LEDC Student Scavenger Hunt</h3>
-				<p>As the back-end developer, our team this site used foundation for responsive, mobile-first-application. Code Igniter and core PHP on the server were used with a mySQL database.</p>
-				<a href="http://www.reactr.ca/scavenger/index.php/welcome" target="_blank">SEE FULL SITE</a>
-			</div>
+			
 			</div>
 
 		</section>
@@ -286,12 +273,7 @@ if (isset($_POST['name'])) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/easing/EasePack.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js"></script>
-<!--build:js js/main.min.js -->
-<!-- <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/portfolio.js"></script>
-<script type="text/javascript" src="js/headerColour.js"></script>
-<script type="text/javascript" src="js/scrollNav.js"></script> -->
-<!-- endbuild -->
+
 <script type="text/javascript" src="prod/js/scripts.js"></script>
 
 </body></html>
