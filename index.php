@@ -39,6 +39,14 @@ if (isset($_POST['name'])) {
 		<nav>
 			<img id="logo" src="images/logo-g.png" alt="Natalie's Logo">
 			<p id="logoText">Natalie Mastracci</p>
+			<!-- <div class="social">
+				<a href="https://www.instagram.com/nmastracci/"><img class="instagram" src="images/social-instagram.png" alt="instagram logo"></a>	
+				
+				<a href="https://twitter.com/NMastracci"><img class="twitter" src="images/social-twitter.png" alt="twitter logo"></a>
+				<a href="https://www.linkedin.com/in/natalie-mastracci-b8772257/"><img class="linkedIn" src="images/social-linkedin.png" alt="linkedIn logo"></a>
+				
+				
+			</div> -->
 
 			<ul class="main-nav">
 				<li><a href="index.html">HOME</a></li>
