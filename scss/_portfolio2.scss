@@ -7,14 +7,18 @@
 	// }
 }
 .pTitle {
-	font-family: $fontfamilythin;
-	// font-family: $fontfamilythin;
+	
+	font-family: $fontfamilythick;
 	font-size: 4em;
 	text-align: center;
-	// letter-spacing: 50px;
+	color: #555;
+	letter-spacing: 2px;
 	// margin-right:-50px;
 	// margin-bottom: 50px;
 	// width:375px;
+	@include medium-up {
+		font-family: $fontfamilythin;
+	}
 	@include large-up {
 		
 		font-size: 60px;
@@ -188,101 +192,102 @@
 }
 
 //ARTWORK
-// #artwork-page {
-// 	@include large-up {
-// 	overflow: hidden;
-// 	width:1366px;
-// 	height:3000px;
-// 	position:relative;
-// 	display:none;
-// }
-// }
-// #walking {
-// 	position: absolute;
-// 	top:300px;
-// 	left:1040px;
-// 	height:434px;
-// 	width: 236px;
-// 	overflow: hidden;
-// 	background-image: url(../../images/art_walking.jpg);
-// 	background-position: right;
-// 	// background-position: -984px;
-// 	background-repeat: no-repeat;
-// 	background-attachment: fixed;
-// 	// background-size: cover;
-// }
-// #ashley {
-// 	position: absolute;
-// 	top:150px;
-// 	left:200px;
-// 	height:320px;
-// 	width: 488px;
-// 	overflow: hidden;
-// 	background-image: url(../../images/art_ashley.jpg);
-// 	background-position: -10px;
-// 	background-repeat: no-repeat;
-// 	background-attachment: fixed;
-// }
+@include large-up {
+#artwork-page {
+	
+	overflow: hidden;
+	width:1366px;
+	height:3000px;
+	position:relative;
+	display:none;
+}
+#walking {
+	position: absolute;
+	top:300px;
+	left:1040px;
+	height:434px;
+	width: 236px;
+	overflow: hidden;
+	background-image: url(../../images/art_walking.jpg);
+	background-position: right;
+	// background-position: -984px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	// background-size: cover;
+}
+#ashley {
+	position: absolute;
+	top:150px;
+	left:200px;
+	height:320px;
+	width: 488px;
+	overflow: hidden;
+	background-image: url(../../images/art_ashley.jpg);
+	background-position: -10px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 
-// #christine {
-// 	position: absolute;
-// 	top: 600px;
-// 	left:150px;
-// 	height: 223px;
-// 	width: 483px;
-// 	overflow: hidden;
-// 	background-image: url(../../images/art_christine.jpg);
-// 	background-position: left;
-// 	background-repeat: no-repeat;
-// 	background-attachment: fixed;
-// }
-// #purpleDress {
-// 	position: absolute;
-// 	top: 950px;
-// 	left: 636px;
-// 	height:708px;
-// 	width:668px;
-// 	overflow: hidden;
-// 	background-image: url(../../images/art_purpleDress.jpg);
-// 	background-position: right;
-// 	background-repeat: no-repeat;
-// 	background-attachment: fixed;
+#christine {
+	position: absolute;
+	top: 600px;
+	left:150px;
+	height: 223px;
+	width: 483px;
+	overflow: hidden;
+	background-image: url(../../images/art_christine.jpg);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+#purpleDress {
+	position: absolute;
+	top: 950px;
+	left: 636px;
+	height:708px;
+	width:668px;
+	overflow: hidden;
+	background-image: url(../../images/art_purpleDress.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 
-// }
+}
 
-// #profile {
-// 	position: absolute;
-// 	top: 1550px;
-// 	left: 120px;
-// 	height:1125px;
-// 	width:462px;
-// 	overflow: hidden;
-// 	background-image: url(../../images/art_profile.jpg);
-// 	background-position: left;
-// 	background-repeat: no-repeat;
-// 	background-attachment: fixed;
-// }
+#profile {
+	position: absolute;
+	top: 1550px;
+	left: 120px;
+	height:1125px;
+	width:462px;
+	overflow: hidden;
+	background-image: url(../../images/art_profile.jpg);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 
-// #greenDress {
-// 	position: absolute;
-// 	top: 2000px;
-// 	left: 950px;
-// 	height:1427px;
-// 	width:281px;
-// 	overflow: hidden;
-// 	background-image: url(../../images/art_greenDress.jpg);
-// 	background-position: right;
-// 	background-repeat: no-repeat;
-// 	background-attachment: fixed;
-// }
+#greenDress {
+	position: absolute;
+	top: 2000px;
+	left: 950px;
+	height:1427px;
+	width:281px;
+	overflow: hidden;
+	background-image: url(../../images/art_greenDress.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 
-// .backwhite {
-// 	position: absolute;
-// 	&:last-child{
-// 		left:900px;
-// 		z-index: -3;
-// 	}
-// }
+.backwhite {
+	position: absolute;
+	&:last-child{
+		left:900px;
+		z-index: -3;
+	}
+}
+}
 //ARTWORK
 
 .card {
@@ -295,6 +300,7 @@
 	display: inline-block;
 	overflow:hidden;
 	margin: 1.5em auto;
+	margin-left:1.7em;
 	@include medium-up {
 	margin-left:50px;
 	}
