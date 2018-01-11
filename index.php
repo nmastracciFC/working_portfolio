@@ -49,9 +49,9 @@ if (isset($_POST['name'])) {
 			</div> -->
 
 			<ul class="main-nav">
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="portfolio.html">PORTFOLIO</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
+				<!-- <li><a href="index.html">HOME</a></li> -->
+				<li><a href="#portfolio">PORTFOLIO</a></li>
+				<li><a href="#form">CONTACT</a></li>
 			</ul>
 		</nav> 
 
@@ -121,7 +121,7 @@ if (isset($_POST['name'])) {
 			</div>
 
 			<div class="card">
-				<h1 class="summerLEDC">Parallax Two Ways</h1>
+				<h1 class="summerLEDC">Parallax Exercise</h1>
 				<h3>Front End Dev</h3>
 				<p>Here are two different examples of depth using javascript and css to create a parallax effect</p>
 				<p>Students who registered their team on the app, recieved an email to sign in to their team's checklist and begin completing tasks. The committee who determined the winner could see each team's progress in real time from their dashboard.</p>

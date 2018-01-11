@@ -14,6 +14,7 @@
 	}
 	@include large-up {
 		background-image: url(../../images/sgnm-long.jpg);
+		background-position:center;
 	}
 }
 
@@ -31,6 +32,11 @@
 		width:40em;
 		grid-column-start:4;
 	}
+	@include large-up {
+		width: 60em;
+		grid-column-start:4;
+		grid-row-start:6;
+	}
 }
 
 #heading {
@@ -46,7 +52,7 @@
 
 	}
 	@include large-up {
-	
+		grid-row-start:2;
 	
 	
 	}
@@ -99,10 +105,10 @@
 
 		@include large-up {
 		font-family: $fontfamilybody;
-		font-size: 1.25em;
+		font-size: 1.7em;
 		margin-bottom: 10px;
 		
-		display:inline-block;
+		display:block;
 	}
 
 	}
@@ -116,7 +122,7 @@
 		&:hover {
 			color: #000;
 			margin-left: 5px;
-			font-size: 21px;
+			font-size: 1.75em;
 		}
 	}
 	}
@@ -128,24 +134,26 @@
 		transition: all 0.5s ease;
 		&:hover {
 			color: #000;
-			font-size: 21px;
-		}
+			font-size: 1.75em;		}
 	}
 	}
 }
 #sub-head {
 	grid-column-start:6;
 	grid-column-end:12;
-	grid-row-start:7;
+	grid-row-start:6;
 	grid-row-end:12;
 
 	z-index: 2;
 	color: #555;
 	text-align: left;
+	@include medium-up {
+		grid-row-start:7;
+	}
 	@include large-up {
-	
-	z-index: 2;
-	
+		grid-column-start:7;
+
+		grid-row-start:8;
 	text-align: left;
 	}
 	h2{
@@ -158,8 +166,8 @@
 		}
 		@include large-up {
 		font-family: $fontfamilythick;
-		font-size: 2.5px;
-		margin-bottom: 1.9px;
+		font-size: 2.8em;
+		margin-bottom: 1.3em;
 	}
 	}
 	h3{
@@ -170,9 +178,9 @@
 		}
 		@include large-up {
 		
-		font-size: 17px;
+		font-size: 1.5em;
 		margin-bottom: 10px;
-		margin-left: 40px;
+		// margin-left: 40px;
 	}
 	}
 	h4 {
@@ -181,8 +189,8 @@
 		}
 		@include large-up {
 		font-family: $fontfamilybody;
-		font-size: 17px;
-		margin-left: 40px;
+		font-size: 1.5em;
+		// margin-left: 40px;
 	}
 }
 }

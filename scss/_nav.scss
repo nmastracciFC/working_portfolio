@@ -9,21 +9,26 @@
 		opacity: 0.5;
 	}
 	}
+	@include large-up {
+		margin: 1.6em 0 2em 2em;
+	}
 }
 #logoText {
 	display:none;
 
-	@include large-up {
-	color: $navcolor;
-	display:inline;
-	font-family: $fontfamilythin;
-	font-size: 25px;
-	letter-spacing: 0.220em;
-	margin-left: 27px;
-	margin-bottom:30px;
-	transition: all 0.5s ease;
+	// @include large-up {
+	// 	vertical-align: top;
+	// color: $navcolor;
+	// display:inline;
+	// font-family: $fontfamilythin;
+	// font-size: 1.1em;
+	// letter-spacing: 0.220em;
+	// margin-top:2em;
+	// margin-left: 1.3em;
+	// // margin-bottom:30px;
+	// transition: all 0.5s ease;
 	
-	}
+	// }
 }
 #logoText:hover {
 	margin:33px;
@@ -34,6 +39,7 @@
 	float:right;
 	display:none;
 	@include medium-up {
+		display:inline-block;
 	
 	margin-top: 3.938em;
 	}
