@@ -39,20 +39,23 @@ if (isset($_POST['name'])) {
 		<nav>
 			<img id="logo" src="images/logo-g.png" alt="Natalie's Logo">
 			<p id="logoText">Natalie Mastracci</p>
-			<!-- <div class="social">
+			
+
+			
+
+			<div class="social">
 				<a href="https://www.instagram.com/nmastracci/"><img class="instagram" src="images/social-instagram.png" alt="instagram logo"></a>	
 				
 				<a href="https://twitter.com/NMastracci"><img class="twitter" src="images/social-twitter.png" alt="twitter logo"></a>
 				<a href="https://www.linkedin.com/in/natalie-mastracci-b8772257/"><img class="linkedIn" src="images/social-linkedin.png" alt="linkedIn logo"></a>
+			</div>
+		<ul class="main-nav">
 				
-
-			</div> -->
-
-			<ul class="main-nav">
-				<!-- <li><a href="index.html">HOME</a></li> -->
 				<li><a href="#portfolio">PORTFOLIO</a></li>
 				<li><a href="#form">CONTACT</a></li>
 			</ul>
+
+
 		</nav> 
 
 		
@@ -106,10 +109,6 @@ if (isset($_POST['name'])) {
 			<p class="lightbox-desc">Placeholder Copy</p>
 		</section>
 
-		
-		<!-- <span class="data-ref" id="8">AJAX ME</span>
-		<img id="ajaxPic" src="" alt="ajax display">
-		<p id="ajaxDesc">placeholder</p> -->
 
 
 		<section id="development-page" style="display: none;">
@@ -121,7 +120,6 @@ if (isset($_POST['name'])) {
 				<h3>Back End Dev</h3>
 				<p>Working on a team of three to create the Time and Attendance module that will fit into HRDownload's greater product. This app will use laravel--with eloquent models and migrations--as well as vue.js components.</p>
 				<p>The module is being created for multiple users with different levels of access to features. Managers will be able to create, set and assign schedules and Employees will be able to see their schedule and request time off. Daily scrum, weekly sprints and frequent code review will see that this product is complete in early April</p>
-				<!-- <a class="to-box" id="hrd" href="#portfolio" >SEE THE TEAM</a> -->
 				<span class="to-box" id="8">SEE THE TEAM</span>
 			</div>
 

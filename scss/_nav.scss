@@ -75,3 +75,11 @@
 
 
 } 
+.social {
+	display:none;
+	@include large-up {
+	display: inline-block;
+	float:right;
+	margin-top:3em;
+	}
+}

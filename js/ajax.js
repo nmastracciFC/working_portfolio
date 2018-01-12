@@ -1,4 +1,4 @@
-// const button = document.querySelector(".data-ref");
+
 const xhr = new XMLHttpRequest();
 const toBox = document.querySelector(".to-box");
 	
@@ -68,7 +68,6 @@ function lightboxMe() {
 }
 
 function closeLightbox(){
-	// debugger;
 	window.scrollTo(0,1000);
 	document.body.style.overflow = "auto";
 	let lightbox = document.querySelector(".i-love-lightboxes");
