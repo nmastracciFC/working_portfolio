@@ -47,20 +47,26 @@ footer {
 	height: 8em;
 
 	padding-bottom: 15px;
+	@include medium-up {
+		height: 3em;
+	}
 	@include large-up {
 		height: 4em;
 	}
 }
 .footer-nav {
 	// float: left;
-	// margin-top: 50px;
+	
 	background-color: #fff;
 	padding:25px;
 	display: block;
+	@include medium-up {
+		// margin-top: 50px;
+		display:inline-block;
+	}
 	@include large-up {
 	 display:inline-block;
 	}
-
 	li{
 	display: inline;
 	margin-right: 40px;
@@ -80,16 +86,28 @@ footer {
 	color: $navcolor;
 	// margin-top:70px;
 	padding-left:1.5em;
+	padding-top:1em;
+	@include medium-up {
+		padding-top: 0;
+	}
 }
 .linkedIn {
 	float: right;
 	vertical-align: bottom;
 	text-align: left;
 	padding-right: 0.5em;
+	// padding-top:0;
+	// @include medium-up {
+	// 	padding-top:0;
+	// }
+	// @include large-up {
+	// 	padding-top:4em;
+	// }
 }
 .twitter {
 	@extend .linkedIn;
 	// padding-right: 0.5em;
+	
 	
 }
 .instagram {

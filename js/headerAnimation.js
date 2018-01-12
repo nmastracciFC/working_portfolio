@@ -1,55 +1,26 @@
 console.log("headerAnimation.js is attached");
 
-// const headerBox = document.querySelector("#headerColour"),
-// 	splatter = document.querySelectorAll(".stay-put");;
-// const nLarge = document.querySelector("#en"),
-// 	name = document.querySelector("#heading"),
-// 	skill = document.querySelector("#sub-head");
-// 	console.log(name, skill);
-// // TULIPS
-// const tulip1 = document.querySelector("#tulip1"),	
-// 	tulip2 = document.querySelector("#tulip2"),
-// 	tulip3 = document.querySelector("#tulip3"),
-// 	tulip4 = document.querySelector("#tulip4"),
-// 	tulip5 = document.querySelector("#tulip5"),
-// 	tulip6 = document.querySelector("#tulip6"),
-// 	nLogo = document.querySelector("#nLogo");
+function organize() {
+	let nav = document.querySelector("nav");
+	let headingH1 = document.querySelector("#heading h1");
+	let headingH3 = document.querySelector("#heading h3");
+	let headingH4 = document.querySelectorAll("#heading h4");
+	let eight = document.querySelector("#eight");
+	let subHeadH2 = document.querySelector("#sub-head h2");
+	let subHeadH3 = document.querySelector("#sub-head h3");
+	let subHeadH4 = document.querySelector("#sub-head h4");
+
+	TweenLite.from(nav, 0.7, {y:-100, ease:Power2.easeOut});
+	TweenLite.from(headingH1, 1, {opacity:0, y:50, ease:Power2.easeOut, delay:0.6});
+	TweenLite.from(headingH3, 1, {opacity:0, x:-100, ease:Power2.easeOut, delay:1.2 });
+	TweenLite.from(headingH4, 0.8, {opacity:0, x:-50, ease:Power2.easeOut, delay:1.5});
+	TweenLite.from(eight, 4, {opacity:0, ease:Power2.easeIn, delay: 0.5});
+	TweenLite.from(subHeadH2, 1, {opacity:0, y:-50, ease:Power2.easeOut, delay:1.7});
+	TweenLite.from(subHeadH3, 1, {opacity:0, y:-50, ease:Power2.easeOut, delay:1.9});
+	TweenLite.from(subHeadH4, 1, {opacity:0, y:-50, ease:Power2.easeOut, delay:2.1});
+
+}
 
 
-// function parallaxHeader() {
-// 	var scroll = window.pageYOffset;
-// 	// console.log(scroll);
-// 	// console.log(headerBox.getBoundingClientRect().bottom);
-
-// 	tulip1.style.top = -scroll * 0.2 + "px";	
-// 	tulip2.style.top = -scroll * 0.4 + "px";
-// 	tulip3.style.top = -scroll * 0.6 + "px";
-// 	tulip4.style.top = -scroll * 0.8 + "px";
-// 	tulip5.style.top = -scroll * 1 + "px";
-// 	tulip6.style.top = -scroll * 1.2 + "px";
-// 	nLogo.style.top = scroll * 0.8 + "px";
-
-
-// 	if (headerBox.getBoundingClientRect().bottom <= 350 ) {
-// 		TweenLite.to(splatter, 0.5, {opacity:0, ease:Power1.easeOut, onComplete: hide});
-// 		// TweenLite.to(name, 0.8, {x:-500, ease:Power2.easeOut});
-// 		// TweenLite.to(skill, 0.8, {x:500, ease:Power2.easeOut});
-
-// 		function hide(){
-// 			nLogo.classList.add("hidden");
-// 		}
-		
-// 	} else if (headerBox.getBoundingClientRect().bottom >= 350) {
-// 		function show(){
-// 			nLogo.classList.remove("hidden");
-// 		}
-// 		show();
-// 		TweenLite.to(splatter, 1, {opacity:1, ease:Power1.easeOut});
-// 		// TweenLite.to(name, 0.8, {x:0, ease:Power2.easeOut});
-// 		// TweenLite.to(skill, 0.8, {x:0, ease:Power2.easeOut});
-// 	}
-	
-	
-// }
-
-// window.addEventListener("scroll", function(){requestAnimationFrame(parallaxHeader);}, false);
+window.addEventListener("load", organize, false);
+// window.addEventListener("scroll", revealPort, false);

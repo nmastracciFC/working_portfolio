@@ -18,6 +18,8 @@
 	// width:375px;
 	@include medium-up {
 		font-family: $fontfamilythin;
+		letter-spacing: 0.4em;
+		margin-right:-0.4em;
 	}
 	@include large-up {
 		
@@ -75,15 +77,6 @@
 }
 }
 
-// #section1 {
-// 	width:375px;
-// 	@include medium-up {
-// 		width:900px;
-// 	}
-// 	@include large-up {
-// 		width:1200px;
-// 	}
-// }
 //DEVELOPMENT
 #development-page {
 	margin:0 auto;

@@ -1,4 +1,5 @@
 //START CONTACT
+
 .title {
 	color: $maincolor;
 	font-family: $fontfamilythick;
@@ -23,6 +24,10 @@
 	margin: 0 auto;
 	width: 320px;
 	padding-top:100px;
+	@include medium-up {
+		padding-bottom:100px;
+	}
+	
 }
 .contact-label {
 	font-family: $fontfamilybody;

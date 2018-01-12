@@ -278,7 +278,7 @@ if (isset($_POST['name'])) {
 			<h1 class="title ">Let's Keep In Touch</h1>
 			<!-- like what you see? -->
 			<p class=" description" >Why not fill out the form below and say hello?</p>
-			<form id="cform" action="admin/scripts/insert.php" method="POST">
+			<form  action="admin/scripts/insert.php" method="POST">
 				<label class="contact-label" for="name">name</label>
 				<input class="form-mat" type="text"  id="name" name="name">
 
@@ -305,10 +305,10 @@ if (isset($_POST['name'])) {
 				<li><a href="#form">CONTACT</a></li>
 			</ul>
 			<h6 class="cright">© Natalie Mastracci 2017</h6>
-				<a href="https://www.instagram.com/nmastracci/"><img class="instagram" src="images/social-instagram.png" alt="instagram logo"></a>	
+				<a href="https://www.instagram.com/nmastracci/" target="_blank"><img class="instagram" src="images/social-instagram.png" alt="instagram logo"></a>	
 				
-				<a href="https://twitter.com/NMastracci"><img class="twitter" src="images/social-twitter.png" alt="twitter logo"></a>
-				<a href="https://www.linkedin.com/in/natalie-mastracci-b8772257/"><img class="linkedIn" src="images/social-linkedin.png" alt="linkedIn logo"></a>
+				<a href="https://twitter.com/NMastracci" target="_blank"><img class="twitter" src="images/social-twitter.png" alt="twitter logo"></a>
+				<a href="https://www.linkedin.com/in/natalie-mastracci-b8772257/" target="_blank"><img class="linkedIn" src="images/social-linkedin.png" alt="linkedIn logo"></a>
 				
 		</footer>
 	</div>
