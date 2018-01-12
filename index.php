@@ -107,8 +107,10 @@ if (isset($_POST['name'])) {
 		</section>
 
 		
+		<span class="ajax" id="8">AJAX ME</span>
+		<img id="ajaxPic" src="" alt="ajax display">
+		<p id="ajaxDesc">placeholder</p>
 
-		
 
 		<section id="development-page" style="display: none;">
 			<h2 class="hidden">Development page</h2>

@@ -2,58 +2,55 @@
 	"use strict";
 	console.log("main.js connected");
 
+const xhr = new XMLHttpRequest();
 
 	var toBox = document.querySelector(".to-box");
-// 	theHeading = document.querySelector(".heading"),
-// 	theSubhead = document.querySelector(".main-copy h2"),
-// 	theSeasonText = document.querySelector(".main-copy p"),
-// 	lbText = document.querySelector("img-desc"),
-// 	appliedClass;
+	var button = document.querySelector(".ajax");
 
-// function changeElements() {
-// 	//debugger;
-// 	//debugger is a special term that stops code execution
-// 	//shows you the "this" keywork that shows where in the DOM tree you are
-// 	let subImages = document.querySelector(".subImagesContainer");
-// 	let objectIndex = dynamicContent[this.id];
 
-// 	//remove duplicate images
-// 	while (subImages.firstChild) {
-// 		subImages.removeChild(subImages.firstChild);
-// 	}
 
-// 	//add the images to the bottom of the page
-// 	objectIndex.images.forEach(function(image, index){
-// 		//create image element
-// 		let newSubImg = document.createElement("img");
-// 		//add a css class to it
-// 		newSubImg.classList.add("thumb");
-// 		//set the source
-// 		newSubImg.src = "images/" +objectIndex.images[index];
+	function getImage() {
+		const url = './admin/scripts/getPics.php?allPics='+ this.id;
+//the fetch API uses new Javascript Promise API
+	fetch(url) //do an ajax call with fetch
+		.then((resp) => resp.json()) //response is JSON object
+		.then(({ pieces_desc, likeness_path}) => {
+			let pDesc = document.querySelector("#ajaxDesc").textContent = pieces_desc;
+			let imgPath = document.querySelector("#ajaxPic").textContent = likeness_path;
+			console.log(pDesc, imgPath);
+			
+//on the image you clicked take the class off
+//template string will look at whatever is in our model field 
+		
+		}) 
+		.catch(function(error) {
+			//catches any error and reports it to the database
+			console.log(error);
+		});
+	}
 
-// 		newSubImg.dataset.index = index;
-// 		//add an event handler to trigger a lightbox 
-// 		newSubImg.addEventListener("click", function(){popLightbox(index, objectIndex);}, false);
-// 		//add it to the page
-// 		subImages.appendChild(newSubImg);
-// 	})
+	// function getImage(){
+	// 	const url = './admin/scripts/getPics.php?allPics';
 
-// 	//remove the colours we applied on the the last click
-// 	theSubhead.classList.remove(appliedClass);
-// 	theHeading.classList.remove(appliedClass);
-	
-// 	//change the text using the values of the properties of the object
-// 	theSubhead.firstChild.nodeValue = objectIndex.headline;
-// 	theSeasonText.firstChild.nodeValue = objectIndex.text;
-// 	//add the colour that corresponds to the season we clicked on
-// 	theSubhead.classList.add(this.id);
-// 	theHeading.classList.add(this.id);
+	// 	fetch(url)
+	// 	.then((resp) => resp.json()) //response is JSON object
+	// 	.then((data) => {processImage(data);}) //call the process function
+	// 	.catch(function(error) {
+	// 		//catches any error and reports it to the database
+	// 		console.log(error);
+	// 	});
+	// }
 
-// 	appliedClass = this.id;
-// toBox.forEach(function(image, index){
-// 	//will add an event handler to each image
-// 	linkit.addEventListener("click", changeElements, false);
-// });
+	// function processImage(data) {
+	// 	const{pieces_desc, likeness_path} = data;
+	// 	console.log(data);
+
+	// 	// let pDesc = document.querySelector(".lightbox-desc").textContent = pieces_desc;
+	// 	// let imgPath = document.querySelector(".this-looks-great").textContent = likeness_path;
+	// 	let pDesc = document.querySelector("#ajaxDesc").textContent = pieces_desc;
+	// 	let imgPath = document.querySelector("#ajaxPic").textContent = likeness_path;
+	// 	console.log(pDesc, imgPath);
+	// }
 
 
 function lightboxMe(currentIndex, currentObject) {
@@ -99,6 +96,7 @@ function closeLightbox(){
 
 }
 
+button.addEventListener("click", getImage, false);
 toBox.addEventListener("click", lightboxMe, false);
 
 
