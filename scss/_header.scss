@@ -3,12 +3,8 @@
 	display:grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(12, 1fr);
-	// margin-top: 20px;
-	
-	// height:1307px;
 	background-image: url(../../images/sgnm-sm.jpg);
 	background-repeat: no-repeat;
-	// width:100%;
 	@include medium-up {
 		background-image: url(../../images/sgnm-med.jpg);
 	}
@@ -20,7 +16,6 @@
 
 .stay-put {
 	position:absolute;
-	// display: none;
 }
 #eight {
 	width:24em;
@@ -114,7 +109,6 @@
 	}
 	#to-portfolio {
 		cursor: pointer;
-		// margin-left: 14px;
 		text-align:right;
 		@include medium-up {
 		transition: all 0.5s ease;
@@ -127,7 +121,6 @@
 	}
 	}
 	#to-contact {
-		// display:block;
 		text-align:right;
 		cursor: pointer;
 		@include medium-up {
@@ -178,7 +171,6 @@
 		
 		font-size: 1.5em;
 		margin-bottom: 10px;
-		// margin-left: 40px;
 	}
 	}
 	h4 {
@@ -188,7 +180,6 @@
 		@include large-up {
 		font-family: $fontfamilybody;
 		font-size: 1.5em;
-		// margin-left: 40px;
 	}
 }
 }

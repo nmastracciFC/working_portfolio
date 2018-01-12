@@ -31,11 +31,8 @@ function showDev() {
 		var screenWidth = window.innerWidth;
 		if (screenWidth <= 900) {
 	console.log(document.querySelector("#artwork"));
-
-	// document.querySelector("#artwork").classList.toggle('hidden');
 	document.querySelector("#artwork").style.display="none";
-	// debugger;
-	// document.querySelector("#artwork-page").classList.toggle('hidden');
+
 	document.querySelector("#artwork-page").style.display="none";
 
 }

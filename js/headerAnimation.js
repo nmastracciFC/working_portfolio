@@ -23,4 +23,3 @@ function organize() {
 
 
 window.addEventListener("load", organize, false);
-// window.addEventListener("scroll", revealPort, false);

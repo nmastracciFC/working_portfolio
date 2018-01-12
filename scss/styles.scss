@@ -5,10 +5,8 @@
 @import 'fonts';
 @import 'nav';
 @import 'contact';
-// @import 'portfolio';
-// @import 'headerColour';
 @import 'header';
-@import 'portfolio2';
+@import 'portfolio';
 @import 'lightbox';
 .hidden {
 	display:none;
@@ -17,9 +15,6 @@
 body {
 	font-family: $fontfamilybody;
 	font-size: 14px;
-	// background-color: #000;
-	
-	
 }
 
 a {
@@ -28,10 +23,8 @@ a {
 }
 
 #container {
-	// width: 374px;
 	width:100%;
 	@include medium-up {
-		// width:750px;
 		width:100%;
 	}
 	@include large-up {
@@ -44,12 +37,15 @@ footer {
 	clear:both;
 	width:100%;
 	height: 8em;
+	margin-top:9em;
 
 	padding-bottom: 15px;
 	@include medium-up {
+		margin-top:9em;
 		height: 3em;
 	}
 	@include large-up {
+		margin-top:9em;
 		height: 4em;
 	}
 }
@@ -76,13 +72,11 @@ footer {
 	} 
 } 
 .cright {
-	// float: right;
 	display: inline-block;
 	text-align: right;
 	color: $navcolor;
 	padding-left:1.5em;
 	padding-top:1.2em;
-	// vertical-align: bottom;
 	@include medium-up {
 		padding-top: 0;
 	}
@@ -92,17 +86,9 @@ footer {
 	vertical-align: bottom;
 	text-align: left;
 	padding-right: 0.5em;
-	// padding-top:0;
-	// @include medium-up {
-	// 	padding-top:0;
-	// }
-	// @include large-up {
-	// 	padding-top:4em;
-	// }
 }
 .twitter {
 	@extend .linkedIn;
-	// padding-right: 0.5em;
 	
 	
 }
