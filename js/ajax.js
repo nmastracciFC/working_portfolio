@@ -56,7 +56,11 @@ function lightboxMe() {
 	lightbox.style.height = coverUp;
 
 	if (lightboxImg > 999+"px"){
-		lightboxImg.style.width = 700+"px";
+		lightboxImg.style.width = 320+"px";
+	} else if (lightboxImg > 700 +"px") {
+		lightboxImg.style.width = 750+"px";
+	} else if (lightboxImg < 700 +"px") {
+		lightboxImg.style.width = 320+"px";
 	}
 
 	lightBoxClose.addEventListener("click", closeLightbox, false);
