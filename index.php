@@ -301,8 +301,8 @@ if (isset($_POST['name'])) {
 		<footer>
 			<ul class="footer-nav">
 				<!-- <li><a href="index.html">HOME</a></li> -->
-				<li><a href="#portfolio">PORTFOLIO</a></li>
-				<li><a href="#form">CONTACT</a></li>
+				<li><a id="navToPort2" href="#portfolio">PORTFOLIO</a></li>
+				<li><a id="navToForm2" href="#form">CONTACT</a></li>
 			</ul>
 			<h6 class="cright">© Natalie Mastracci 2017</h6>
 				<a href="https://www.instagram.com/nmastracci/" target="_blank"><img class="instagram" src="images/social-instagram.png" alt="instagram logo"></a>	
