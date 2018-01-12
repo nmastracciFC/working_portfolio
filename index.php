@@ -86,6 +86,14 @@ if (isset($_POST['name'])) {
 			</div>
 		</header>
 
+		<section class="i-love-lightboxes">
+		<!-- close button -->
+			<p class="fa fa-times close-box">X</p>
+			<img class="this-looks-great" src="" alt="portfolio image">
+			<!-- lightbox image description -->
+			<p class="lightbox-desc">Placeholder Copy</p>
+		</section>
+
 
 		<section id="portfolio">
 			<h2 class="hidden">Portfolio</h2>
@@ -96,6 +104,8 @@ if (isset($_POST['name'])) {
 				<h2 id="development" style="">Development</h2>
 				<h2 id="artwork" style="">Artwork</h2>
 			</div>
+
+
 		
 
 		
@@ -109,7 +119,8 @@ if (isset($_POST['name'])) {
 				<h3>Back End Dev</h3>
 				<p>Working on a team of three to create the Time and Attendance module that will fit into HRDownload's greater product. This app will use laravel--with eloquent models and migrations--as well as vue.js components.</p>
 				<p>The module is being created for multiple users with different levels of access to features. Managers will be able to create, set and assign schedules and Employees will be able to see their schedule and request time off. Daily scrum, weekly sprints and frequent code review will see that this product is complete in early April</p>
-				<a href="#portfolio" target="_blank">SEE THE TEAM</a>
+				<!-- <a class="to-box" id="hrd" href="#portfolio" >SEE THE TEAM</a> -->
+				<span class="to-box" id="hrd">SEE THE TEAM</span>
 			</div>
 
 			<div class="card">
