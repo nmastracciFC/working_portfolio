@@ -43,7 +43,7 @@ function lightboxMe() {
 	let coverUp = window.innerHeight;
 	let coverAcross = window.innerWidth;
 	console.log(coverUp, coverAcross);
-	
+	window.scrollTo(0,0);
 	document.body.style.overflow = "hidden";
 
 	let lightbox = document.querySelector(".i-love-lightboxes");
@@ -55,11 +55,16 @@ function lightboxMe() {
 	lightbox.style.display = "block";
 	lightbox.style.height = coverUp;
 
+	if (lightboxImg > 999+"px"){
+		lightboxImg.style.width = 700+"px";
+	}
+
 	lightBoxClose.addEventListener("click", closeLightbox, false);
 }
 
 function closeLightbox(){
 	// debugger;
+	window.scrollTo(0,1000);
 	document.body.style.overflow = "auto";
 	let lightbox = document.querySelector(".i-love-lightboxes");
 	lightbox.querySelector('img').src="";
