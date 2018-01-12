@@ -1,5 +1,5 @@
 <?php
-require_once("admin/scripts/connect.php");
+// require_once("admin/scripts/connect.php");
 require_once("admin/scripts/config.php");
 
 if (isset($_POST['name'])) {
@@ -44,10 +44,10 @@ if (isset($_POST['name'])) {
 			
 
 			<div class="social">
-				<a href="https://www.instagram.com/nmastracci/"><img class="instagram" src="images/social-instagram.png" alt="instagram logo"></a>	
+				<a href="https://www.instagram.com/nmastracci/" target="_blank"><img class="instagram" src="images/social-instagram.png" alt="instagram logo"></a>	
 				
-				<a href="https://twitter.com/NMastracci"><img class="twitter" src="images/social-twitter.png" alt="twitter logo"></a>
-				<a href="https://www.linkedin.com/in/natalie-mastracci-b8772257/"><img class="linkedIn" src="images/social-linkedin.png" alt="linkedIn logo"></a>
+				<a href="https://twitter.com/NMastracci" target="_blank"><img class="twitter" src="images/social-twitter.png" alt="twitter logo"></a>
+				<a href="https://www.linkedin.com/in/natalie-mastracci-b8772257/" target="_blank"><img class="linkedIn" src="images/social-linkedin.png" alt="linkedIn logo" ></a>
 			</div>
 		<ul class="main-nav">
 				
@@ -145,7 +145,7 @@ if (isset($_POST['name'])) {
 				<img class="data-ref" src="images/logo_parker-white.svg" alt="Parker Clothing Logo">
 				<h3>Front End Dev</h3>
 				<p>With javascript turned off in the browser this site still works seamlessly. Developed purely with HTML and CSS this website serves as a tribute to CSS3 transitions. Illustrator and Photoshop were used to create all graphic content.</p>
-				<a href="" target="_blank">SEE FULL SITE</a>
+				<a href="parker/index.html" target="_blank">SEE FULL SITE</a>
 			</div>
 			
 			<!-- <div class="card">

@@ -2,7 +2,6 @@
 const xhr = new XMLHttpRequest();
 const toBox = document.querySelector(".to-box");
 	
-
 function getImage(){
 	if (!xhr) { 
       alert('instance not happening');

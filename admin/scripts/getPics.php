@@ -1,7 +1,5 @@
-<?php ini_set('display_errors', 1);
-error_reporting(E_ALL);
-
-include('connect.php');
+<?php 
+require_once('connect.php');
 
 if(isset($_GET['allPics'])) {
 $allPics = $_GET['allPics'];
