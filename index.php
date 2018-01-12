@@ -107,9 +107,9 @@ if (isset($_POST['name'])) {
 		</section>
 
 		
-		<span class="data-ref" id="hrd">AJAX ME</span>
+		<!-- <span class="data-ref" id="8">AJAX ME</span>
 		<img id="ajaxPic" src="" alt="ajax display">
-		<p id="ajaxDesc">placeholder</p>
+		<p id="ajaxDesc">placeholder</p> -->
 
 
 		<section id="development-page" style="display: none;">
@@ -122,7 +122,7 @@ if (isset($_POST['name'])) {
 				<p>Working on a team of three to create the Time and Attendance module that will fit into HRDownload's greater product. This app will use laravel--with eloquent models and migrations--as well as vue.js components.</p>
 				<p>The module is being created for multiple users with different levels of access to features. Managers will be able to create, set and assign schedules and Employees will be able to see their schedule and request time off. Daily scrum, weekly sprints and frequent code review will see that this product is complete in early April</p>
 				<!-- <a class="to-box" id="hrd" href="#portfolio" >SEE THE TEAM</a> -->
-				<span class="to-box" id="hrd">SEE THE TEAM</span>
+				<span class="to-box" id="8">SEE THE TEAM</span>
 			</div>
 
 			<div class="card">
