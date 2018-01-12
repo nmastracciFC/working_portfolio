@@ -12,12 +12,12 @@ const toPortfolio = document.querySelector("#to-portfolio"),
 	
 
 function scrollPortfolio(e){
-		e.preventDefault();
-		TweenLite.to(window, 2, {scrollTo:{y:"#portfolio"}, ease:Power2.easeInOut});
+	e.preventDefault();
+	TweenLite.to(window, 2, {scrollTo:{y:"#portfolio"}, ease:Power2.easeInOut});
 }
 function scrollContact(e){
 	e.preventDefault();
-		TweenLite.to(window, 2, {scrollTo:{y:"#form"}, ease:Power2.easeInOut});
+	TweenLite.to(window, 2, {scrollTo:{y:"#form"}, ease:Power2.easeInOut});
 }
  
 toPortfolio.addEventListener("click", scrollPortfolio,false);
