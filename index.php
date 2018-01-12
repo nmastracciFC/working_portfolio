@@ -51,8 +51,8 @@ if (isset($_POST['name'])) {
 			</div>
 		<ul class="main-nav">
 				
-				<li><a href="#portfolio">PORTFOLIO</a></li>
-				<li><a href="#form">CONTACT</a></li>
+				<li><a id="navToPort" href="#portfolio">PORTFOLIO</a></li>
+				<li><a id="navToForm" href="#form">CONTACT</a></li>
 			</ul>
 
 

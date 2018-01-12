@@ -1,4 +1,4 @@
-console.log("headerColour.js is attached");
+console.log("headerAnimation.js is attached");
 
 // const headerBox = document.querySelector("#headerColour"),
 // 	splatter = document.querySelectorAll(".stay-put");;
