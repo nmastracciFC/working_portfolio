@@ -86,13 +86,7 @@ if (isset($_POST['name'])) {
 			</div>
 		</header>
 
-		<section class="i-love-lightboxes">
-		<!-- close button -->
-			<p class="fa fa-times close-box">X</p>
-			<img class="this-looks-great" src="" alt="portfolio image">
-			<!-- lightbox image description -->
-			<p class="lightbox-desc">Placeholder Copy</p>
-		</section>
+		
 
 
 		<section id="portfolio">
@@ -105,6 +99,12 @@ if (isset($_POST['name'])) {
 				<h2 id="artwork" style="">Artwork</h2>
 			</div>
 
+
+		<section class="i-love-lightboxes">
+			<span class="close-box">X</span>
+			<img class="this-looks-great" src="" alt="portfolio image">
+			<p class="lightbox-desc">Placeholder Copy</p>
+		</section>
 
 		
 

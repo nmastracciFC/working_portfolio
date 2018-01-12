@@ -54,16 +54,8 @@
 // 	//will add an event handler to each image
 // 	linkit.addEventListener("click", changeElements, false);
 // });
-toBox.addEventListener("click", lightboxMe, false);
-// }
 
-//loops through collection
-// toBox.forEach(function(image, index){
-// 	//will add an event handler to each image
-// 	image.addEventListener("click", changeElements, false);
-// });
 
-//trigger the lightbox
 function lightboxMe(currentIndex, currentObject) {
 	let coverUp = window.innerHeight;
 	let coverAcross = window.innerWidth;
@@ -79,7 +71,7 @@ function lightboxMe(currentIndex, currentObject) {
 	let lightboxImg = lightbox.querySelector("img");
 	let lightboxDesc = document.querySelector(".lightbox-desc");
 	let lightBoxClose = document.querySelector(".close-box");
-	
+	 console.log(lightBoxClose);
 	
 	lightbox.style.display = "block";
 	lightbox.style.height = coverUp;
@@ -89,9 +81,9 @@ function lightboxMe(currentIndex, currentObject) {
 	// lightboxDesc.innerHTML = hrd.desc;
 
 
-	if (lightboxImg > 999+"px"){
-		lightboxImg.style.width = 700+"px";
-	}
+	// if (lightboxImg > 999+"px"){
+	// 	lightboxImg.style.width = 700+"px";
+	// }
 
 	lightBoxClose.addEventListener("click", closeLightbox, false);
 }
@@ -100,38 +92,15 @@ function closeLightbox(){
 	//reset everything and close the lgihtbox
 	// debugger;
 	document.body.style.overflow = "auto";
-	let lightbox = document.querySelector(".lightbox");
+	let lightbox = document.querySelector(".i-love-lightboxes");
 	lightbox.querySelector('img').src="";
 	lightbox.querySelector("p").innerHTML = "";
 	lightbox.style.display = "none";
 
 }
 
+toBox.addEventListener("click", lightboxMe, false);
 
-
-//document.querySelector('#spring').click();
-//way to call the function to work right away
-// changeElements.call(document.querySelector("#spring"));
-
-// function checkWidth(){
-// var screenWidth = window.innerWidth;
-// if (screenWidth <= 900) {
-// 	console.log(document.querySelector("#artwork"));
-// 	document.querySelector("#artwork").classList.toggle('hidden');
-
-// }
-// }
-
-// // var carImg = document.querySelectorAll(".data-ref");
-
-// // function getDevCardImg() {
-// // 	const url = './admin/scripts/getPics.php?allPics='+this.id;
-
-// // 	fetch(url)
-// // 	.then((resp)=> resp.json())
-// // 	.then(({ }))
-
-// // }
 
 
 // window.addEventListener("load", checkWidth, false);
