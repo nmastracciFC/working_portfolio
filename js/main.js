@@ -4,31 +4,81 @@
 
 const xhr = new XMLHttpRequest();
 
-	var toBox = document.querySelector(".to-box");
-	var button = document.querySelector(".ajax");
+	const toBox = document.querySelector(".to-box");
+	const button = document.querySelector(".data-ref");
 
+function getImage(){
+	if (!xhr) { // this is for older browser that don't support AJAX
+      alert('instance not happening');
+      return false; // exit the whole process and don't do anything else - we're done
+    }
 
+xhr.onreadystatechange = function processRequest() {
+	let reqIndicator = document.querySelector('.request-state');
+    // reqIndicator.textContent = xhr.readyState;
 
-	function getImage() {
-		const url = './admin/scripts/getPics.php?allPics='+ this.id;
-//the fetch API uses new Javascript Promise API
-	fetch(url) //do an ajax call with fetch
-		.then((resp) => resp.json()) //response is JSON object
-		.then(({ pieces_desc, likeness_path}) => {
-			let pDesc = document.querySelector("#ajaxDesc").textContent = pieces_desc;
-			let imgPath = document.querySelector("#ajaxPic").textContent = likeness_path;
-			console.log(pDesc, imgPath);
-			
-//on the image you clicked take the class off
-//template string will look at whatever is in our model field 
-		
-		}) 
-		.catch(function(error) {
-			//catches any error and reports it to the database
-			console.log(error);
-		});
+	if(xhr.readyState === XMLHttpRequest.DONE){
+		if (xhr.status === 200) {
+			let data = JSON.parse(xhr.responseText);
+			processResult(data);
+			console.log(this.id);
+
+	}else {
+		alert('there was a request problem');
 	}
+}
 
+	// 	console.log(typeof xhr.responseText);//this is a string
+	// 	//turn string into JS
+	// 	var employees = JSON.parse(xhr.responseText);
+	// 	console.log(typeof employees);//this is an object
+
+	// 	var statusHTML = '<ul class="bulleted">';
+	// 	for (var i=0; i<employees.length; i += 1) {
+	// 		if(employees[i].inoffice === true) {
+	// 			statusHTML+= '<li class="in">';
+	// 		} else {
+	// 			statusHTML+= '<li class="out">';
+	// 		}
+	// 		statusHTML += employees[i].name;
+	// 		statusHTML += '</li>';
+	// 	}
+	// 	statusHTML += '</ul>';
+	// 	document.querySelector("#employeeList").innerHTML = statusHTML;
+	// }
+};
+xhr.open('GET', './admin/scripts/getPics.php?allPics');
+xhr.send();
+}
+function processResult(data) {
+	const{ pieces_desc, likeness_path} = data;
+	let pDesc = document.querySelector("#ajaxDesc").textContent = pieces_desc;
+	let imgPath = document.querySelector("#ajaxPic").textContent = likeness_path;
+	console.log(pDesc, imgPath);
+
+}
+
+
+
+//START
+
+	// function getImage() {
+	// 	const url = './admin/scripts/getPics.php?allPics='+ this.id;
+
+	// fetch(url) 
+	// 	.then((resp) => resp.json())
+	// 	.then(({ pieces_desc, likeness_path}) => {
+	// 		let pDesc = document.querySelector("#ajaxDesc").textContent = pieces_desc;
+	// 		let imgPath = document.querySelector("#ajaxPic").textContent = likeness_path;
+	// 		console.log(pDesc, imgPath);
+		
+	// 	}) 
+	// 	.catch(function(error) {
+	// 		//catches any error and reports it to the database
+	// 		console.log(error);
+	// 	});
+	// }
+//END
 	// function getImage(){
 	// 	const url = './admin/scripts/getPics.php?allPics';
 
@@ -57,13 +107,9 @@ function lightboxMe(currentIndex, currentObject) {
 	let coverUp = window.innerHeight;
 	let coverAcross = window.innerWidth;
 	console.log(coverUp, coverAcross);
-	// debugger;
 	
-	//move window to the top every time we click - quick bug fix
-	// window.scrollTo(0,0);
 	document.body.style.overflow = "hidden";
 
-	//trigger the lightbox overlay so that we can see it
 	let lightbox = document.querySelector(".i-love-lightboxes");
 	let lightboxImg = lightbox.querySelector("img");
 	let lightboxDesc = document.querySelector(".lightbox-desc");
@@ -86,7 +132,6 @@ function lightboxMe(currentIndex, currentObject) {
 }
 
 function closeLightbox(){
-	//reset everything and close the lgihtbox
 	// debugger;
 	document.body.style.overflow = "auto";
 	let lightbox = document.querySelector(".i-love-lightboxes");
@@ -99,8 +144,5 @@ function closeLightbox(){
 button.addEventListener("click", getImage, false);
 toBox.addEventListener("click", lightboxMe, false);
 
-
-
-// window.addEventListener("load", checkWidth, false);
 
 	})();

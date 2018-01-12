@@ -107,7 +107,7 @@ if (isset($_POST['name'])) {
 		</section>
 
 		
-		<span class="ajax" id="8">AJAX ME</span>
+		<span class="data-ref" id="hrd">AJAX ME</span>
 		<img id="ajaxPic" src="" alt="ajax display">
 		<p id="ajaxDesc">placeholder</p>
 
