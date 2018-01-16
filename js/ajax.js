@@ -1,4 +1,4 @@
-console.log("Welcome! Thanks for taking the time to look under the hood")
+console.log("Welcome! Thanks for taking the time to poke around. That contact box feels awful bare... would probably look better if you filled it out.");
 const xhr = new XMLHttpRequest();
 const toBox = document.querySelector(".to-box");
 	
@@ -16,8 +16,13 @@ xhr.send();
 function processRequest() {
 	if(xhr.readyState === XMLHttpRequest.DONE){
 		if (xhr.status === 200) {
-			var data = JSON.parse(xhr.responseText);
+			// var data = JSON.parse(xhr.responseText);
+			var data = xhr.responseText;
+			console.log(xhr);
+			console.log(responseText);
+			console.log(xhr.responsetext);
 			processResult(data);
+			console.log(data);
 		
 
 	}else {

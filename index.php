@@ -1,5 +1,5 @@
 <?php
-// require_once("admin/scripts/connect.php");
+require_once("admin/scripts/connect.php");
 require_once("admin/scripts/config.php");
 
 if (isset($_POST['name'])) {
@@ -105,8 +105,8 @@ if (isset($_POST['name'])) {
 
 		<section class="i-love-lightboxes">
 			<span class="close-box">X</span>
-			<img class="this-looks-great" src="" alt="portfolio image">
-			<p class="lightbox-desc">Placeholder Copy</p>
+			<img class="this-looks-great" src="images/reactr-team.jpg" alt="portfolio image">
+			<p class="lightbox-desc"></p>
 		</section>
 
 
@@ -134,8 +134,8 @@ if (isset($_POST['name'])) {
 			<div class="card">
 				<h1 class="summerLEDC">Parallax Exercise</h1>
 				<h3>Front End Dev</h3>
-				<p>Here are two different examples of depth using javascript and css to create a parallax effect</p>
-				<p>Students who registered their team on the app, recieved an email to sign in to their team's checklist and begin completing tasks. The committee who determined the winner could see each team's progress in real time from their dashboard.</p>
+				<p>A study in the illusion of depth. A multi-layered scene was created in Adobe Illustrator. The different layers were exported as SVGs and absolutely positioned over one another. Then each picture's speed of scroll was altered to move at different individual percentages of the window's pageYOffset.</p>
+				
 				<a href="parallax/index.html" target="_blank">SEE FULL SITE</a>
 			</div>
 

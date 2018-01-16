@@ -3,10 +3,10 @@
 	display:grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(12, 1fr);
-	background-image: url(../../images/sgnm-sm.jpg);
+	background-image: url(../../images/sgnm-upped-sm.jpg);
 	background-repeat: no-repeat;
 	@include medium-up {
-		background-image: url(../../images/sgnm-med.jpg);
+		background-image: url(../../images/sgnm-upped-med.jpg);
 	}
 	@include large-up {
 		background-image: url(../../images/sgnm-upped.jpg);
