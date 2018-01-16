@@ -1,4 +1,4 @@
-
+console.log("Welcome! Thanks for taking the time to look under the hood")
 const xhr = new XMLHttpRequest();
 const toBox = document.querySelector(".to-box");
 	
@@ -18,8 +18,6 @@ function processRequest() {
 		if (xhr.status === 200) {
 			var data = JSON.parse(xhr.responseText);
 			processResult(data);
-			
-			console.log(this.id);
 		
 
 	}else {
@@ -29,11 +27,9 @@ function processRequest() {
 
 
 	function processResult(data) {
-	console.log(data);
 	let lightbox = document.querySelector(".i-love-lightboxes");
 	let pDesc = document.querySelector(".lightbox-desc").textContent = data[0].pieces_desc;
 	let imgPath = lightbox.querySelector("img").src = "images/"+data[0].likeness_path;
-	console.log(pDesc, imgPath);
 
 }
 }
@@ -41,7 +37,6 @@ function processRequest() {
 function lightboxMe() {
 	let coverUp = window.innerHeight;
 	let coverAcross = window.innerWidth;
-	console.log(coverUp, coverAcross);
 	window.scrollTo(0,0);
 	document.body.style.overflow = "hidden";
 
@@ -49,7 +44,6 @@ function lightboxMe() {
 	let lightboxImg = lightbox.querySelector("img");
 	let lightboxDesc = document.querySelector(".lightbox-desc");
 	let lightBoxClose = document.querySelector(".close-box");
-	 console.log(lightBoxClose);
 	
 	lightbox.style.display = "block";
 	lightbox.style.height = coverUp;

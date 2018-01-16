@@ -1,5 +1,3 @@
-console.log("headerAnimation.js is attached");
-
 function organize() {
 	let nav = document.querySelector("nav");
 	let headingH1 = document.querySelector("#heading h1");

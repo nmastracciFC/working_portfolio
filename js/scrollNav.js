@@ -1,6 +1,5 @@
 (function (){
 	"use strict";
-	console.log("scrollNav.js connected");
 
 var scroll = window.pageYOffset;
 
@@ -10,7 +9,6 @@ const toPortfolio = document.querySelector("#to-portfolio"),
 	navForm = document.querySelector("#navToForm"),
 	navPort2 = document.querySelector("#navToPort2"),
 	navForm2 = document.querySelector("#navToForm2");
-	console.log(toPortfolio, toContact);
 	
 
 function scrollPortfolio(e){

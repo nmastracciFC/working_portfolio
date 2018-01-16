@@ -16,7 +16,7 @@ function submitMessage($name, $email, $message, $direct) {
 	$msg = "name: ".$name."\n\nEmail: ".$email."\n\nComments: ".$message;
 	
 	mail($to, $subj, $msg, $extra); 
-	$direct = $direct."?name={$name}";
+	// $direct = $direct."?name={$name}";
 	redirect_to($direct);
 }
 

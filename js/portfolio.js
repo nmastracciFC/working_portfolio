@@ -1,6 +1,5 @@
 (function (){
 	"use strict";
-	console.log("portfolio.js connected");
 
 var dev = document.querySelector("#development"),
 	des = document.querySelector("#design"),
@@ -30,7 +29,6 @@ function showDev() {
 	function checkWidth(){
 		var screenWidth = window.innerWidth;
 		if (screenWidth <= 900) {
-	console.log(document.querySelector("#artwork"));
 	document.querySelector("#artwork").style.display="none";
 
 	document.querySelector("#artwork-page").style.display="none";

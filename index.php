@@ -1,5 +1,5 @@
 <?php
-require_once("admin/scripts/connect.php");
+// require_once("admin/scripts/connect.php");
 require_once("admin/scripts/config.php");
 
 if (isset($_POST['name'])) {
